@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
+  <div class="background">
+    <div class="container">
       <app-header></app-header>
       <router-view></router-view>
       <app-footer></app-footer>
+    </div>
   </div>
 </template>
 
@@ -14,10 +16,13 @@ export default {
     appHeader: Header,
     appFooter: Footer
   }
-
 }
 </script>
 
-<style lang="scss">
-
+<style scoped lang="scss">
+  .background {
+    margin: 50px;
+    text-align: center;
+    height: 100%;
+  }
 </style>
