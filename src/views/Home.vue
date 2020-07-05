@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="row">
     <img
       class="image"
       src="https://images.pexels.com/photos/3957987/pexels-photo-3957987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -44,15 +44,19 @@
 
 <style scoped lang="scss">
 .image {
-  height: 250px;
-  width: 600px;
-  object-fit: cover;
-  margin: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 .jumbotron {
   height: 60px;
   padding: 10px;
   align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 .text {
   width: 100%;
