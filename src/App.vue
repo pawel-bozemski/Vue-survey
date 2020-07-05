@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  body {
+  font-family: 'Roboto', sans-serif;
+  }
   .background {
     margin: 50px;
     text-align: center;
