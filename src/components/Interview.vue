@@ -15,6 +15,7 @@
                 name="gender"
                 id="female"
                 value="female"
+                v-model="gender"
               />
             </span>
           </label>
@@ -29,6 +30,7 @@
                 name="gender"
                 id="male"
                 value="male"
+                v-model="gender"
               />
             </span>
           </label>
@@ -47,8 +49,9 @@
                 class="input"
                 type="radio"
                 name="age"
-                id="age"
-                value="18"
+                id="18-24"
+                value="18-24"
+                v-model="age"
               />
             </span>
           </label>
@@ -61,8 +64,9 @@
                 class="input"
                 type="radio"
                 name="age"
-                id="age"
-                value="25"
+                id="25-34"
+                value="25-34"
+                v-model="age"
               />
             </span>
           </label>
@@ -75,8 +79,9 @@
                 class="input"
                 type="radio"
                 name="age"
-                id="age"
-                value="35"
+                id="34-44"
+                value="34-44"
+                v-model="age"
               />
             </span>
           </label>
@@ -89,8 +94,9 @@
                 class="input"
                 type="radio"
                 name="age"
-                id="age"
-                value="45"
+                id="45-54"
+                value="45-54"
+                v-model="age"
               />
             </span>
           </label>
@@ -103,8 +109,9 @@
                 class="input"
                 type="radio"
                 name="age"
-                id="age"
-                value="55"
+                id="55-65"
+                value="55-65"
+                v-model="age"
               />
             </span>
           </label>
@@ -119,6 +126,7 @@
                 name="age"
                 id="65+"
                 value="65"
+                v-model="age"
               />
             </span>
           </label>
@@ -139,6 +147,7 @@
                 name="location"
                 id="cottage"
                 value="cottage"
+                v-model="location"
               />
             </span>
           </label>
@@ -153,6 +162,7 @@
                 name="location"
                 id="city19k"
                 value="city19k"
+                v-model="location"
               />
             </span>
           </label>
@@ -167,6 +177,7 @@
                 name="location"
                 id="city20k"
                 value="city20k"
+                v-model="location"
               />
             </span>
           </label>
@@ -181,6 +192,7 @@
                 name="location"
                 id="city50k"
                 value="city50k"
+                v-model="location"
               />
             </span>
           </label>
@@ -195,6 +207,7 @@
                 name="location"
                 id="city100k"
                 value="city100k"
+                v-model="location"
               />
             </span>
           </label>
@@ -209,6 +222,7 @@
                 name="location"
                 id="city200k"
                 value="city200k"
+                v-model="location"
               />
             </span>
           </label>
@@ -223,6 +237,7 @@
                 name="location"
                 id="city500k"
                 value="city500k"
+                v-model="location"
               />
             </span>
           </label>
@@ -242,6 +257,7 @@
                 name="education"
                 id="elementary"
                 value="elementary"
+                v-model="education"
               />
             </span>
           </label>
@@ -256,6 +272,7 @@
                 name="education"
                 id="secondary"
                 value="secondary"
+                v-model="education"
               />
             </span>
           </label>
@@ -270,6 +287,7 @@
                 name="education"
                 id="higher"
                 value="higher"
+                v-model="education"
               />
             </span>
           </label>
@@ -285,6 +303,7 @@
         Dalej >>>>
       </router-link>
     </div>
+      <button @click="setInterview">change state</button>
 
   </div>
 </template>
@@ -298,8 +317,20 @@ export default {
       location: '',
       education: ''
     }
+  },
+  methods: {
+    setInterview () {
+      const interview = {
+        gender: this.gender,
+        age: this.age,
+        location: this.location,
+        education: this.education
+      }
+      this.$store.dispatch('setInterview', interview)
+    }
   }
 }
+
 </script>
 
 <style scoped lang="scss">

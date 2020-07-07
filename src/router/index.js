@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 import NotFound from '../views/NotFound.vue'
 import Page1 from '../components/pages/Page1'
 import Page2 from '../components/pages/Page2'
-import Page3 from '../components/pages/Page3'
 import Interview from '../components/Interview'
 import Results from '../components/Results'
 
@@ -25,11 +24,6 @@ const routes = [
     path: '/page2',
     name: 'page2',
     component: Page2
-  },
-  {
-    path: '/page3',
-    name: 'page3',
-    component: Page3
   },
   {
     path: '/interview',
