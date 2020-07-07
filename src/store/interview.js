@@ -13,8 +13,15 @@ const actions = {
   }
 }
 
+const getters = {
+  interview: state => {
+    return state.interview
+  }
+}
+
 export default {
   state,
   mutations,
-  actions
+  actions,
+  getters
 }

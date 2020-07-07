@@ -295,16 +295,14 @@
       </div>
     </div>
     <div class="jumbotron">
-      <router-link
-      to="/page1"
-      tag="button"
-      class="btn btn-warning"
-      >
-        Dalej >>>>
+      <router-link to="/page1">
+      <button
+        class="btn btn-warning"
+        @click="setInterview">
+          Dalej >>>>
+        </button>
       </router-link>
     </div>
-      <button @click="setInterview">change state</button>
-
   </div>
 </template>
 
