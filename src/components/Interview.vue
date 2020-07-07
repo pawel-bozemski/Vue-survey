@@ -154,7 +154,8 @@
         </div>
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="city19k">
-            miasto do 19 tys. <br> mieszkańców
+            miasto do 19 tys. <br />
+            mieszkańców
             <span>
               <input
                 class="input"
@@ -169,7 +170,8 @@
         </div>
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="city20k">
-            miasto 20-49 tys. <br> mieszkańców
+            miasto 20-49 tys. <br />
+            mieszkańców
             <span>
               <input
                 class="input"
@@ -184,7 +186,8 @@
         </div>
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="city50k">
-            miasto 50-99 tys. <br> mieszkańców
+            miasto 50-99 tys. <br />
+            mieszkańców
             <span>
               <input
                 class="input"
@@ -199,7 +202,8 @@
         </div>
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="city100k">
-            miasto 100-199 tys. <br> mieszkańców
+            miasto 100-199 tys. <br />
+            mieszkańców
             <span>
               <input
                 class="input"
@@ -214,7 +218,8 @@
         </div>
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="city200k">
-            miasto 200-499 tys. <br> mieszkańców
+            miasto 200-499 tys. <br />
+            mieszkańców
             <span>
               <input
                 class="input"
@@ -229,7 +234,8 @@
         </div>
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="city500k">
-            miasto 500 tys. + <br> mieszkańców
+            miasto 500 tys. + <br />
+            mieszkańców
             <span>
               <input
                 class="input"
@@ -296,9 +302,7 @@
     </div>
     <div class="jumbotron">
       <router-link to="/page1">
-      <button
-        class="btn btn-warning"
-        @click="setInterview">
+        <button class="btn btn-warning" @click="setInterview">
           Dalej >>>>
         </button>
       </router-link>
@@ -328,7 +332,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped lang="scss">

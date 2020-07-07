@@ -68,7 +68,10 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak często jada Pan/Pani produkty typu fast-food <br>(hamburgery, frytki, hot-dog itp.)?</h4>
+      <h4>
+        Jak często jada Pan/Pani produkty typu fast-food <br />(hamburgery,
+        frytki, hot-dog itp.)?
+      </h4>
       <div class="questions">
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="ipsum">
@@ -134,7 +137,9 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?</h4>
+      <h4>
+        Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?
+      </h4>
       <div class="questions">
         <div class="form-check form-check-inline question-box">
           <label class="form-check-label" for="dolor">
@@ -200,20 +205,21 @@
     </div>
     Wywiad 1/10
     <div class="progress">
-      <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      <div
+        class="progress-bar bg-danger"
+        role="progressbar"
+        style="width: 10%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
     </div>
-    <router-link
-      to="/interview"
-      tag="a"
-      class="backBtn"
-      >
+    <router-link to="/interview" tag="a" class="backBtn">
       <i class="fas fa-chevron-circle-left"></i>
     </router-link>
     <div class="jumbotron">
       <router-link to="/page2">
-      <button
-        class="btn btn-warning"
-        @click="setDiet">
+        <button class="btn btn-warning" @click="setDiet">
           Dalej >>>>
         </button>
       </router-link>
@@ -241,7 +247,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style scoped lang="scss">
