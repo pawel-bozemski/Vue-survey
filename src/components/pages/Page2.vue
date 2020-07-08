@@ -6,62 +6,22 @@
         Czy w Pana/Pani najbliższej rodzinie (dziadkowie, rodzice, rodzeństwo,
         dzieci) wystąpiła choroba nowotworowa ?
       </h4>
+
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="lorem">
-            Lorem ipsum dolor sit amet
+        <div
+          class="form-check form-check-inline question-box"
+          v-for="question in question_1Questions"
+          :key="question.id"
+        >
+          <label class="form-check-label" :for="question.value">
+            {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                name="question_1"
-                id="lorem"
-                value="lorem"
-                v-model="question_1"
-              />
-            </span>
-          </label>
-        </div>
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="consectetur">
-            consectetur adipiscing elit
-            <span>
-              <input
-                class="input"
-                type="radio"
-                name="question_1"
-                id="consectetur"
-                value="consectetur"
-                v-model="question_1"
-              />
-            </span>
-          </label>
-        </div>
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="sed">
-            sed do eiusmod tempor
-            <span>
-              <input
-                class="input"
-                type="radio"
-                name="question_1"
-                id="sed"
-                value="sed"
-                v-model="question_1"
-              />
-            </span>
-          </label>
-        </div>
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="labore">
-            incididunt ut labore
-            <span>
-              <input
-                class="input"
-                type="radio"
-                name="question_1"
-                id="labore"
-                value="labore"
+                :name="question.name"
+                :id="question.value"
+                :value="question.value"
                 v-model="question_1"
               />
             </span>
@@ -79,61 +39,20 @@
         choroby sercowo-naczyniowe?
       </h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="ipsum">
-            Lorem ipsum dolor sit amet
+        <div
+          class="form-check form-check-inline question-box"
+          v-for="question in question_2Questions"
+          :key="question.id"
+        >
+          <label class="form-check-label" :for="question.value">
+            {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                name="question_2"
-                id="ipsum"
-                value="ipsum"
-                v-model="question_2"
-              />
-            </span>
-          </label>
-        </div>
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="adipiscing">
-            consectetur adipiscing elit
-            <span>
-              <input
-                class="input"
-                type="radio"
-                name="question_2"
-                id="adipiscing"
-                value="adipiscing"
-                v-model="question_2"
-              />
-            </span>
-          </label>
-        </div>
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="eiusmod">
-            sed do eiusmod tempor
-            <span>
-              <input
-                class="input"
-                type="radio"
-                name="question_2"
-                id="eiusmod"
-                value="eiusmod"
-                v-model="question_2"
-              />
-            </span>
-          </label>
-        </div>
-        <div class="form-check form-check-inline question-box">
-          <label class="form-check-label" for="incididunt">
-            incididunt ut labore
-            <span>
-              <input
-                class="input"
-                type="radio"
-                name="question_2"
-                id="incididunt"
-                value="incididunt"
+                :name="question.name"
+                :id="question.value"
+                :value="question.value"
                 v-model="question_2"
               />
             </span>
@@ -167,6 +86,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   data () {
     return {
@@ -175,6 +96,14 @@ export default {
       question_3: ''
     }
   },
+  computed: {
+    ...mapGetters({
+      question_1Questions: 'question_1',
+      question_2Questions: 'question_2',
+      question_3Questions: 'question_3'
+    })
+  },
+
   methods: {
     setHeart () {
       const heart = {
@@ -189,44 +118,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.interview {
-  margin-bottom: 50px;
-}
 .progress {
   margin: 15px;
 }
-.questions {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: start;
-}
-.question-box {
-  background-color: white;
-  width: 20%;
-  height: 50px;
-  margin: 15px;
-  border-radius: 10px;
-  flex: 30%;
-  flex-grow: initial;
-}
-.jumbotron {
-  position: relative;
-  margin: 30px;
-  height: 50%;
-  padding: 10px;
-}
-label {
-  position: relative;
-  padding: 5px;
-  width: 100%;
-  text-align: left;
-  opacity: 0.7;
-}
-span {
-  position: absolute;
-  right: 2%;
-  top: 20%;
-}
+@import "../questionStyle.scss";
 </style>
