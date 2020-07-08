@@ -6,7 +6,7 @@
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in question_1Questions"
+          v-for="question in diet_1Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -18,7 +18,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="question_1"
+                v-model="diet_1"
               />
             </span>
           </label>
@@ -34,7 +34,7 @@
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in question_2Questions"
+          v-for="question in diet_2Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -46,7 +46,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="question_2"
+                v-model="diet_2"
               />
             </span>
           </label>
@@ -61,7 +61,7 @@
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in question_3Questions"
+          v-for="question in diet_3Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -73,7 +73,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="question_3"
+                v-model="diet_3"
               />
             </span>
           </label>
@@ -109,24 +109,24 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      question_1: '',
-      question_2: '',
-      question_3: ''
+      diet_1: '',
+      diet_2: '',
+      diet_3: ''
     }
   },
   computed: {
     ...mapGetters({
-      question_1Questions: 'question_1',
-      question_2Questions: 'question_2',
-      question_3Questions: 'question_3'
+      diet_1Questions: 'diet_1',
+      diet_2Questions: 'diet_2',
+      diet_3Questions: 'diet_3'
     })
   },
   methods: {
     setDiet () {
       const diet = {
-        question_1: this.question_1,
-        question_2: this.question_2,
-        question_3: this.question_3
+        diet_1: this.diet_1,
+        diet_2: this.diet_2,
+        diet_3: this.diet_3
       }
       this.$store.dispatch('setDiet', diet)
     }

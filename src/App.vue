@@ -22,6 +22,7 @@ export default {
 <style scoped lang="scss">
   body {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box
   }
   .background {
     margin: 50px;

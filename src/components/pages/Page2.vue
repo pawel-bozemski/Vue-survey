@@ -10,7 +10,7 @@
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in question_1Questions"
+          v-for="question in heart_1Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -22,7 +22,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="question_1"
+                v-model="heart_1"
               />
             </span>
           </label>
@@ -41,7 +41,7 @@
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in question_2Questions"
+          v-for="question in heart_2Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -53,7 +53,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="question_2"
+                v-model="heart_2"
               />
             </span>
           </label>
@@ -91,25 +91,22 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      question_1: '',
-      question_2: '',
-      question_3: ''
+      heart_1: '',
+      heart_2: ''
     }
   },
   computed: {
     ...mapGetters({
-      question_1Questions: 'question_1',
-      question_2Questions: 'question_2',
-      question_3Questions: 'question_3'
+      heart_1Questions: 'heart_1',
+      heart_2Questions: 'heart_2'
     })
   },
 
   methods: {
     setHeart () {
       const heart = {
-        question_1: this.question_1,
-        question_2: this.question_2,
-        question_3: this.question_3
+        heart_1: this.heart_1,
+        heart_2: this.heart_2
       }
       this.$store.dispatch('setHeart', heart)
     }

@@ -91,7 +91,7 @@
                 :name="question.value"
                 :id="question.value"
                 :value="question.value"
-                v-model="location"
+                v-model="education"
               />
             </span>
           </label>
