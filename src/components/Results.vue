@@ -2,7 +2,8 @@
   <div class="interview">
     <h1>Wyniki</h1>
     <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
-    <app-age35 v-if="age=35-45"></app-age35>
+    <app-age35 v-if="age == '35-44'"></app-age35>
+    <h4 v-else></h4>
   </div>
 </template>
 

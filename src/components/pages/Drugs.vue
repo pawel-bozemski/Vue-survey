@@ -1,12 +1,14 @@
 <template>
   <div class="interview">
-    <h1>Dieta</h1>
+    <h1>Używki</h1>
     <div class="jumbotron">
-      <h4>Jakie posiłki spożywa Pan/Pani najczęściej</h4>
+      <h4>
+        Czy pije Pani/Pani poniższe rodzaje alkoholi? (Piwo, Wino, Wódka, Inne alkohole)
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in diet_1Questions"
+          v-for="question in drugs_1Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -18,7 +20,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="diet_1"
+                v-model="drugs_1"
               />
             </span>
           </label>
@@ -28,13 +30,12 @@
 
     <div class="jumbotron">
       <h4>
-        Jak często jada Pan/Pani produkty typu fast-food <br />(hamburgery,
-        frytki, hot-dog itp.)?
+        Czy pali Pan/Pani poniższe rodzaje wyrobów tytoniowych? - Tradycyjne wyroby tytoniowe
       </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in diet_2Questions"
+          v-for="question in drugs_2Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -46,7 +47,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="diet_2"
+                v-model="drugs_2"
               />
             </span>
           </label>
@@ -54,14 +55,14 @@
       </div>
     </div>
 
-    <div class="jumbotron">
+        <div class="jumbotron">
       <h4>
-        Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?
+        Czy pali Pan/Pani poniższe rodzaje wyrobów tytoniowych? - Tradycyjne wyroby tytoniowe
       </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in diet_3Questions"
+          v-for="question in drugs_3Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -73,30 +74,31 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="diet_3"
+                v-model="drugs_3"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
-    Wywiad 1/10
+
+    Wywiad 2/8
     <div class="progress">
       <div
         class="progress-bar bg-danger"
         role="progressbar"
-        style="width: 10%"
+        style="width: 25%"
         aria-valuenow="25"
         aria-valuemin="0"
         aria-valuemax="100"
       ></div>
     </div>
-    <router-link to="/interview" tag="a" class="backBtn">
+    <router-link to="/diet" tag="a" class="backBtn">
       <i class="fas fa-chevron-circle-left"></i>
     </router-link>
     <div class="jumbotron">
-      <router-link to="/page2">
-        <button class="btn btn-warning" @click="setDiet">
+      <router-link to="/psych">
+        <button class="btn btn-warning" @click="setDrugs">
           Dalej >>>>
         </button>
       </router-link>
@@ -106,29 +108,31 @@
 
 <script>
 import { mapGetters } from 'vuex'
+
 export default {
   data () {
     return {
-      diet_1: '',
-      diet_2: '',
-      diet_3: ''
+      drugs_1: '',
+      drugs_2: '',
+      drugs_3: ''
     }
   },
   computed: {
     ...mapGetters({
-      diet_1Questions: 'diet_1',
-      diet_2Questions: 'diet_2',
-      diet_3Questions: 'diet_3'
+      drugs_1Questions: 'drugs_1',
+      drugs_2Questions: 'drugs_2',
+      drugs_3Questions: 'drugs_3'
     })
   },
+
   methods: {
-    setDiet () {
-      const diet = {
-        diet_1: this.diet_1,
-        diet_2: this.diet_2,
-        diet_3: this.diet_3
+    setDrugs () {
+      const drugs = {
+        drugs_1: this.drugs_1,
+        drugs_2: this.drugs_2,
+        drugs_3: this.drugs_3
       }
-      this.$store.dispatch('setDiet', diet)
+      this.$store.dispatch('setDrugs', drugs)
     }
   }
 }
@@ -138,6 +142,5 @@ export default {
 .progress {
   margin: 15px;
 }
-@import '../questionStyle.scss';
-
+@import "../questionStyle.scss";
 </style>

@@ -1,13 +1,14 @@
 <template>
   <div class="interview">
-    <h1>Metryka</h1>
-    <p>Prosimy o podanie podstawowych danych statystycznych</p>
+    <h1>Profilaktyka</h1>
     <div class="jumbotron">
-      <h4>Płeć</h4>
+      <h4>
+        Czy w ciągu ostatniego roku wykonywał/a Pan/Pani morfologię?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in genderQuestions"
+          v-for="question in prevention_1Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -19,88 +20,112 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="gender"
+                v-model="prevention_1"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
     <div class="jumbotron">
-      <h4>Wiek</h4>
+      <h4>
+        Czy w ciągu ostatniego roku robił Pan/Pani pomiar ciśnienia krwi?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in ageQuestions"
+          v-for="question in prevention_2Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="age"
+                v-model="prevention_2"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
     <div class="jumbotron">
-      <h4>Wielkość miejscowości zamieszkania</h4>
+      <h4>
+        Czy w ciągu ostaniego roku temu mierzył/a Pan/Pani poziom cukru we krwi?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in locationQuestions"
+          v-for="question in prevention_3Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="location"
+                v-model="prevention_3"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <h4>Wykształcenie</h4>
+
+        <div class="jumbotron">
+      <h4>
+        Jak często wykonuje Pan/Pani samobadania jako profilaktykę raka jąder / piersi?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in educationQuestions"
+          v-for="question in prevention_4Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="education"
+                v-model="prevention_4"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
+    Wywiad 6/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-danger"
+        role="progressbar"
+        style="width: 75%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <router-link to="/health" tag="a" class="backBtn">
+      <i class="fas fa-chevron-circle-left"></i>
+    </router-link>
     <div class="jumbotron">
-      <router-link to="/diet">
-        <button class="btn btn-warning" @click="setInterview">
+      <router-link to="/doctor">
+        <button class="btn btn-warning" @click="setPrevention">
           Dalej >>>>
         </button>
       </router-link>
@@ -110,39 +135,42 @@
 
 <script>
 import { mapGetters } from 'vuex'
+
 export default {
   data () {
     return {
-      gender: '',
-      age: '',
-      location: '',
-      education: ''
+      prevention_1: '',
+      prevention_2: '',
+      prevention_3: '',
+      prevention_4: ''
     }
   },
   computed: {
     ...mapGetters({
-      genderQuestions: 'gender',
-      ageQuestions: 'age',
-      locationQuestions: 'location',
-      educationQuestions: 'education'
+      prevention_1Questions: 'prevention_1',
+      prevention_2Questions: 'prevention_2',
+      prevention_3Questions: 'prevention_3',
+      prevention_4Questions: 'prevention_4'
     })
   },
+
   methods: {
-    setInterview () {
-      const interview = {
-        gender: this.gender,
-        age: this.age,
-        location: this.location,
-        education: this.education
+    setPrevention () {
+      const prevention = {
+        prevention_1: this.prevention_1,
+        prevention_2: this.prevention_2,
+        prevention_3: this.prevention_3,
+        prevention_: this.prevention_4
       }
-      this.$store.dispatch('setInterview', interview)
+      this.$store.dispatch('setPrevention', prevention)
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-
-@import './questionStyle.scss';
-
+.progress {
+  margin: 15px;
+}
+@import "../questionStyle.scss";
 </style>

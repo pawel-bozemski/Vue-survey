@@ -1,13 +1,14 @@
 <template>
   <div class="interview">
-    <h1>Metryka</h1>
-    <p>Prosimy o podanie podstawowych danych statystycznych</p>
+    <h1>Problemy zdrowotne</h1>
     <div class="jumbotron">
-      <h4>Płeć</h4>
+      <h4>
+        Czy cierpi Pan/Pani jakieś przewlekłe (trwające, lub mające trwać przynajmniej 6 miesięcy) problemy ze zdrowiem?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in genderQuestions"
+          v-for="question in health_1Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -19,88 +20,85 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="gender"
+                v-model="health_1"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
     <div class="jumbotron">
-      <h4>Wiek</h4>
+      <h4>
+        Czy stwierdzono u Pana/Pani kiedyś lub obecnie następujące choroby?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in ageQuestions"
+          v-for="question in health_2Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="age"
+                v-model="health_2"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
     <div class="jumbotron">
-      <h4>Wielkość miejscowości zamieszkania</h4>
+      <h4>
+        Czy któraś z tych dolegliwości pojawia się u Pan/Pani co najmniej kilka razy w miesiącu?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in locationQuestions"
+          v-for="question in health_3Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="location"
+                v-model="health_3"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <h4>Wykształcenie</h4>
-      <div class="questions">
-        <div
-          class="form-check form-check-inline question-box"
-          v-for="question in educationQuestions"
-          :key="question.id"
-        >
-          <label class="form-check-label" :for="question.name">
-            {{ question.title }}
-            <span>
-              <input
-                class="input"
-                type="radio"
-                :name="question.value"
-                :id="question.value"
-                :value="question.value"
-                v-model="education"
-              />
-            </span>
-          </label>
-        </div>
-      </div>
+
+    Wywiad 5/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-danger"
+        role="progressbar"
+        style="width: 63%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
     </div>
+    <router-link to="/sport" tag="a" class="backBtn">
+      <i class="fas fa-chevron-circle-left"></i>
+    </router-link>
     <div class="jumbotron">
-      <router-link to="/diet">
-        <button class="btn btn-warning" @click="setInterview">
+      <router-link to="/prevention">
+        <button class="btn btn-warning" @click="setHealth">
           Dalej >>>>
         </button>
       </router-link>
@@ -110,39 +108,39 @@
 
 <script>
 import { mapGetters } from 'vuex'
+
 export default {
   data () {
     return {
-      gender: '',
-      age: '',
-      location: '',
-      education: ''
+      health_1: '',
+      health_2: '',
+      health_3: ''
     }
   },
   computed: {
     ...mapGetters({
-      genderQuestions: 'gender',
-      ageQuestions: 'age',
-      locationQuestions: 'location',
-      educationQuestions: 'education'
+      health_1Questions: 'health_1',
+      health_2Questions: 'health_2',
+      health_3Questions: 'health_3'
     })
   },
+
   methods: {
-    setInterview () {
-      const interview = {
-        gender: this.gender,
-        age: this.age,
-        location: this.location,
-        education: this.education
+    setHealth () {
+      const health = {
+        health_1: this.health_1,
+        health_2: this.health_2,
+        health_3: this.health_3
       }
-      this.$store.dispatch('setInterview', interview)
+      this.$store.dispatch('setHealth', health)
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-
-@import './questionStyle.scss';
-
+.progress {
+  margin: 15px;
+}
+@import "../questionStyle.scss";
 </style>

@@ -1,13 +1,12 @@
 <template>
   <div class="interview">
-    <h1>Metryka</h1>
-    <p>Prosimy o podanie podstawowych danych statystycznych</p>
+    <h1>Dostęp do opieki medycznej</h1>
     <div class="jumbotron">
-      <h4>Płeć</h4>
+      <h4>Kiedy ostatnio był/a Pan/Pani na wizycie u lekarza pierwszego kontaktu?</h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in genderQuestions"
+          v-for="question in doctor_1Questions"
           :key="question.id"
         >
           <label class="form-check-label" :for="question.value">
@@ -19,88 +18,85 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="gender"
+                v-model="doctor_1"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
     <div class="jumbotron">
-      <h4>Wiek</h4>
+      <h4>
+        Kiedy ostatnio leczył/a się  Pan/Pani u lekarza specjalisty?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in ageQuestions"
+          v-for="question in doctor_2Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="age"
+                v-model="doctor_2"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
+
     <div class="jumbotron">
-      <h4>Wielkość miejscowości zamieszkania</h4>
+      <h4>
+        Kiedy ostatnio odwiedzał/a Pan/Pani dentystę lub ortodontę?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
-          v-for="question in locationQuestions"
+          v-for="question in doctor_3Questions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
                 class="input"
                 type="radio"
-                :name="question.value"
+                :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                v-model="location"
+                v-model="doctor_3"
               />
             </span>
           </label>
         </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <h4>Wykształcenie</h4>
-      <div class="questions">
-        <div
-          class="form-check form-check-inline question-box"
-          v-for="question in educationQuestions"
-          :key="question.id"
-        >
-          <label class="form-check-label" :for="question.name">
-            {{ question.title }}
-            <span>
-              <input
-                class="input"
-                type="radio"
-                :name="question.value"
-                :id="question.value"
-                :value="question.value"
-                v-model="education"
-              />
-            </span>
-          </label>
-        </div>
-      </div>
+
+    Wywiad 7/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-danger"
+        role="progressbar"
+        style="width: 88%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
     </div>
+    <router-link to="/prevention" tag="a" class="backBtn">
+      <i class="fas fa-chevron-circle-left"></i>
+    </router-link>
     <div class="jumbotron">
-      <router-link to="/diet">
-        <button class="btn btn-warning" @click="setInterview">
+      <router-link to="/cost">
+        <button class="btn btn-warning" @click="setDoctor">
           Dalej >>>>
         </button>
       </router-link>
@@ -113,36 +109,35 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      gender: '',
-      age: '',
-      location: '',
-      education: ''
+      doctor_1: '',
+      doctor_2: '',
+      doctor_3: ''
     }
   },
   computed: {
     ...mapGetters({
-      genderQuestions: 'gender',
-      ageQuestions: 'age',
-      locationQuestions: 'location',
-      educationQuestions: 'education'
+      doctor_1Questions: 'doctor_1',
+      doctor_2Questions: 'doctor_2',
+      doctor_3Questions: 'doctor_3'
     })
   },
   methods: {
-    setInterview () {
-      const interview = {
-        gender: this.gender,
-        age: this.age,
-        location: this.location,
-        education: this.education
+    setDoctor () {
+      const doctor = {
+        doctor_1: this.doctor_1,
+        doctor_2: this.doctor_2,
+        doctor_3: this.doctor_3
       }
-      this.$store.dispatch('setInterview', interview)
+      this.$store.dispatch('setDoctor', doctor)
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-
-@import './questionStyle.scss';
+.progress {
+  margin: 15px;
+}
+@import '../questionStyle.scss';
 
 </style>
