@@ -98,7 +98,7 @@
       <i class="fas fa-chevron-circle-left"></i>
     </router-link>
     <div class="jumbotron">
-      <router-link to="/results">
+      <router-link to="/resultsdiet">
         <button class="btn btn-warning" @click="setCost">
           Dalej >>>>
         </button>

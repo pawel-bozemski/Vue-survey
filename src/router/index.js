@@ -11,7 +11,7 @@ import Prevention from '../components/pages/Prevention'
 import Doctor from '../components/pages/Doctor'
 import Cost from '../components/pages/Cost'
 import Interview from '../components/Interview'
-import Results from '../components/Results'
+import ResultsDiet from '../components/ResultsDiet'
 
 Vue.use(VueRouter)
 
@@ -68,9 +68,9 @@ const routes = [
     component: Interview
   },
   {
-    path: '/results',
-    name: 'results',
-    component: Results
+    path: '/resultsdiet',
+    name: 'resultsdiet',
+    component: ResultsDiet
   },
   {
     path: '*',
