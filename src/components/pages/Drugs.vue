@@ -55,9 +55,9 @@
       </div>
     </div>
 
-        <div class="jumbotron">
+    <div class="jumbotron">
       <h4>
-        Czy pali Pan/Pani poniższe rodzaje wyrobów tytoniowych? - Tradycyjne wyroby tytoniowe
+        Czy pali Pan/Pani alternatywne papierosy – podgrzewacze tytoniu?
       </h4>
       <div class="questions">
         <div

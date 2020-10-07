@@ -1,0 +1,38 @@
+<template>
+  <div class="interview">
+    <h1>Wyniki Używki</h1>
+    <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
+    <app-age18 v-if="this.interview.age == '18-24'"></app-age18>
+    <app-age25 v-else-if="this.interview.age == '25-34'"></app-age25>
+    <app-age35 v-else-if="this.interview.age == '35-44'"></app-age35>
+    <app-age45 v-else-if="this.interview.age == '45-54'"></app-age45>
+    <app-age55 v-else-if="this.interview.age == '55-64'"></app-age55>
+    <app-age65 v-else-if="this.interview.age == '65'"></app-age65>
+  </div>
+</template>
+
+<script>
+import Age18 from './drugs/Age18'
+import Age25 from './drugs/Age25'
+import Age35 from './drugs/Age35'
+import Age45 from './drugs/Age45'
+import Age55 from './drugs/Age55'
+import Age65 from './drugs/Age65'
+import { mapGetters } from 'vuex'
+
+export default {
+  computed: {
+    ...mapGetters({
+      interview: 'interview'
+    })
+  },
+  components: {
+    appAge18: Age18,
+    appAge25: Age25,
+    appAge35: Age35,
+    appAge45: Age45,
+    appAge55: Age55,
+    appAge65: Age65
+  }
+}
+</script>

@@ -11,7 +11,8 @@ import Prevention from '../components/pages/Prevention'
 import Doctor from '../components/pages/Doctor'
 import Cost from '../components/pages/Cost'
 import Interview from '../components/Interview'
-import ResultsDiet from '../components/ResultsDiet'
+import ResultsDiet from '../components/results/ResultsDiet'
+import ResultsDrugs from '../components/results/ResultsDrugs'
 
 Vue.use(VueRouter)
 
@@ -72,6 +73,12 @@ const routes = [
     name: 'resultsdiet',
     component: ResultsDiet
   },
+  {
+    path: '/resultsdrugs',
+    name: 'resultsdrugs',
+    component: ResultsDrugs
+  },
+
   {
     path: '*',
     name: 'NotFound',

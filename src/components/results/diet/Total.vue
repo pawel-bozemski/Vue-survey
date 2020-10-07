@@ -55,7 +55,7 @@
         </div>
         <div class="bar">
           <div class="result one" :class="{'active' : this.diet.diet_2 == 'everyday2'}" style="width:3%">
-            <p :class="{'visible' : this.diet.diet_1 == 'everyday2', 'not__visible' : this.diet.diet_2 !== 'everyday2'}">Twój wynik</p>
+            <p :class="{'visible' : this.diet.diet_2 == 'everyday2', 'not__visible' : this.diet.diet_2 !== 'everyday2'}">Twój wynik</p>
           </div>
           <div class="result two" :class="{'active' : this.diet.diet_2 == 'weekly2'}" style="width:7%">
             <p :class="{'visible' : this.diet.diet_2 == 'weekly2', 'not__visible' : this.diet.diet_2 !== 'weekly2'}">Twój wynik</p>
@@ -140,7 +140,7 @@
     </div>
 
     <div class="jumbotron">
-      <router-link to="/resultdrugs">
+      <router-link to="/resultsdrugs">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>
@@ -169,9 +169,6 @@ export default {
       diet: 'diet',
       interview: 'interview'
     })
-  },
-  mounted () {
-    console.log(this.diet)
   }
 }
 </script>

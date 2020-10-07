@@ -11,13 +11,13 @@ const state = {
     { id: 1, name: 'drugs_2', value: 'everyday2', title: 'Tak, codziennie lub prawie codziennie' },
     { id: 2, name: 'drugs_2', value: 'sometimes2', title: 'Tak, okazjonalnie' },
     { id: 3, name: 'drugs_2', value: 'past2', title: 'Nie, ale w przeszłości paliłem/am' },
-    { id: 4, name: 'drugs_2', value: 'never2', title: 'Raz w miesiącu lub rzadziej' }
+    { id: 4, name: 'drugs_2', value: 'never2', title: 'Nie, nigdy' }
   ],
   drugs_3: [
     { id: 1, name: 'drugs_3', value: 'everyday3', title: 'Tak, codziennie lub prawie codziennie' },
     { id: 2, name: 'drugs_3', value: 'sometimes3', title: 'Tak, okazjonalnie' },
     { id: 3, name: 'drugs_3', value: 'past3', title: 'Nie, ale w przeszłości paliłem/am' },
-    { id: 4, name: 'drugs_3', value: 'never3', title: 'Raz w miesiącu lub rzadziej' }
+    { id: 4, name: 'drugs_3', value: 'never3', title: 'Nie, nigdy' }
   ]
 }
 
