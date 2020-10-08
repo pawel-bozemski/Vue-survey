@@ -13,6 +13,8 @@ import Cost from '../components/pages/Cost'
 import Interview from '../components/Interview'
 import ResultsDiet from '../components/results/ResultsDiet'
 import ResultsDrugs from '../components/results/ResultsDrugs'
+import ResultsPsych from '../components/results/ResultsPsych'
+import ResultsSport from '../components/results/ResultsSport'
 
 Vue.use(VueRouter)
 
@@ -77,6 +79,16 @@ const routes = [
     path: '/resultsdrugs',
     name: 'resultsdrugs',
     component: ResultsDrugs
+  },
+  {
+    path: '/resultspsych',
+    name: 'resultspsych',
+    component: ResultsPsych
+  },
+  {
+    path: '/resultssport',
+    name: 'resultssport',
+    component: ResultsSport
   },
 
   {

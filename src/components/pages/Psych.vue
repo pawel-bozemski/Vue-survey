@@ -3,7 +3,7 @@
     <h1>Zdrowie psychiczne</h1>
     <div class="jumbotron">
       <h4>
-        Czy i jak często znajduje się Pan/Pani w stresujących sytuacjach?      </h4>
+        Czy i jak często znajduje się Pan/Pani w stresujących sytuacjach?</h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"

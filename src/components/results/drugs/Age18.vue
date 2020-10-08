@@ -95,16 +95,16 @@
         </div>
         <div class="bar">
           <div class="result one" :class="{'active' : this.drugs.drugs_3 == 'everyday3'}" style="width:10%">
-            <p :class="{'visible' : this.drugs.drugs_3 == 'everyday3', 'not__visible' : this.drugs.drugs_3 !== 'everyday3'}">Tak, codziennie</p>
+            <p :class="{'visible' : this.drugs.drugs_3 == 'everyday3', 'not__visible' : this.drugs.drugs_3 !== 'everyday3'}">Twój wynik</p>
           </div>
           <div class="result two" :class="{'active' : this.drugs.drugs_3 == 'sometimes3'}" style="width:10%">
-            <p :class="{'visible' : this.drugs.drugs_3 == 'sometimes3', 'not__visible' : this.drugs.drugs_3 !== 'sometimes3'}">Tak, okazjonalnie</p>
+            <p :class="{'visible' : this.drugs.drugs_3 == 'sometimes3', 'not__visible' : this.drugs.drugs_3 !== 'sometimes3'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active' : this.drugs.drugs_3 == 'past3'}" style="width:15%">
-            <p :class="{'visible' : this.drugs.drugs_3 == 'past3', 'not__visible' : this.drugs.drugs_3 !== 'past3'}">Nie, ale w przeszłości paliłem/am</p>
+            <p :class="{'visible' : this.drugs.drugs_3 == 'past3', 'not__visible' : this.drugs.drugs_3 !== 'past3'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.drugs.drugs_3 == 'never3'}" style="width:75%">
-            <p :class="{'visible' : this.drugs.drugs_3 == 'never3', 'not__visible' : this.drugs.drugs_3 !== 'never3'}">Nie, nigdy</p>
+          <div class="result two"  :class="{'active' : this.drugs.drugs_3 == 'never3'}" style="width:65%">
+            <p :class="{'visible' : this.drugs.drugs_3 == 'never3', 'not__visible' : this.drugs.drugs_3 !== 'never3'}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
@@ -128,7 +128,7 @@
     </div>
 
     <div class="jumbotron">
-      <router-link to="/resultdrugs">
+      <router-link to="/resultspsych">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>
