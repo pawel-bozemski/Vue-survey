@@ -43,7 +43,7 @@
             <span>
               <input
                 class="input"
-                type="radio"
+                type="checkbox"
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
@@ -70,7 +70,7 @@
             <span>
               <input
                 class="input"
-                type="radio"
+                type="checkbox"
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
@@ -113,8 +113,8 @@ export default {
   data () {
     return {
       health_1: '',
-      health_2: '',
-      health_3: ''
+      health_2: [],
+      health_3: []
     }
   },
   computed: {
@@ -133,6 +133,7 @@ export default {
         health_3: this.health_3
       }
       this.$store.dispatch('setHealth', health)
+      console.log(health)
     }
   }
 }
