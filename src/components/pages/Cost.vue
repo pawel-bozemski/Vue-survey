@@ -4,7 +4,6 @@
     <div class="jumbotron">
       <h4>
         Czy kiedykolwiek ze względu na koszty zrezygnował/a Pan/Pani z wizyty u lekarza?
-
       </h4>
       <div class="questions">
         <div
