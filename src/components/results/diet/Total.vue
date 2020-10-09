@@ -63,7 +63,7 @@
           <div class="result one" :class="{'active' : this.diet.diet_2 == 'monthly2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'monthly2', 'not__visible' : this.diet.diet_2 !== 'monthly2'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.diet.diet22== 'yearly2'}" style="width:60%">
+          <div class="result two"  :class="{'active' : this.diet.diet_2== 'yearly2'}" style="width:60%">
             <p :class="{'visible' : this.diet.diet_2 == 'yearly2', 'not__visible' : this.diet.diet_2 !== 'yearly2'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active' : this.diet.diet_2 == 'never2'}" style="width:10%">

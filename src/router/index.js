@@ -16,6 +16,7 @@ import ResultsDrugs from '../components/results/ResultsDrugs'
 import ResultsPsych from '../components/results/ResultsPsych'
 import ResultsSport from '../components/results/ResultsSport'
 import ResultsHealth from '../components/results/ResultsHealth'
+import ResultsPrevention from '../components/results/ResultsPrevention'
 
 Vue.use(VueRouter)
 
@@ -95,6 +96,11 @@ const routes = [
     path: '/resultshealth',
     name: 'resultshealth',
     component: ResultsHealth
+  },
+  {
+    path: '/resultscheck',
+    name: 'resultsprevention',
+    component: ResultsPrevention
   },
 
   {
