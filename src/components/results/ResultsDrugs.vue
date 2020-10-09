@@ -8,6 +8,27 @@
     <app-age45 v-else-if="this.interview.age == '45-54'"></app-age45>
     <app-age55 v-else-if="this.interview.age == '55-64'"></app-age55>
     <app-age65 v-else-if="this.interview.age == '65'"></app-age65>
+    <div class="jumbotron">
+      <router-link to="/resultspsych">
+        <button class="btn btn-warning">
+          Dalej >>>>
+        </button>
+      </router-link>
+    </div>
+
+    <div class="jumbotron">
+      <div class="icons">
+        <ul class="list-inline brands">
+          <li class="list-inline-item"><i class="fas fa-print"></i>Drukuj</li>
+          <li class="list-inline-item">
+            <i class="far fa-envelope"></i>Wyślij
+          </li>
+          <li class="list-inline-item">
+            <i class="fas fa-external-link-alt"></i>Udostępnij
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 

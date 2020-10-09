@@ -258,26 +258,7 @@
             <span class="dot" :class="{'active' : this.health.health_2.includes('heart') !== true, 'two__bg' : this.health.health_2.includes('heart') == true}"></span>Nie</div>
         </div>
       </div>
-
     </div>
-    <div class="jumbotron">
-      <router-link to="/resultshealth">
-        <button class="btn btn-warning">
-          Dalej >>>>
-        </button>
-      </router-link>
-    </div>
-
-    <div class="jumbotron">
-      <div class="icons">
-      <ul class="list-inline brands">
-        <li class="list-inline-item"><i class="fas fa-print"></i>Drukuj</li>
-        <li class="list-inline-item"><i class="far fa-envelope"></i>Wyślij</li>
-        <li class="list-inline-item"><i class="fas fa-external-link-alt"></i>Udostępnij</li>
-      </ul>
-      </div>
-    </div>
-
   </div>
 </template>
 
