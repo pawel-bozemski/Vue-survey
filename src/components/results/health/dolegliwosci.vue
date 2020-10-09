@@ -350,65 +350,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.questions {
-  padding: 10px;
-}
-.brands {
-  margin: 0;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.jumbotron {
-  padding: 15px;
-}
-.bar {
-  width: 100%;
-  background-color: #ddd;
-  margin: 10px 0;
-  display: inline-block;
-}
 
-.result {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  height: 50px;
-  float: left;
-  display: block;
-}
-.active {
-  background-color: orange;
-  display: inline;
-}
-.not__visible {
-  background-color: orange;
-  display: none;
-}
-.visible {
-  display: inline;
-}
-.one__bg {
-  background-color: #7d8597;
-}
-.two__bg {
-  background-color: #979dac;
-}
-.three__bg {
-  background-color: #5c677d;
-}
-.four__bg {
-  background-color: #33415c;
-}
-.dot {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 25px;
-}
-.dot__content {
-  width: 25%;
-}
+@import '../../resultsStyle.scss';
+
 </style>
