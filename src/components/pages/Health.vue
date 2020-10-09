@@ -100,7 +100,7 @@
         </button>
       </router-link>
       <router-link to="/prevention">
-        <button class="btn btn-warning" @click="setCost">
+        <button class="btn btn-warning" @click="setHealth">
           Dalej
         </button>
       </router-link>

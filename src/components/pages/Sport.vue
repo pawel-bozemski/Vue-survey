@@ -99,7 +99,7 @@
         </button>
       </router-link>
       <router-link to="/health">
-        <button class="btn btn-warning" @click="setCost">
+        <button class="btn btn-warning" @click="setSport">
           Dalej
         </button>
       </router-link>

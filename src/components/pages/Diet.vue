@@ -120,7 +120,7 @@
         </button>
       </router-link>
       <router-link to="/drugs">
-        <button class="btn btn-warning" @click="setCost">
+        <button class="btn btn-warning" @click="setDiet">
           Dalej
         </button>
       </router-link>

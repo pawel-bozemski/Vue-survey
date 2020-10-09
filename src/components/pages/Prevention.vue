@@ -127,7 +127,7 @@
         </button>
       </router-link>
       <router-link to="/doctor">
-        <button class="btn btn-warning" @click="setCost">
+        <button class="btn btn-warning" @click="setPrevention">
           Dalej
         </button>
       </router-link>
@@ -162,7 +162,7 @@ export default {
         prevention_1: this.prevention_1,
         prevention_2: this.prevention_2,
         prevention_3: this.prevention_3,
-        prevention_: this.prevention_4
+        prevention_4: this.prevention_4
       }
       this.$store.dispatch('setPrevention', prevention)
     }

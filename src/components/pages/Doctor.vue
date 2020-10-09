@@ -98,7 +98,7 @@
         </button>
       </router-link>
       <router-link to="/cost">
-        <button class="btn btn-warning" @click="setCost">
+        <button class="btn btn-warning" @click="setDoctor">
           Dalej
         </button>
       </router-link>

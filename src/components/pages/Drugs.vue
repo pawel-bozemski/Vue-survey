@@ -100,7 +100,7 @@
         </button>
       </router-link>
       <router-link to="/psych">
-        <button class="btn btn-warning" @click="setCost">
+        <button class="btn btn-warning" @click="setDrugs">
           Dalej
         </button>
       </router-link>
