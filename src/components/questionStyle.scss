@@ -2,12 +2,16 @@
 .interview {
   margin-bottom: 50px;
 }
+.buttons {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
 
 .questions {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: start;
 }
 .question-box {

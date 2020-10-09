@@ -57,3 +57,9 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+
+@import '../questionStyle.scss';
+
+</style>

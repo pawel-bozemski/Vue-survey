@@ -92,13 +92,15 @@
         aria-valuemax="100"
       ></div>
     </div>
-    <router-link to="/psych" tag="a" class="backBtn">
-      <i class="fas fa-chevron-circle-left"></i>
-    </router-link>
-    <div class="jumbotron">
+    <div class="jumbotron buttons">
+      <router-link to="/psych" tag="a" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
       <router-link to="/health">
-        <button class="btn btn-warning" @click="setSport">
-          Dalej >>>>
+        <button class="btn btn-warning" @click="setCost">
+          Dalej
         </button>
       </router-link>
     </div>
