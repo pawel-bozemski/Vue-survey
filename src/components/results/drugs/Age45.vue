@@ -63,7 +63,7 @@
           <div class="result one" :class="{'active' : this.drugs.drugs_2 == 'past2'}" style="width:29%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'past2', 'not__visible' : this.drugs.drugs_2 !== 'past2'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.drugs.drugs22== 'never2'}" style="width:46%">
+          <div class="result two"  :class="{'active' : this.drugs.drugs_2== 'never2'}" style="width:46%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'never2', 'not__visible' : this.drugs.drugs_2 !== 'never2'}">Twój wynik</p>
           </div>
         </div>
