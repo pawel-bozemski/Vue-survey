@@ -110,7 +110,7 @@ const routes = [
     component: ResultsDoctor
   },
   {
-    path: '/resultscostr',
+    path: '/resultscost',
     name: 'resultsdcost',
     component: ResultsCost
   },
