@@ -3,6 +3,7 @@
     <h1>Dieta</h1>
     <div class="jumbotron">
       <h4>Jakie posiłki spożywa Pan/Pani najczęściej</h4>
+      <img class="image1" src="../../imgs/diet/sub.png" alt="">
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
@@ -25,7 +26,6 @@
         </div>
       </div>
     </div>
-
     <div class="jumbotron">
       <h4>
         Jak często jada Pan/Pani produkty typu fast-food <br />(hamburgery,
@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-
+    <img class="image2" src="../../imgs/diet/apple.png" alt="">
     <div class="jumbotron">
       <h4>
         Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?
@@ -80,7 +80,6 @@
         </div>
       </div>
     </div>
-
     <div class="jumbotron">
       <h4>
         Jaki jest Twój indeks masy ciała ?
@@ -221,7 +220,12 @@ export default {
 .progress {
   margin: 15px;
 }
-
+.image1 {
+  left: -15%;
+}
+.image2 {
+  right: -15%;
+}
 .questions_bmi {
   display: inline;
   .row {

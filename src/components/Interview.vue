@@ -149,4 +149,12 @@ export default {
 
 @import './questionStyle.scss';
 
+.image1 {
+  left: -10%;
+}
+.image2 {
+  right: -10%;
+  bottom: 10%;
+}
+
 </style>
