@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import NotFound from '../views/NotFound.vue'
+import Finish from '../components/Finish'
 import Diet from '../components/pages/Diet'
 import Drugs from '../components/pages/Drugs'
 import Psych from '../components/pages/Psych'
@@ -17,7 +18,6 @@ import ResultsPsych from '../components/results/ResultsPsych'
 import ResultsSport from '../components/results/ResultsSport'
 import ResultsHealth1 from '../components/results/ResultsHealth1'
 import ResultsHealth2 from '../components/results/ResultsHealth2'
-
 import ResultsPrevention from '../components/results/ResultsPrevention'
 import ResultsDoctor from '../components/results/ResultsDoctor'
 import ResultsCost from '../components/results/ResultsCost'
@@ -29,6 +29,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/finish',
+    name: 'Finish',
+    component: Finish
   },
   {
     path: '/diet',

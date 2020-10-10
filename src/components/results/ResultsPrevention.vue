@@ -17,7 +17,12 @@
     <app-age65w v-else-if="this.interview.age == '65' && this.interview.gender == 'female'"></app-age65w>
 
     <div class="jumbotron">
-      <router-link to="/resultscost">
+      <router-link to="/resultshealthprob" tag="a" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
+      <router-link to="/resultsdoctor">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>

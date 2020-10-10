@@ -11,7 +11,12 @@
     <app-city500k v-else-if="this.interview.location == 'city500k'"></app-city500k>
 
     <div class="jumbotron">
-      <router-link to="/resultspsych">
+      <router-link to="/resultscheck" tag="a" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
+      <router-link to="/resultscost">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>

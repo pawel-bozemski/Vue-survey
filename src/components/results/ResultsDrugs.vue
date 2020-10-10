@@ -9,6 +9,11 @@
     <app-age55 v-else-if="this.interview.age == '55-64'"></app-age55>
     <app-age65 v-else-if="this.interview.age == '65'"></app-age65>
     <div class="jumbotron">
+      <router-link to="/resultsdiet" tag="a" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
       <router-link to="/resultspsych">
         <button class="btn btn-warning">
           Dalej >>>>

@@ -4,6 +4,11 @@
     <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
     <app-sick></app-sick>
     <div class="jumbotron">
+      <router-link to="/resultssport" tag="a" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
       <router-link to="/resultsprob">
         <button class="btn btn-warning">
           Dalej >>>>

@@ -4,7 +4,12 @@
     <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
     <app-total></app-total>
     <div class="jumbotron">
-      <router-link to="/resultsdrugs">
+      <router-link to="/resultsdoctor" tag="a" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
+      <router-link to="/finish">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>
