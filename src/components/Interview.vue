@@ -2,6 +2,7 @@
   <div class="interview">
     <h1>Metryka</h1>
     <p>Prosimy o podanie podstawowych danych statystycznych</p>
+    <img class="image1" src="../imgs/interview/pani.png" alt="">
     <div class="jumbotron">
       <h4>Płeć</h4>
       <div class="questions">
@@ -74,6 +75,7 @@
         </div>
       </div>
     </div>
+    <img class="image2" src="../imgs/interview/pan.png" alt="">
     <div class="jumbotron">
       <h4>Wykształcenie</h4>
       <div class="questions">

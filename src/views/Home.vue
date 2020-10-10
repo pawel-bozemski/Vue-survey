@@ -2,7 +2,7 @@
   <div class="row">
     <img
       class="image"
-      src="https://images.pexels.com/photos/3957987/pexels-photo-3957987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+      src="../imgs/start/start.png"
       alt="people with mask"
     />
     <div class="text">
@@ -34,7 +34,7 @@
       tag="button"
       class="btn btn-warning"
       >
-        Dalej >>>>
+        Rozpocznij >>>
       </router-link>
     </div>
   </div>
@@ -47,7 +47,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
 }
 .jumbotron {
   height: 60px;
