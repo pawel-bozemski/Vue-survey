@@ -1,6 +1,17 @@
 <template>
   <div class="interview">
-    <h1>Dostęp do opieki medycznej</h1>
+      Etap 7/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 88%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <h1>Wizyty u lekarzy</h1>
     <div class="jumbotron">
       <h4>Kiedy ostatnio był/a Pan/Pani na wizycie u lekarza pierwszego kontaktu?</h4>
       <div class="questions">
@@ -27,6 +38,7 @@
     </div>
 
     <div class="jumbotron">
+      <img class="image2" src="../../imgs/doctor/desk.png" alt="">
       <h4>
         Kiedy ostatnio leczył/a się  Pan/Pani u lekarza specjalisty?
       </h4>
@@ -52,6 +64,7 @@
         </div>
       </div>
     </div>
+      <img class="image1" src="../../imgs/doctor/bed.png" alt="">
 
     <div class="jumbotron">
       <h4>
@@ -80,17 +93,6 @@
       </div>
     </div>
 
-    Wywiad 7/8
-    <div class="progress">
-      <div
-        class="progress-bar bg-danger"
-        role="progressbar"
-        style="width: 88%"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
     <div class="jumbotron buttons">
       <router-link to="/prevention" tag="a" class="backBtn">
         <button class="btn btn-warning">
@@ -140,9 +142,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.progress {
-  margin: 15px;
-}
+
 @import '../questionStyle.scss';
 
+.image1 {
+  left: -10%;
+  bottom: 10%;
+}
+.image2 {
+  right: -15%;
+}
 </style>

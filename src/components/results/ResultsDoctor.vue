@@ -10,7 +10,7 @@
     <app-city200k v-else-if="this.interview.location == 'city200k'"></app-city200k>
     <app-city500k v-else-if="this.interview.location == 'city500k'"></app-city500k>
 
-    <div class="jumbotron">
+    <div class="jumbotron buttons">
       <router-link to="/resultscheck" tag="a" class="backBtn">
         <button class="btn btn-warning">
           Wstecz
@@ -23,15 +23,17 @@
       </router-link>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron ">
       <div class="icons">
         <ul class="list-inline brands">
-          <li class="list-inline-item"><i class="fas fa-print"></i>Drukuj</li>
           <li class="list-inline-item">
-            <i class="far fa-envelope"></i>Wyślij
+            <img src="../../imgs/icons/print.png" alt="">
           </li>
           <li class="list-inline-item">
-            <i class="fas fa-external-link-alt"></i>Udostępnij
+            <img src="../../imgs/icons/send.png" alt="">
+          </li>
+          <li class="list-inline-item">
+            <img src="../../imgs/icons/share.png" alt="">
           </li>
         </ul>
       </div>
@@ -71,6 +73,6 @@ export default {
 
 <style scoped lang="scss">
 
-@import '../questionStyle.scss';
+@import '../resultsStyle.scss';
 
 </style>

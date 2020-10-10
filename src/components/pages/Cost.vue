@@ -1,5 +1,16 @@
 <template>
   <div class="interview">
+    Etap 8/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 100%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
     <h1>Koszty leczenia</h1>
     <div class="jumbotron">
       <h4>
@@ -27,7 +38,8 @@
         </div>
       </div>
     </div>
-
+    <img class="image2" src="../../imgs/cost/gold.png" alt="">
+    <img class="image1" src="../../imgs/cost/hospital.png" alt="">
     <div class="jumbotron">
       <h4>
         Czy kiedykolwiek nie było stać Pana/Pani na wykupienie leku na receptę?
@@ -81,18 +93,6 @@
         </div>
       </div>
     </div>
-
-    Wywiad 8/8
-    <div class="progress">
-      <div
-        class="progress-bar bg-danger"
-        role="progressbar"
-        style="width: 100%"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
     <div class="jumbotron buttons">
       <router-link to="/doctor" tag="a" class="backBtn">
         <button class="btn btn-warning">
@@ -142,9 +142,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.progress {
-  margin: 15px;
-}
+
 @import '../questionStyle.scss';
 
+.image1 {
+  left: -10%;
+  bottom: 10%;
+}
+.image2 {
+  right: -10%;
+}
 </style>

@@ -3,28 +3,30 @@
     <h1>Wyniki Zdrowie - choroby</h1>
     <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
     <app-sick></app-sick>
-    <div class="jumbotron">
+    <div class="jumbotron buttons">
       <router-link to="/resultssport" tag="a" class="backBtn">
         <button class="btn btn-warning">
           Wstecz
         </button>
       </router-link>
-      <router-link to="/resultsprob">
+      <router-link to="/resultshealthprob">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>
       </router-link>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron ">
       <div class="icons">
         <ul class="list-inline brands">
-          <li class="list-inline-item"><i class="fas fa-print"></i>Drukuj</li>
           <li class="list-inline-item">
-            <i class="far fa-envelope"></i>Wyślij
+            <img src="../../imgs/icons/print.png" alt="">
           </li>
           <li class="list-inline-item">
-            <i class="fas fa-external-link-alt"></i>Udostępnij
+            <img src="../../imgs/icons/send.png" alt="">
+          </li>
+          <li class="list-inline-item">
+            <img src="../../imgs/icons/share.png" alt="">
           </li>
         </ul>
       </div>
@@ -44,6 +46,6 @@ export default {
 
 <style scoped lang="scss">
 
-@import '../questionStyle.scss';
+@import '../resultsStyle.scss';
 
 </style>

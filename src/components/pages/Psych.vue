@@ -1,9 +1,21 @@
 <template>
   <div class="interview">
-    <h1>Zdrowie psychiczne</h1>
+    Etap 3/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 38%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <h1>Higiena psychiczna</h1>
     <div class="jumbotron">
       <h4>
         Czy i jak często znajduje się Pan/Pani w stresujących sytuacjach?</h4>
+      <img class="image1" src="../../imgs/psych/panie.png" alt="">
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
@@ -53,6 +65,7 @@
         </div>
       </div>
     </div>
+    <img class="image2" src="../../imgs/psych/bed.png" alt="">
 
     <div class="jumbotron">
       <h4>
@@ -79,18 +92,6 @@
           </label>
         </div>
       </div>
-    </div>
-
-    Wywiad 3/8
-    <div class="progress">
-      <div
-        class="progress-bar bg-danger"
-        role="progressbar"
-        style="width: 38%"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
     </div>
     <div class="jumbotron buttons">
       <router-link to="/drugs" tag="a" class="backBtn">
@@ -143,8 +144,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.progress {
-  margin: 15px;
-}
+
 @import "../questionStyle.scss";
+
+.image1 {
+  right: -25%;
+}
+.image2 {
+  left: -15%;
+}
 </style>

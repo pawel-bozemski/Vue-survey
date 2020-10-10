@@ -3,7 +3,7 @@
   font-size: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .jumbotron {
   padding: 15px;
@@ -55,4 +55,9 @@
 }
 .dot__content {
   width: 25%;
+}
+.buttons {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
 }

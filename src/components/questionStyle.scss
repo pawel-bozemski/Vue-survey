@@ -11,6 +11,9 @@
 .noshow {
   display: none;
 }
+label {
+  font-size: 16px;
+}
 
 .questions {
   display: flex;
@@ -20,8 +23,7 @@
 }
 .question-box {
   background-color: white;
-  width: 20%;
-  height: 50px;
+  height: 40px;
   margin: 15px;
   border-radius: 10px;
   flex: 30%;
@@ -52,4 +54,7 @@ span {
 .image2 {
   position: absolute;
   z-index: -5;
+}
+.progress {
+  margin: 15px;
 }

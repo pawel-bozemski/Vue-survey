@@ -1,5 +1,16 @@
 <template>
   <div class="interview">
+    Etap 5/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 63%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
     <h1>Problemy zdrowotne</h1>
     <div class="jumbotron">
       <h4>
@@ -25,9 +36,9 @@
             </span>
           </label>
         </div>
+        <img class="image1" src="../../imgs/health/heart.png" alt="">
       </div>
     </div>
-
     <div class="jumbotron">
       <h4>
         Czy stwierdzono u Pana/Pani kiedyś lub obecnie następujące choroby?
@@ -59,6 +70,7 @@
       <h4>
         Czy któraś z tych dolegliwości pojawia się u Pan/Pani co najmniej kilka razy w miesiącu?
       </h4>
+      <img class="image2" src="../../imgs/health/med.png" alt="">
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
@@ -80,18 +92,6 @@
           </label>
         </div>
       </div>
-    </div>
-
-    Wywiad 5/8
-    <div class="progress">
-      <div
-        class="progress-bar bg-danger"
-        role="progressbar"
-        style="width: 63%"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
     </div>
     <div class="jumbotron buttons">
       <router-link to="/sport" tag="a" class="backBtn">
@@ -144,8 +144,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.progress {
-  margin: 15px;
-}
+
 @import "../questionStyle.scss";
+
+.image1 {
+  left: -15%;
+}
+.image2 {
+  right: -20%;
+}
 </style>

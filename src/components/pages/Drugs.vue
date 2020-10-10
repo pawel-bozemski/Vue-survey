@@ -1,11 +1,23 @@
 <template>
   <div class="interview">
+        Etap 2/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 25%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
     <h1>Używki</h1>
     <div class="jumbotron">
       <h4>
         Czy pije Pani/Pani poniższe rodzaje alkoholi? (Piwo, Wino, Wódka, Inne alkohole)
       </h4>
       <div class="questions">
+      <img class="image1" src="../../imgs/drugs/dinner.png" alt="">
         <div
           class="form-check form-check-inline question-box"
           v-for="question in drugs_1Questions"
@@ -81,18 +93,6 @@
         </div>
       </div>
     </div>
-
-    Wywiad 2/8
-    <div class="progress">
-      <div
-        class="progress-bar bg-danger"
-        role="progressbar"
-        style="width: 25%"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
     <div class="jumbotron buttons">
       <router-link to="/diet" tag="a" class="backBtn">
         <button class="btn btn-warning">
@@ -144,8 +144,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.progress {
-  margin: 15px;
-}
+
 @import "../questionStyle.scss";
+
+.image1 {
+  right: -15%;
+}
 </style>

@@ -1,5 +1,16 @@
 <template>
   <div class="interview">
+    Etap 1/8
+    <div class="progress">
+      <div
+        class="progress-bar bg-warning"
+        role="progressbar"
+        style="width: 13%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
     <h1>Dieta</h1>
     <div class="jumbotron">
       <h4>Jakie posiłki spożywa Pan/Pani najczęściej</h4>
@@ -143,33 +154,21 @@
       </div>
     </div>
   </div>
-
-    Wywiad 1/8
-    <div class="progress">
-      <div
-        class="progress-bar bg-danger"
-        role="progressbar"
-        style="width: 13%"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
-    <div class="jumbotron buttons">
-      <router-link to="/interview" tag="a" class="backBtn">
-        <button class="btn btn-warning">
-          Wstecz
-        </button>
-      </router-link>
-      <router-link to="/drugs">
-        <button
-        :class="{'noshow' : this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === ''}"
-        class="btn btn-warning"
-        @click="setDiet">
-          Dalej
-        </button>
-      </router-link>
-    </div>
+  <div class="jumbotron buttons">
+    <router-link to="/interview" tag="a" class="backBtn">
+      <button class="btn btn-warning">
+        Wstecz
+      </button>
+    </router-link>
+    <router-link to="/drugs">
+      <button
+      :class="{'noshow' : this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === ''}"
+      class="btn btn-warning"
+      @click="setDiet">
+        Dalej
+      </button>
+    </router-link>
+  </div>
   </div>
 </template>
 
@@ -206,7 +205,6 @@ export default {
     calculateBMI () {
       const calc = this.mass / ((this.height) / 100 * (this.height) / 100)
       this.bmi = Math.round(calc)
-      console.log('calculateBMI -> this.bmi', this.bmi)
     }
   }
 }
@@ -217,9 +215,6 @@ export default {
 @import '../questionStyle.scss';
 @import '../resultsStyle.scss';
 
-.progress {
-  margin: 15px;
-}
 .image1 {
   left: -15%;
 }
