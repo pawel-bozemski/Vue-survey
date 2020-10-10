@@ -85,22 +85,65 @@
       <h4>
         Jaki jest Twój indeks masy ciała ?
       </h4>
-      <div class="questions">
-        <div class="form-row">
-          <div class="col">
-            <input type="number" class="form-control" placeholder="Wzrost w cm" name="height" v-model="height" >
+      <div class="questions_bmi">
+        <div class="row">
+          <div class="col-lg">
+            <input type="number" class="form-control bmi" placeholder="Wzrost w cm" name="height" v-model="height" >
           </div>
-          <div class="col">
-            <input type="number" class="form-control" placeholder="Masa ciała w kg" v-model="mass">
+          <div class="col-lg">
+            <input type="number" class="form-control bmi" placeholder="Masa ciała w kg" v-model="mass">
           </div>
-          <div class="col">
-            <button type="button" class="btn btn-primary" @click="calculateBMI">Oblicz</button>
+        </div>
+        <div class="row">
+          <div class="col-lg">
+            <button type="button" class="btn btn-warning" @click="calculateBMI">Oblicz</button>
           </div>
+        </div>
+      </div>
 
-          <p>Twoje bmi to {{ bmi }}</p>
+    <div
+    class="results_bmi"
+    :class="{'noshow' : this.bmi == ''}"
+    >
+      <h4>Twoje BMI</h4>
+      <div class="questionss">
+        <div class="form-check form-check-inline question-box">
+          <h6 class="col">{{ this.bmi }}</h6>
+        </div>
+        <div class="bar">
+          <div class="result one" :class="{'active' : this.bmi < 19 }" style="width:25%">
+            <p :class="{'visible' : this.bmi < 19 , 'not__visible' : this.bmi >= 19}">Twój wynik</p>
+          </div>
+          <div class="result two" :class="{'active' : this.bmi >= 19 && this.bmi < 25}" style="width:25%">
+            <p :class="{'visible' : this.bmi >= 19 && this.bmi < 25, 'not__visible' : this.bmi < 19 || this.bmi >= 25}">Twój wynik</p>
+          </div>
+          <div class="result one" :class="{'active' : this.bmi >= 25 && this.bmi < 30}" style="width:25%">
+            <p :class="{'visible' : this.bmi >= 25 && this.bmi < 30, 'not__visible' : this.bmi <= 25 || this.bmi >= 30}">Twój wynik</p>
+          </div>
+          <div class="result two"  :class="{'active' : this.bmi>= 30}" style="width:25%">
+            <p :class="{'visible' : this.bmi >= 30, 'not__visible' : this.bmi <= 30}">Twój wynik</p>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="result" :class="{'active' : this.bmi < 19 , 'one__bg' : this.bmi >= 19}" style="width:25%">Niedowaga</div>
+          <div class="result" :class="{'active' : this.bmi >= 19 && this.bmi < 25, 'two__bg' : this.bmi < 19 || this.bmi >= 25}" style="width:25%">Waga Optymalna</div>
+          <div class="result" :class="{'active' : this.bmi >= 25 && this.bmi < 30, 'one__bg' : this.bmi < 25 || this.bmi >= 30}" style="width:25%">Nadwaga</div>
+          <div class="result" :class="{'active' : this.bmi >= 30, 'two__bg' : this.bmi <= 30}" style="width:25%">Otyłość</div>
+        </div>
+        <div class="row">
+          <div class="dot__content">
+            <div class="dot" :class="{'active' : this.bmi < 19 , 'one__bg' : this.bmi >= 19}"></div>Mniej niż 19
+          </div>
+          <div class="dot__content">
+            <div class="dot" :class="{'active' : this.bmi >= 19 && this.bmi < 25, 'two__bg' : this.bmi < 19 || this.bmi >= 25}"></div>19-25</div>
+          <div class="dot__content">
+            <div class="dot" :class="{'active' : this.bmi >= 25 && this.bmi < 30, 'one__bg' : this.bmi < 25 || this.bmi >= 30}"></div>25-30</div>
+          <div class="dot__content">
+            <div class="dot" :class="{'active' : this.bmi >= 30, 'two__bg' :this.bmi <= 30}"></div>Więcej niż 30</div>
         </div>
       </div>
     </div>
+  </div>
 
     Wywiad 1/8
     <div class="progress">
@@ -164,15 +207,26 @@ export default {
     calculateBMI () {
       const calc = this.mass / ((this.height) / 100 * (this.height) / 100)
       this.bmi = Math.round(calc)
+      console.log('calculateBMI -> this.bmi', this.bmi)
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
+
+@import '../questionStyle.scss';
+@import '../resultsStyle.scss';
+
 .progress {
   margin: 15px;
 }
-@import '../questionStyle.scss';
+
+.questions_bmi {
+  display: inline;
+  .row {
+    margin: 15px;
+  }
+}
 
 </style>
