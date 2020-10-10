@@ -1,10 +1,10 @@
 <template>
   <div class="interview">
-    <h1>Wyniki Sport</h1>
+    <h1>Wyniki Zdrowie - dolegliwości</h1>
     <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
-    <app-total></app-total>
+    <app-prob></app-prob>
     <div class="jumbotron">
-      <router-link to="/resultshealthsick">
+      <router-link to="/resultscheck">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>
@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import Total from './sport/Total'
+import Problems from './health/Problems'
 
 export default {
   components: {
-    appTotal: Total
+    appProb: Problems
   }
 }
 </script>

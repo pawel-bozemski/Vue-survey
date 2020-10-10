@@ -15,7 +15,9 @@ import ResultsDiet from '../components/results/ResultsDiet'
 import ResultsDrugs from '../components/results/ResultsDrugs'
 import ResultsPsych from '../components/results/ResultsPsych'
 import ResultsSport from '../components/results/ResultsSport'
-import ResultsHealth from '../components/results/ResultsHealth'
+import ResultsHealth1 from '../components/results/ResultsHealth1'
+import ResultsHealth2 from '../components/results/ResultsHealth2'
+
 import ResultsPrevention from '../components/results/ResultsPrevention'
 import ResultsDoctor from '../components/results/ResultsDoctor'
 import ResultsCost from '../components/results/ResultsCost'
@@ -95,9 +97,14 @@ const routes = [
     component: ResultsSport
   },
   {
-    path: '/resultshealth',
-    name: 'resultshealth',
-    component: ResultsHealth
+    path: '/resultshealthsick',
+    name: 'resultshealth1',
+    component: ResultsHealth1
+  },
+  {
+    path: '/resultshealthprob',
+    name: 'resultshealth2',
+    component: ResultsHealth2
   },
   {
     path: '/resultscheck',
