@@ -99,7 +99,10 @@
         </button>
       </router-link>
       <router-link to="/sport">
-        <button class="btn btn-warning" @click="setPsych">
+        <button
+        :class="{'noshow' : this.psych_1 === '' || this.psych_2 === '' || this.psych_3 === ''}"
+        class="btn btn-warning"
+        @click="setPsych">
           Dalej
         </button>
       </router-link>

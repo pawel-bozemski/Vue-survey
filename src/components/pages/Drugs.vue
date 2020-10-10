@@ -100,7 +100,10 @@
         </button>
       </router-link>
       <router-link to="/psych">
-        <button class="btn btn-warning" @click="setDrugs">
+        <button
+        :class="{'noshow' : this.drugs_1 === '' || this.drugs_2 === '' || this.drugs_3 === ''}"
+        class="btn btn-warning"
+        @click="setDrugs">
           Dalej
         </button>
       </router-link>

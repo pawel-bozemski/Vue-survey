@@ -1,6 +1,5 @@
 <template>
   <div class="interview">
-
     <div class="jumbotron">
       <h4>Czy któraś z tych dolegliwości pojawia się u Pan/Pani co najmniej kilka razy w miesiącu?</h4>
       <div class="questions">
@@ -331,8 +330,8 @@
             <span class="dot" :class="{'active' : this.health.health_3.includes('memory') !== true, 'two__bg' : this.health.health_3.includes('memory') == true}"></span>Nie</div>
         </div>
       </div>
-
     </div>
+  </div>
 
 </template>
 

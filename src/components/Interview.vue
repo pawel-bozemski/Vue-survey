@@ -100,7 +100,9 @@
     </div>
     <div class="jumbotron">
       <router-link to="/diet">
-        <button class="btn btn-warning" @click="setInterview">
+        <button class="btn btn-warning"
+          :class="{'noshow' : this.gender === '' || this.age === '' || this.location === '' || this.education === ''}"
+         @click="setInterview">
           Dalej >>>>
         </button>
       </router-link>

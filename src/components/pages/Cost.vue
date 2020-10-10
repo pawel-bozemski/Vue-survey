@@ -100,7 +100,10 @@
         </button>
       </router-link>
       <router-link to="/resultsdiet">
-        <button class="btn btn-warning" @click="setCost">
+        <button
+        class="btn btn-warning"
+        :class="{'noshow' : this.cost_1 === '' || this.cost_2 === '' || this.cost_3 === ''}"
+        @click="setCost">
           Dalej
         </button>
       </router-link>
