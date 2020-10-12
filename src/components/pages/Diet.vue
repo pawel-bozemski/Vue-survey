@@ -113,7 +113,7 @@
 
     <div
     class="results_bmi"
-    :class="{'noshow' : this.bmi == '' || this.bmi == NaN}"
+    :class="{'noshow' : this.bmi == '' ||  isNaN(this.bmi) == true || this.bmi == Infinity }"
     >
       <h4>Twoje BMI</h4>
       <div class="questionss">
