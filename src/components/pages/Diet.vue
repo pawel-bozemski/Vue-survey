@@ -154,21 +154,21 @@
       </div>
     </div>
   </div>
-  <div class="jumbotron buttons">
-    <router-link to="/interview" tag="a" class="backBtn">
-      <button class="btn btn-warning">
-        Wstecz
-      </button>
-    </router-link>
-    <router-link to="/drugs">
-      <button
-      :class="{'disabled' : this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === ''}"
-      class="btn btn-warning"
-      @click="setDiet">
-        Dalej
-      </button>
-    </router-link>
-  </div>
+    <div class="jumbotron buttons">
+      <router-link to="/interview" class="backBtn">
+        <button class="btn btn-warning">
+          Wstecz
+        </button>
+      </router-link>
+      <router-link to="/drugs">
+        <button
+        :disabled="this.disable"
+        class="btn btn-warning"
+        @click="setDiet">
+          Dalej
+        </button>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -182,7 +182,8 @@ export default {
       diet_3: '',
       bmi: '',
       height: '',
-      mass: ''
+      mass: '',
+      disable: true
     }
   },
   computed: {
@@ -205,6 +206,29 @@ export default {
     calculateBMI () {
       const calc = this.mass / ((this.height) / 100 * (this.height) / 100)
       this.bmi = Math.round(calc)
+    }
+  },
+  watch: {
+    diet_1: function () {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    diet_2: function () {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    diet_3: function () {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
     }
   }
 }

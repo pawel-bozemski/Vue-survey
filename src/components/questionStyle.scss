@@ -11,12 +11,6 @@
 .noshow {
   display: none;
 }
-.form-check-label {
-  font-size: 14px;
-  padding: 10px;
-  line-height: 15px;
-}
-
 .questions {
   display: flex;
   flex-direction: row;
@@ -43,6 +37,8 @@ label {
   width: 100%;
   text-align: left;
   opacity: 0.7;
+  font-size: 14px;
+  line-height: 15px;
 }
 span {
   position: absolute;

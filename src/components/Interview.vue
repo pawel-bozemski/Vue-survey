@@ -20,6 +20,7 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
+                :checked="question.value"
                 v-model="gender"
               />
             </span>
@@ -103,7 +104,7 @@
     <div class="jumbotron">
       <router-link to="/diet">
         <button class="btn btn-warning"
-          :class="{'disabled' : this.gender === '' || this.age === '' || this.location === '' || this.education === ''}"
+          :disabled="this.disable"
           @click="setInterview">
           Dalej >>>>
         </button>
@@ -121,7 +122,7 @@ export default {
       age: '',
       location: '',
       education: '',
-      disabled: true
+      disable: true
     }
   },
   computed: {
@@ -129,9 +130,38 @@ export default {
       genderQuestions: 'gender',
       ageQuestions: 'age',
       locationQuestions: 'location',
-      educationQuestions: 'education',
-      interview: 'interview'
+      educationQuestions: 'education'
     })
+  },
+  watch: {
+    gender: function () {
+      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    age: function () {
+      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    location: function () {
+      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    education: function () {
+      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    }
   },
   methods: {
     setInterview () {
@@ -142,7 +172,6 @@ export default {
         education: this.education
       }
       this.$store.dispatch('setInterview', interview)
-      this.disabled = false
     }
   }
 }

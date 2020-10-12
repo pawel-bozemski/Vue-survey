@@ -101,7 +101,7 @@
       </router-link>
       <router-link to="/cost">
         <button
-        :class="{'disabled' : this.doctor_1 === '' || this.doctor_2 === '' || this.doctor_3 === ''}"
+        :disabled="this.disable"
         class="btn btn-warning"
         @click="setDoctor">
           Dalej
@@ -118,7 +118,31 @@ export default {
     return {
       doctor_1: '',
       doctor_2: '',
-      doctor_3: ''
+      doctor_3: '',
+      disable: true
+    }
+  },
+  watch: {
+    doctor_1: function () {
+      if (this.doctor_1 === '' || this.doctor_2 === '' || this.doctor_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    doctor_2: function () {
+      if (this.doctor_1 === '' || this.doctor_2 === '' || this.doctor_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    doctor_3: function () {
+      if (this.doctor_1 === '' || this.doctor_2 === '' || this.doctor_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
     }
   },
   computed: {

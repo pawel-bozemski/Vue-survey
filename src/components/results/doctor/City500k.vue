@@ -90,7 +90,7 @@
           <div class="result one" :class="{'active' : this.doctor.doctor_3 == 'halfYear3'}" style="width:41%">
             <p :class="{'visible' : this.doctor.doctor_3 == 'halfYear3', 'not__visible' : this.doctor.doctor_3 !== 'halfYear3'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.doctor.doctor_3 == 'year3'}" style="width:24%">
+          <div class="result two" :class="{'active' : this.doctor.doctor_3 == 'year3'}" style="width:20%">
             <p :class="{'visible' : this.doctor.doctor_3 == 'year3', 'not__visible' : this.doctor.doctor_3 !== 'year3'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active' : this.doctor.doctor_3 == 'moreYear3'}" style="width:23%">
@@ -102,7 +102,7 @@
         </div>
         <div class="bar">
           <div class="result" :class="{'active' : this.doctor.doctor_3 == 'halfYear3', 'one__bg' : this.doctor.doctor_3 !== 'halfYear3'}" style="width:41%">41%</div>
-          <div class="result" :class="{'active' : this.doctor.doctor_3 == 'year3', 'two__bg' : this.doctor.doctor_3 !== 'year3'}" style="width:24%">24%</div>
+          <div class="result" :class="{'active' : this.doctor.doctor_3 == 'year3', 'two__bg' : this.doctor.doctor_3 !== 'year3'}" style="width:20%">24%</div>
           <div class="result" :class="{'active' : this.doctor.doctor_3 == 'moreYear3', 'one__bg' : this.doctor.doctor_3 !== 'moreYear3'}" style="width:23%">23%</div>
           <div class="result" :class="{'active' : this.doctor.doctor_3 == 'never3', 'two__bg' : this.doctor.doctor_3 !== 'never3'}" style="width:16%">16%</div>
         </div>

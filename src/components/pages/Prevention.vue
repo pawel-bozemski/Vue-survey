@@ -127,7 +127,7 @@
       </router-link>
       <router-link to="/doctor">
         <button
-        :class="{'disabled' : this.prevention_1 === '' || this.prevention_2 === '' || this.prevention_3 === '' || this.prevention_4 === ''}"
+        :disabled="this.disable"
         class="btn btn-warning"
         @click="setPrevention">
           Dalej
@@ -146,9 +146,42 @@ export default {
       prevention_1: '',
       prevention_2: '',
       prevention_3: '',
-      prevention_4: ''
+      prevention_4: '',
+      disable: true
     }
   },
+  watch: {
+    prevention_1: function () {
+      if (this.prevention_1 === '' || this.prevention_2 === '' || this.prevention_3 === '' || this.prevention_4 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    prevention_2: function () {
+      if (this.prevention_1 === '' || this.prevention_2 === '' || this.prevention_3 === '' || this.prevention_4 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    prevention_3: function () {
+      if (this.prevention_1 === '' || this.prevention_2 === '' || this.prevention_3 === '' || this.prevention_4 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    prevention_4: function () {
+      if (this.prevention_1 === '' || this.prevention_2 === '' || this.prevention_3 === '' || this.prevention_4 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    }
+
+  },
+
   computed: {
     ...mapGetters({
       prevention_1Questions: 'prevention_1',

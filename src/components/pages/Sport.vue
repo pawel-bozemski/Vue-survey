@@ -99,7 +99,7 @@
       </router-link>
       <router-link to="/health">
         <button
-        :class="{'disabled' : this.sport_1 === '' || this.sport_2 === '' || this.sport_3 === ''}"
+        :disabled="this.disable"
         class="btn btn-warning"
         @click="setSport">
           Dalej
@@ -117,9 +117,34 @@ export default {
     return {
       sport_1: '',
       sport_2: '',
-      sport_3: ''
+      sport_3: '',
+      disable: true
     }
   },
+  watch: {
+    sport_1: function () {
+      if (this.sport_1 === '' || this.sport_2 === '' || this.sport_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    sport_2: function () {
+      if (this.sport_1 === '' || this.sport_2 === '' || this.sport_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    sport_3: function () {
+      if (this.sport_1 === '' || this.sport_2 === '' || this.sport_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    }
+  },
+
   computed: {
     ...mapGetters({
       sport_1Questions: 'sport_1',

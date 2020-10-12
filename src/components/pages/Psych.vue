@@ -101,7 +101,7 @@
       </router-link>
       <router-link to="/sport">
         <button
-        :class="{'disabled' : this.psych_1 === '' || this.psych_2 === '' || this.psych_3 === ''}"
+        :disabled="this.disable"
         class="btn btn-warning"
         @click="setPsych">
           Dalej
@@ -119,7 +119,8 @@ export default {
     return {
       psych_1: '',
       psych_2: '',
-      psych_3: ''
+      psych_3: '',
+      disable: true
     }
   },
   computed: {
@@ -129,7 +130,29 @@ export default {
       psych_3Questions: 'psych_3'
     })
   },
-
+  watch: {
+    psych_1: function () {
+      if (this.psych_1 === '' || this.psych_2 === '' || this.psych_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    psych_2: function () {
+      if (this.psych_1 === '' || this.psych_2 === '' || this.psych_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    psych_3: function () {
+      if (this.psych_1 === '' || this.psych_2 === '' || this.psych_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    }
+  },
   methods: {
     setPsych () {
       const psych = {

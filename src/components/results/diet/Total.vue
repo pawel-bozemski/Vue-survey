@@ -27,7 +27,7 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.diet.diet_1 == 'zdrowe', 'one__bg' : this.diet.diet_1 !== 'zdrowe'}" style="width:28%">28%</div>
           <div class="result" :class="{'active' : this.diet.diet_1 == 'bezmiesne', 'two__bg' : this.diet.diet_1 !== 'bezmiesne'}" style="width:10%">10%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'miesne', 'one__bg' : this.diet.diet_1 !== 'miesne'}" style="width:37%">37%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'miesne', 'one__bg' : this.diet.diet_1 !== 'miesne'}" style="width:40%">37%</div>
           <div class="result" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'two__bg' : this.diet.diet_1 !== 'lowCarb'}" style="width:10%">10%</div>
           <div class="result" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'one__bg' : this.diet.diet_1 !== 'lowSalt'}" style="width:12%">12%</div>
         </div>

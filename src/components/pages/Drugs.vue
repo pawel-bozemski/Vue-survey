@@ -101,7 +101,7 @@
       </router-link>
       <router-link to="/psych">
         <button
-        :class="{'disabled' : this.drugs_1 === '' || this.drugs_2 === '' || this.drugs_3 === ''}"
+        :disabled="this.disable"
         class="btn btn-warning"
         @click="setDrugs">
           Dalej
@@ -119,7 +119,31 @@ export default {
     return {
       drugs_1: '',
       drugs_2: '',
-      drugs_3: ''
+      drugs_3: '',
+      disable: true
+    }
+  },
+  watch: {
+    drugs_1: function () {
+      if (this.drugs_1 === '' || this.drugs_2 === '' || this.drugs_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    drugs_2: function () {
+      if (this.drugs_1 === '' || this.drugs_2 === '' || this.drugs_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    drugs_3: function () {
+      if (this.drugs_1 === '' || this.drugs_2 === '' || this.drugs_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
     }
   },
   computed: {

@@ -101,7 +101,7 @@
       </router-link>
       <router-link to="/prevention">
         <button
-        :class="{'disabled' : this.health_1 === ''}"
+        :disabled="this.disable"
         class="btn btn-warning"
         @click="setHealth">
           Dalej
@@ -119,7 +119,8 @@ export default {
     return {
       health_1: '',
       health_2: [],
-      health_3: []
+      health_3: [],
+      disable: true
     }
   },
   computed: {
@@ -128,6 +129,11 @@ export default {
       health_2Questions: 'health_2',
       health_3Questions: 'health_3'
     })
+  },
+  watch: {
+    health_1: function () {
+      this.disable = false
+    }
   },
 
   methods: {

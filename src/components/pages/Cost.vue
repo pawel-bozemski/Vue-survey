@@ -101,8 +101,8 @@
       </router-link>
       <router-link to="/resultsdiet">
         <button
+        :disabled="this.disable"
         class="btn btn-warning"
-        :class="{'disabled' : this.cost_1 === '' || this.cost_2 === '' || this.cost_3 === ''}"
         @click="setCost">
           Dalej
         </button>
@@ -118,7 +118,8 @@ export default {
     return {
       cost_1: '',
       cost_2: '',
-      cost_3: ''
+      cost_3: '',
+      disable: true
     }
   },
   computed: {
@@ -136,6 +137,29 @@ export default {
         cost_3: this.cost_3
       }
       this.$store.dispatch('setCost', cost)
+    }
+  },
+  watch: {
+    cost_1: function () {
+      if (this.cost_1 === '' || this.cost_2 === '' || this.cost_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    cost_2: function () {
+      if (this.cost_1 === '' || this.cost_2 === '' || this.cost_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    cost_3: function () {
+      if (this.cost_1 === '' || this.cost_2 === '' || this.cost_3 === '') {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
     }
   }
 }
