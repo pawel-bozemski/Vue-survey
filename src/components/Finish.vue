@@ -44,7 +44,7 @@
   width: 90%;
 }
 .image {
-  margin: 20px;
+  margin: 20px 0;
   z-index: 999;
   position: relative;
 }
@@ -64,11 +64,44 @@
 }
 
 .text {
-  margin: 25px
+  margin: 20px 0;
 }
 h6 {
   color: orange;
   text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .image {
+    max-width: 500px;
+  }
+  .image__icon-1 {
+    top: 19%;
+    right: 0%;
+  }
+  .image__icon-2 {
+    left: 5%;
+    top: 60%;
+
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .image {
+    width: 100%;
+  }
+  .image__icon-1 {
+    display: none;
+  }
+  .image__icon-2 {
+    display: none;
+  }
 }
 
 </style>

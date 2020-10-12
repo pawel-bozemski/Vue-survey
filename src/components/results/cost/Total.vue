@@ -10,7 +10,7 @@
           <div class="result one" :class="{'active' : this.cost.cost_1 == 'yes1'}" style="width:33%">
             <p :class="{'visible' : this.cost.cost_1 == 'yes1', 'not__visible' : this.cost.cost_1 !== 'yes1'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.cost.cost_1 == 'no1'}" style="width:3434%">
+          <div class="result two" :class="{'active' : this.cost.cost_1 == 'no1'}" style="width:34%">
             <p :class="{'visible' : this.cost.cost_1 == 'no1', 'not__visible' : this.cost.cost_1 !== 'no1'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active' : this.cost.cost_1 == 'never1'}" style="width:33%">

@@ -118,7 +118,7 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      gender: 'female',
+      gender: '',
       age: '',
       location: '',
       education: '',
@@ -133,9 +133,6 @@ export default {
       educationQuestions: 'education',
       interview: 'interview'
     })
-  },
-  mounted: function () {
-    console.log(this.interview)
   },
   watch: {
     gender: function () {

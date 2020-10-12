@@ -56,3 +56,24 @@ span {
 .progress {
   margin: 15px;
 }
+
+
+@media (max-width: 1024px) {
+  .questions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: inherit;
+  }
+
+  .image1 {
+    position: absolute;
+    z-index: -5;
+    width: 30%;
+  }
+  .image2 {
+    position: absolute;
+    z-index: -5;
+    width: 30%;
+  }
+}

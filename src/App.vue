@@ -29,4 +29,9 @@ export default {
     text-align: center;
     height: 100%;
   }
+  @media (max-width: 500px) {
+  .background {
+    margin: 0;
+  }
+  }
 </style>

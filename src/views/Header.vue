@@ -6,8 +6,7 @@
 
 <style scoped lang="scss">
   .logo {
-    height: 120px;
-    margin-left: 50px;
-    padding-left: 50px;
+    max-width: 100px;
+    max-height: 120px;
   }
 </style>

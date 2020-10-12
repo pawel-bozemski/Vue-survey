@@ -5,8 +5,11 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.row {
+  margin: 0;
+}
 .jumbotron {
-  padding: 15px;
+  padding: 20px;
 }
 .bar {
   width: 100%;
@@ -40,24 +43,20 @@
 .two__bg {
   background-color: #979dac;
 }
-.three__bg {
-  background-color: #5c677d;
-}
-.four__bg {
-  background-color: #33415c;
-}
 .dot {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   display: inline-block;
-  margin: 0 25px;
+  margin: 0;
+  position: absolute;
+  left: 0%;
+  text-align: left;
 }
 .dot__content {
-  display: flex;
-  flex-basis: 30%;
-  margin-top: 10px;
   font-size: 14px;
+  position: relative;
+  padding: 15px 25px;
 }
 .buttons {
   display: flex;
@@ -66,4 +65,25 @@
 }
 .questions {
   margin: 10px;
+}
+
+@media (max-width: 1024px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .result {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .visible {
+    padding: 5px;
+  }
+
 }
