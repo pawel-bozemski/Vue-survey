@@ -101,7 +101,7 @@
       </router-link>
       <router-link to="/cost">
         <button
-        :class="{'noshow' : this.doctor_1 === '' || this.doctor_2 === '' || this.doctor_3 === ''}"
+        :class="{'disabled' : this.doctor_1 === '' || this.doctor_2 === '' || this.doctor_3 === ''}"
         class="btn btn-warning"
         @click="setDoctor">
           Dalej

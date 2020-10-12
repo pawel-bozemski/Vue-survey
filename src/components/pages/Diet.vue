@@ -162,7 +162,7 @@
     </router-link>
     <router-link to="/drugs">
       <button
-      :class="{'noshow' : this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === ''}"
+      :class="{'disabled' : this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === ''}"
       class="btn btn-warning"
       @click="setDiet">
         Dalej

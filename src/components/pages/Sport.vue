@@ -99,7 +99,7 @@
       </router-link>
       <router-link to="/health">
         <button
-        :class="{'noshow' : this.sport_1 === '' || this.sport_2 === '' || this.sport_3 === ''}"
+        :class="{'disabled' : this.sport_1 === '' || this.sport_2 === '' || this.sport_3 === ''}"
         class="btn btn-warning"
         @click="setSport">
           Dalej

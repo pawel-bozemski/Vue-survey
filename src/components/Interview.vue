@@ -84,7 +84,7 @@
           v-for="question in educationQuestions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
@@ -103,8 +103,8 @@
     <div class="jumbotron">
       <router-link to="/diet">
         <button class="btn btn-warning"
-          :class="{'noshow' : this.gender === '' || this.age === '' || this.location === '' || this.education === ''}"
-         @click="setInterview">
+          :class="{'disabled' : this.gender === '' || this.age === '' || this.location === '' || this.education === ''}"
+          @click="setInterview">
           Dalej >>>>
         </button>
       </router-link>
@@ -120,7 +120,8 @@ export default {
       gender: '',
       age: '',
       location: '',
-      education: ''
+      education: '',
+      disabled: true
     }
   },
   computed: {
@@ -130,7 +131,6 @@ export default {
       locationQuestions: 'location',
       educationQuestions: 'education',
       interview: 'interview'
-
     })
   },
   methods: {
@@ -142,6 +142,7 @@ export default {
         education: this.education
       }
       this.$store.dispatch('setInterview', interview)
+      this.disabled = false
     }
   }
 }

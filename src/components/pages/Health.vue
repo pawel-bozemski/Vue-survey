@@ -101,7 +101,7 @@
       </router-link>
       <router-link to="/prevention">
         <button
-        :class="{'noshow' : this.health_1 === ''}"
+        :class="{'disabled' : this.health_1 === ''}"
         class="btn btn-warning"
         @click="setHealth">
           Dalej
