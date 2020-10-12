@@ -7,16 +7,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_1 == 'yes'}" style="width:48%">
+          <div class="result one" :class="{'active' : this.health.health_1 == 'yes'}" style="width:50%">
             <p :class="{'visible' : this.health.health_1 == 'yes', 'not__visible' : this.health.health_1 !== 'yes'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_1 == 'no'}" style="width:52%">
+          <div class="result two" :class="{'active' : this.health.health_1 == 'no'}" style="width:50%">
             <p :class="{'visible' : this.health.health_1 == 'no', 'not__visible' : this.health.health_1 !== 'no'}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_1 == 'yes', 'one__bg' : this.health.health_1 !== 'yes'}" style="width:48%">48%</div>
-          <div class="result" :class="{'active' : this.health.health_1 == 'no', 'two__bg' : this.health.health_1 !== 'no'}" style="width:52%">52%</div>
+          <div class="result" :class="{'active' : this.health.health_1 == 'yes', 'one__bg' : this.health.health_1 !== 'yes'}" style="width:50%">48%</div>
+          <div class="result" :class="{'active' : this.health.health_1 == 'no', 'two__bg' : this.health.health_1 !== 'no'}" style="width:50%">52%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -36,16 +36,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('hipertension') == true}" style="width:48%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('hipertension') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('hipertension') == true, 'not__visible' : this.health.health_2.includes('hipertension') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('hipertension') !== true}" style="width:52%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('hipertension') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('hipertension') !== true, 'not__visible' : this.health.health_2.includes('hipertension') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('hipertension') == true, 'one__bg' : this.health.health_2.includes('hipertension') !== true}" style="width:48%">48%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('hipertension') !== true, 'two__bg' : this.health.health_2.includes('hipertension') == true}" style="width:52%">52%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('hipertension') == true, 'one__bg' : this.health.health_2.includes('hipertension') !== true}" style="width:50%">48%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('hipertension') !== true, 'two__bg' : this.health.health_2.includes('hipertension') == true}" style="width:50%">52%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -62,16 +62,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('diabetes') == true}" style="width:15%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('diabetes') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('diabetes') == true, 'not__visible' : this.health.health_2.includes('diabetes') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('diabetes') !== true}" style="width:85%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('diabetes') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('diabetes') !== true, 'not__visible' : this.health.health_2.includes('diabetes') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('diabetes') == true, 'one__bg' : this.health.health_2.includes('diabetes') !== true}" style="width:15%">7%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('diabetes') !== true, 'two__bg' : this.health.health_2.includes('diabetes') == true}" style="width:85%">93%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('diabetes') == true, 'one__bg' : this.health.health_2.includes('diabetes') !== true}" style="width:50%">7%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('diabetes') !== true, 'two__bg' : this.health.health_2.includes('diabetes') == true}" style="width:50%">93%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -88,16 +88,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('pochp') == true}" style="width:15%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('pochp') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('pochp') == true, 'not__visible' : this.health.health_2.includes('pochp') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('pochp') !== true}" style="width:85%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('pochp') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('pochp') !== true, 'not__visible' : this.health.health_2.includes('pochp') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('pochp') == true, 'one__bg' : this.health.health_2.includes('pochp') !== true}" style="width:15%">2%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('pochp') !== true, 'two__bg' : this.health.health_2.includes('pochp') == true}" style="width:85%">98%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('pochp') == true, 'one__bg' : this.health.health_2.includes('pochp') !== true}" style="width:50%">2%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('pochp') !== true, 'two__bg' : this.health.health_2.includes('pochp') == true}" style="width:50%">98%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -113,16 +113,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('allergy') == true}" style="width:18%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('allergy') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('allergy') == true, 'not__visible' : this.health.health_2.includes('allergy') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('allergy') !== true}" style="width:82%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('allergy') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('allergy') !== true, 'not__visible' : this.health.health_2.includes('allergy') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('allergy') == true, 'one__bg' : this.health.health_2.includes('allergy') !== true}" style="width:18%">18%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('allergy') !== true, 'two__bg' : this.health.health_2.includes('allergy') == true}" style="width:82%">82%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('allergy') == true, 'one__bg' : this.health.health_2.includes('allergy') !== true}" style="width:50%">18%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('allergy') !== true, 'two__bg' : this.health.health_2.includes('allergy') == true}" style="width:50%">82%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -139,16 +139,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('depresion') == true}" style="width:10%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('depresion') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('depresion') == true, 'not__visible' : this.health.health_2.includes('depresion') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('depresion') !== true}" style="width:90%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('depresion') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('depresion') !== true, 'not__visible' : this.health.health_2.includes('depresion') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('depresion') == true, 'one__bg' : this.health.health_2.includes('depresion') !== true}" style="width:10%">10%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('depresion') !== true, 'two__bg' : this.health.health_2.includes('depresion') == true}" style="width:90%">90%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('depresion') == true, 'one__bg' : this.health.health_2.includes('depresion') !== true}" style="width:50%">10%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('depresion') !== true, 'two__bg' : this.health.health_2.includes('depresion') == true}" style="width:50%">90%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -164,16 +164,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('cancer') == true}" style="width:15%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('cancer') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('cancer') == true, 'not__visible' : this.health.health_2.includes('cancer') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('cancer') !== true}" style="width:85%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('cancer') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('cancer') !== true, 'not__visible' : this.health.health_2.includes('cancer') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('cancer') == true, 'one__bg' : this.health.health_2.includes('cancer') !== true}" style="width:15%">3%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('cancer') !== true, 'two__bg' : this.health.health_2.includes('cancer') == true}" style="width:85%">97%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('cancer') == true, 'one__bg' : this.health.health_2.includes('cancer') !== true}" style="width:50%">3%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('cancer') !== true, 'two__bg' : this.health.health_2.includes('cancer') == true}" style="width:50%">97%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -189,16 +189,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('joints') == true}" style="width:16%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('joints') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('joints') == true, 'not__visible' : this.health.health_2.includes('joints') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('joints') !== true}" style="width:84%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('joints') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('joints') !== true, 'not__visible' : this.health.health_2.includes('joints') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('joints') == true, 'one__bg' : this.health.health_2.includes('joints') !== true}" style="width:16%">16%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('joints') !== true, 'two__bg' : this.health.health_2.includes('joints') == true}" style="width:84%">84%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('joints') == true, 'one__bg' : this.health.health_2.includes('joints') !== true}" style="width:50%">16%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('joints') !== true, 'two__bg' : this.health.health_2.includes('joints') == true}" style="width:50%">84%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -214,16 +214,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('neurological') == true}" style="width:9%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('neurological') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('neurological') == true, 'not__visible' : this.health.health_2.includes('neurological') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('neurological') !== true}" style="width:91%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('neurological') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('neurological') !== true, 'not__visible' : this.health.health_2.includes('neurological') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('neurological') == true, 'one__bg' : this.health.health_2.includes('neurological') !== true}" style="width:9%">9%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('neurological') !== true, 'two__bg' : this.health.health_2.includes('neurological') == true}" style="width:91%">91%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('neurological') == true, 'one__bg' : this.health.health_2.includes('neurological') !== true}" style="width:9%">50%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('neurological') !== true, 'two__bg' : this.health.health_2.includes('neurological') == true}" style="width:91%">50%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -239,16 +239,16 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('heart') == true}" style="width:9%">
+          <div class="result one" :class="{'active' : this.health.health_2.includes('heart') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('heart') == true, 'not__visible' : this.health.health_2.includes('heart') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('neurological') !== true}" style="width:91%">
+          <div class="result two" :class="{'active' : this.health.health_2.includes('neurological') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('heart') !== true, 'not__visible' : this.health.health_2.includes('heart') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_2.includes('heart') == true, 'one__bg' : this.health.health_2.includes('heart') !== true}" style="width:9%">9%</div>
-          <div class="result" :class="{'active' : this.health.health_2.includes('heart') !== true, 'two__bg' : this.health.health_2.includes('heart') == true}" style="width:91%">91%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('heart') == true, 'one__bg' : this.health.health_2.includes('heart') !== true}" style="width:50%">9%</div>
+          <div class="result" :class="{'active' : this.health.health_2.includes('heart') !== true, 'two__bg' : this.health.health_2.includes('heart') == true}" style="width:50%">91%</div>
         </div>
         <div class="row">
           <div class="dot__content">

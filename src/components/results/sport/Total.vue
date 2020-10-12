@@ -7,24 +7,24 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.sport.sport_1 == 'daily1'}" style="width:11%">
+          <div class="result one" :class="{'active' : this.sport.sport_1 == 'daily1'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_1 == 'daily1', 'not__visible' : this.sport.sport_1 !== 'daily1'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.sport.sport_1 == '30min'}" style="width:67%">
+          <div class="result two" :class="{'active' : this.sport.sport_1 == '30min'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_1 == '30min', 'not__visible' : this.sport.sport_1 !== '30min'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.sport.sport_1 == '1hour'}" style="width:12%">
+          <div class="result one" :class="{'active' : this.sport.sport_1 == '1hour'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_1 == '1hour', 'not__visible' : this.sport.sport_1 !== '1hour'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.sport.sport_1 == 'coupleHours'}" style="width:10%">
+          <div class="result two"  :class="{'active' : this.sport.sport_1 == 'coupleHours'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_1 == 'coupleHours', 'not__visible' : this.sport.sport_1 !== 'coupleHours'}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.sport.sport_1 == 'daily1', 'one__bg' : this.sport.sport_1 !== 'daily1'}" style="width:11%">13%</div>
-          <div class="result" :class="{'active' : this.sport.sport_1 == '30min', 'two__bg' : this.sport.sport_1 !== '30min'}" style="width:67%">67%</div>
-          <div class="result" :class="{'active' : this.sport.sport_1 == '1hour', 'one__bg' : this.sport.sport_1 !== '1hour'}" style="width:12%">12%</div>
-          <div class="result" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'two__bg' : this.sport.sport_1 !== 'coupleHours'}" style="width:10%">7%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == 'daily1', 'one__bg' : this.sport.sport_1 !== 'daily1'}" style="width:25%">13%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == '30min', 'two__bg' : this.sport.sport_1 !== '30min'}" style="width:25%">67%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == '1hour', 'one__bg' : this.sport.sport_1 !== '1hour'}" style="width:25%">12%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'two__bg' : this.sport.sport_1 !== 'coupleHours'}" style="width:25%">7%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -47,24 +47,24 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.sport.sport_2 == 'none2'}" style="width:50%">
+          <div class="result one" :class="{'active' : this.sport.sport_2 == 'none2'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_2 == 'none2', 'not__visible' : this.sport.sport_2 !== 'none2'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.sport.sport_2 == '4monthly'}" style="width:13%">
+          <div class="result two" :class="{'active' : this.sport.sport_2 == '4monthly'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_2 == '4monthly', 'not__visible' : this.sport.sport_2 !== '4monthly'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.sport.sport_2 == '1weekly'}" style="width:13%">
+          <div class="result one" :class="{'active' : this.sport.sport_2 == '1weekly'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_2 == '1weekly', 'not__visible' : this.sport.sport_2 !== '1weekly'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.sport.sport_2== '2weekly'}" style="width:24%">
+          <div class="result two"  :class="{'active' : this.sport.sport_2== '2weekly'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_2 == '2weekly', 'not__visible' : this.sport.sport_2 !== '2weekly'}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.sport.sport_2 == 'none2', 'one__bg' : this.sport.sport_2 !== 'none2'}" style="width:50%">50%</div>
-          <div class="result" :class="{'active' : this.sport.sport_2 == '4monthly', 'two__bg' : this.sport.sport_2 !== '4monthly'}" style="width:13%">13%</div>
-          <div class="result" :class="{'active' : this.sport.sport_2 == '1weekly', 'one__bg' : this.sport.sport_2 !== '1weekly'}" style="width:13%">13%</div>
-          <div class="result" :class="{'active' : this.sport.sport_2 == '2weekly', 'two__bg' : this.sport.sport_2 !== '2weekly'}" style="width:24%">24%</div>
+          <div class="result" :class="{'active' : this.sport.sport_2 == 'none2', 'one__bg' : this.sport.sport_2 !== 'none2'}" style="width:25%">50%</div>
+          <div class="result" :class="{'active' : this.sport.sport_2 == '4monthly', 'two__bg' : this.sport.sport_2 !== '4monthly'}" style="width:25%">13%</div>
+          <div class="result" :class="{'active' : this.sport.sport_2 == '1weekly', 'one__bg' : this.sport.sport_2 !== '1weekly'}" style="width:25%">13%</div>
+          <div class="result" :class="{'active' : this.sport.sport_2 == '2weekly', 'two__bg' : this.sport.sport_2 !== '2weekly'}" style="width:25%">24%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -87,20 +87,20 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.sport.sport_3 == 'good'}" style="width:7%">
+          <div class="result one" :class="{'active' : this.sport.sport_3 == 'good'}" style="width:33%">
             <p :class="{'visible' : this.sport.sport_3 == 'good', 'not__visible' : this.sport.sport_3 !== 'good'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.sport.sport_3 == 'average'}" style="width:36%">
+          <div class="result two" :class="{'active' : this.sport.sport_3 == 'average'}" style="width:33%">
             <p :class="{'visible' : this.sport.sport_3 == 'average', 'not__visible' : this.sport.sport_3 !== 'average'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.sport.sport_3 == 'bad'}" style="width:57%">
+          <div class="result one" :class="{'active' : this.sport.sport_3 == 'bad'}" style="width:34%">
             <p :class="{'visible' : this.sport.sport_3 == 'bad', 'not__visible' : this.sport.sport_3 !== 'bad'}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.sport.sport_3 == 'good', 'one__bg' : this.sport.sport_3 !== 'good'}" style="width:7%">7%</div>
-          <div class="result" :class="{'active' : this.sport.sport_3 == 'average', 'two__bg' : this.sport.sport_3 !== 'average'}" style="width:36%">36%</div>
-          <div class="result" :class="{'active' : this.sport.sport_3 == 'bad', 'one__bg' : this.sport.sport_3 !== 'bad'}" style="width:57%">57%</div>
+          <div class="result" :class="{'active' : this.sport.sport_3 == 'good', 'one__bg' : this.sport.sport_3 !== 'good'}" style="width:33%">7%</div>
+          <div class="result" :class="{'active' : this.sport.sport_3 == 'average', 'two__bg' : this.sport.sport_3 !== 'average'}" style="width:33%">36%</div>
+          <div class="result" :class="{'active' : this.sport.sport_3 == 'bad', 'one__bg' : this.sport.sport_3 !== 'bad'}" style="width:34%">57%</div>
         </div>
         <div class="row">
           <div class="dot__content">

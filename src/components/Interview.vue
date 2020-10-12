@@ -3,7 +3,7 @@
     <h1>Metryka</h1>
     <p>Prosimy o podanie podstawowych danych statystycznych</p>
     <img class="image1" src="../imgs/interview/pani.png" alt="">
-    <div class="jumbotron">
+    <form class="jumbotron">
       <h4>Płeć</h4>
       <div class="questions">
         <div
@@ -20,14 +20,14 @@
                 :name="question.name"
                 :id="question.value"
                 :value="question.value"
-                :checked="question.value"
                 v-model="gender"
+                :checked="gender"
               />
             </span>
           </label>
         </div>
       </div>
-    </div>
+    </form>
     <div class="jumbotron">
       <h4>Wiek</h4>
       <div class="questions">
@@ -118,7 +118,7 @@ import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
-      gender: '',
+      gender: 'female',
       age: '',
       location: '',
       education: '',
@@ -130,8 +130,12 @@ export default {
       genderQuestions: 'gender',
       ageQuestions: 'age',
       locationQuestions: 'location',
-      educationQuestions: 'education'
+      educationQuestions: 'education',
+      interview: 'interview'
     })
+  },
+  mounted: function () {
+    console.log(this.interview)
   },
   watch: {
     gender: function () {

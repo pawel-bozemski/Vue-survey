@@ -1,5 +1,10 @@
 const state = {
-  interview: [],
+  interview: {
+    gender: '',
+    age: '',
+    location: '',
+    education: ''
+  },
   gender: [
     { id: 1, name: 'gender', value: 'female', title: 'Kobieta' },
     { id: 2, name: 'gender', value: 'male', title: 'Mężczyzna' }
