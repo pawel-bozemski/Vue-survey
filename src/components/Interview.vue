@@ -35,7 +35,7 @@
           v-for="question in ageQuestions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
@@ -59,7 +59,7 @@
           v-for="question in locationQuestions"
           :key="question.id"
         >
-          <label class="form-check-label" :for="question.name">
+          <label class="form-check-label" :for="question.value">
             {{ question.title }}
             <span>
               <input
@@ -128,7 +128,9 @@ export default {
       genderQuestions: 'gender',
       ageQuestions: 'age',
       locationQuestions: 'location',
-      educationQuestions: 'education'
+      educationQuestions: 'education',
+      interview: 'interview'
+
     })
   },
   methods: {
