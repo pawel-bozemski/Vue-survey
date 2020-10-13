@@ -7,8 +7,10 @@
   align-items: start;
   justify-content: space-around;
 }
-button {
-  color:white;
+
+.btn {
+  color: white;
+  background-color: #f57921;
 }
 
 .noshow {
@@ -58,6 +60,9 @@ span {
 }
 .progress {
   margin: 15px;
+  .progress-bar {
+    background-color: #f57921;
+  }
 }
 
 

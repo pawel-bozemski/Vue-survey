@@ -63,12 +63,13 @@
   text-align: center;
 }
 h6 {
-  color: orange;
+  color: #f57921;
   font-size: 25px;
   font-weight: bold;
 }
 .btn {
   color: white;
+  background-color: #f57921;
 }
 
 @media (max-width: 1024px) {

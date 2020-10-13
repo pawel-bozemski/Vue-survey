@@ -3,7 +3,7 @@
     Etap 1/8
     <div class="progress">
       <div
-        class="progress-bar bg-warning"
+        class="progress-bar"
         role="progressbar"
         style="width: 13%"
         aria-valuenow="25"
@@ -155,7 +155,7 @@
     <div class="jumbotron buttons">
       <router-link to="/interview" class="backBtn">
         <button class="btn btn-warning">
-          Wstecz
+           Wstecz
         </button>
       </router-link>
       <router-link to="/drugs">
@@ -163,7 +163,7 @@
         :disabled="this.disable"
         class="btn btn-warning"
         @click="setDiet">
-          Dalej
+          Dalej >>>
         </button>
       </router-link>
     </div>

@@ -3,7 +3,7 @@
     Etap 4/8
     <div class="progress">
       <div
-        class="progress-bar bg-warning"
+        class="progress-bar"
         role="progressbar"
         style="width: 50%"
         aria-valuenow="25"

@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <h1>Wyniki Badanie</h1>
-    <h4 style="color:orange">Sprawdź, jak wypadasz na tle podobnych do Ciebie osób</h4>
+    <h4 class="subtitle">Sprawdź, jak wypadasz na tle podobnych do Ciebie osób</h4>
     <div class="jumbotron">
       <div v-if="this.pointsTotal >= 5" class="card">
         <div class="card-body">

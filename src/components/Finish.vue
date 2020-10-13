@@ -10,8 +10,7 @@
         </p>
         <img class="image" src="../imgs/finish/perks.png" alt="perks" />
       </div>
-              <img class="image__icon-1" src="../imgs/finish/family.png" alt="">
-
+    <img class="image__icon-1" src="../imgs/finish/family.png" alt="">
     </div>
     <div class="row"></div>
     <img class="image__icon-2" src="../imgs/finish/man.png" alt="">
@@ -67,7 +66,7 @@
   margin: 20px 0;
 }
 h6 {
-  color: orange;
+  color: #f57921;
   text-decoration: underline;
 }
 
@@ -91,7 +90,7 @@ h6 {
     font-size: 25px;
   }
   p {
-    font-size: 15px;
+    font-size: 13px;
   }
   .image {
     width: 100%;
