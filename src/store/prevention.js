@@ -1,5 +1,10 @@
 const state = {
-  prevention: [],
+  prevention: {
+    prevention_1: '',
+    prevention_2: '',
+    prevention_3: '',
+    prevention_4: ''
+  },
   prevention_1: [
     { id: 1, name: 'prevention_1', value: 'yes1', title: 'Tak' },
     { id: 2, name: 'prevention_1', value: 'no1', title: 'Nie' }

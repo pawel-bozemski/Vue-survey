@@ -1,5 +1,9 @@
 const state = {
-  cost: [],
+  cost: {
+    cost_1: '',
+    cost_2: '',
+    cost_3: ''
+  },
   cost_1: [
     { id: 1, name: 'cost_1', value: 'yes1', title: 'Tak' },
     { id: 2, name: 'cost_1', value: 'no1', title: 'Nie' },

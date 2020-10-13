@@ -127,9 +127,16 @@ export default {
     ...mapGetters({
       psych_1Questions: 'psych_1',
       psych_2Questions: 'psych_2',
-      psych_3Questions: 'psych_3'
+      psych_3Questions: 'psych_3',
+      psych: 'psych'
     })
   },
+  mounted: function () {
+    this.psych_1 = this.psych.psych_1
+    this.psych_2 = this.psych.psych_2
+    this.psych_3 = this.psych.psych_3
+  },
+
   watch: {
     psych_1: function () {
       if (this.psych_1 === '' || this.psych_2 === '' || this.psych_3 === '') {

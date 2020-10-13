@@ -7,29 +7,29 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'everyday1'}" style="width:25%">
+          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'everyday1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'everyday1', 'not__visible' : this.drugs.drugs_1 !== 'everyday1'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.drugs.drugs_1 == 'weekly1'}" style="width:25%">
+          <div class="result two" :class="{'active' : this.drugs.drugs_1 == 'weekly1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'weekly1', 'not__visible' : this.drugs.drugs_1 !== 'weekly1'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'monthly1'}" style="width:25%">
+          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'monthly1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'monthly1', 'not__visible' : this.drugs.drugs_1 !== 'monthly1'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.drugs.drugs_1 == 'yearly1'}" style="width:25%">
+          <div class="result two"  :class="{'active' : this.drugs.drugs_1 == 'yearly1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'yearly1', 'not__visible' : this.drugs.drugs_1 !== 'yearly1'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'never1'}" style="width:25%">
+          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'never1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'never1', 'not__visible' : this.drugs.drugs_1 !== 'never1'}">Twój wynik</p>
           </div>
 
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'everyday1', 'one__bg' : this.drugs.drugs_1 !== 'everyday1'}" style="width:25%">3%</div>
-          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'weekly1', 'two__bg' : this.drugs.drugs_1 !== 'weekly1'}" style="width:25%">7%</div>
-          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'monthly1', 'one__bg' : this.drugs.drugs_1 !== 'monthly1'}" style="width:25%">10%</div>
-          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'yearly1', 'two__bg' : this.drugs.drugs_1 !== 'yearly1'}" style="width:25%">38%</div>
-          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'never1', 'one__bg' : this.drugs.drugs_1 !== 'never1'}" style="width:25%">42%</div>
+          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'everyday1', 'one__bg' : this.drugs.drugs_1 !== 'everyday1'}" style="width:20%">3%</div>
+          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'weekly1', 'two__bg' : this.drugs.drugs_1 !== 'weekly1'}" style="width:20%">7%</div>
+          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'monthly1', 'one__bg' : this.drugs.drugs_1 !== 'monthly1'}" style="width:20%">10%</div>
+          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'yearly1', 'two__bg' : this.drugs.drugs_1 !== 'yearly1'}" style="width:20%">38%</div>
+          <div class="result" :class="{'active' : this.drugs.drugs_1 == 'never1', 'one__bg' : this.drugs.drugs_1 !== 'never1'}" style="width:20%">42%</div>
         </div>
         <div class="row">
           <div class="dot__content">

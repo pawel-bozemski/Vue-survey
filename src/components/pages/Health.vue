@@ -123,11 +123,17 @@ export default {
       disable: true
     }
   },
+  mounted: function () {
+    this.health_1 = this.health.health_1
+    this.health_2 = this.health.health_2
+    this.health_3 = this.health.health_3
+  },
   computed: {
     ...mapGetters({
       health_1Questions: 'health_1',
       health_2Questions: 'health_2',
-      health_3Questions: 'health_3'
+      health_3Questions: 'health_3',
+      health: 'health'
     })
   },
   watch: {

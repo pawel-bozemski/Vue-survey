@@ -7,8 +7,8 @@
           <h6>Wiek: {{ this.interview.age }} lata</h6>
         </div>
         <div class="bar">
-          <div class="result one" :class="{'active' : this.sport.sport_1 == 'daily1'}" style="width:25%">
-            <p :class="{'visible' : this.sport.sport_1 == 'daily1', 'not__visible' : this.sport.sport_1 !== 'daily1'}">Twój wynik</p>
+          <div class="result one" :class="{'active' : this.sport.sport_1 == 'none1'}" style="width:25%">
+            <p :class="{'visible' : this.sport.sport_1 == 'none1', 'not__visible' : this.sport.sport_1 !== 'none1'}">Twój wynik</p>
           </div>
           <div class="result two" :class="{'active' : this.sport.sport_1 == '30min'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_1 == '30min', 'not__visible' : this.sport.sport_1 !== '30min'}">Twój wynik</p>
@@ -21,14 +21,14 @@
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.sport.sport_1 == 'daily1', 'one__bg' : this.sport.sport_1 !== 'daily1'}" style="width:25%">13%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == 'none1', 'one__bg' : this.sport.sport_1 !== 'none1'}" style="width:25%">13%</div>
           <div class="result" :class="{'active' : this.sport.sport_1 == '30min', 'two__bg' : this.sport.sport_1 !== '30min'}" style="width:25%">67%</div>
           <div class="result" :class="{'active' : this.sport.sport_1 == '1hour', 'one__bg' : this.sport.sport_1 !== '1hour'}" style="width:25%">12%</div>
           <div class="result" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'two__bg' : this.sport.sport_1 !== 'coupleHours'}" style="width:25%">7%</div>
         </div>
         <div class="row">
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.sport.sport_1 == 'daily1', 'one__bg' : this.sport.sport_1 !== 'daily1'}"></span>Tak, codziennie
+            <span class="dot" :class="{'active' : this.sport.sport_1 == 'none1', 'one__bg' : this.sport.sport_1 !== 'none1'}"></span>Tak, codziennie
           </div>
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.sport.sport_1 == '30min', 'two__bg' : this.sport.sport_1 !== '30min'}"></span>Tak, kilka razy w tygodniu</div>

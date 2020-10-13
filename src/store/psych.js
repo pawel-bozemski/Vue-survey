@@ -1,5 +1,9 @@
 const state = {
-  psych: [],
+  psych: {
+    psych_1: '',
+    psych_2: '',
+    psych_3: ''
+  },
   psych_1: [
     { id: 1, name: 'psych_1', value: 'daily1', title: 'Tak, codziennie' },
     { id: 2, name: 'psych_1', value: 'weekly1', title: 'Tak, kilka razy w tygodniu' },

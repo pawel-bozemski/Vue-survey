@@ -150,10 +150,15 @@ export default {
     ...mapGetters({
       drugs_1Questions: 'drugs_1',
       drugs_2Questions: 'drugs_2',
-      drugs_3Questions: 'drugs_3'
+      drugs_3Questions: 'drugs_3',
+      drugs: 'drugs'
     })
   },
-
+  mounted: function () {
+    this.drugs_1 = this.drugs.drugs_1
+    this.drugs_2 = this.drugs.drugs_2
+    this.drugs_3 = this.drugs.drugs_3
+  },
   methods: {
     setDrugs () {
       const drugs = {

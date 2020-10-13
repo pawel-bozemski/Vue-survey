@@ -1,5 +1,9 @@
 const state = {
-  diet: [],
+  diet: {
+    diet_1: '',
+    diet_2: '',
+    diet_3: ''
+  },
   diet_1: [
     { id: 1, name: 'diet_1', value: 'zdrowe', title: 'Skomponowane pod kątem zdrowego odżywiania' },
     { id: 2, name: 'diet_1', value: 'bezmiesne', title: 'Bezmięsne' },

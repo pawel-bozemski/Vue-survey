@@ -1,5 +1,9 @@
 const state = {
-  drugs: [],
+  drugs: {
+    drugs_1: '',
+    drugs_2: '',
+    drugs_3: ''
+  },
   drugs_1: [
     { id: 1, name: 'drugs_1', value: 'everyday1', title: 'Codziennie' },
     { id: 2, name: 'drugs_1', value: 'weekly1', title: 'Kilka razy w tygodniu' },

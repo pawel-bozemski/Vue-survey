@@ -144,15 +144,19 @@ export default {
       }
     }
   },
-
   computed: {
     ...mapGetters({
       sport_1Questions: 'sport_1',
       sport_2Questions: 'sport_2',
-      sport_3Questions: 'sport_3'
+      sport_3Questions: 'sport_3',
+      sport: 'sport'
     })
   },
-
+  mounted: function () {
+    this.sport_1 = this.sport.sport_1
+    this.sport_2 = this.sport.sport_2
+    this.sport_3 = this.sport.sport_3
+  },
   methods: {
     setSport () {
       const sport = {

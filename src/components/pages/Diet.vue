@@ -186,11 +186,17 @@ export default {
       disable: true
     }
   },
+  mounted: function () {
+    this.diet_1 = this.diet.diet_1
+    this.diet_2 = this.diet.diet_2
+    this.diet_3 = this.diet.diet_3
+  },
   computed: {
     ...mapGetters({
       diet_1Questions: 'diet_1',
       diet_2Questions: 'diet_2',
-      diet_3Questions: 'diet_3'
+      diet_3Questions: 'diet_3',
+      diet: 'diet'
     })
   },
   methods: {

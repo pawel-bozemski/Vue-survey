@@ -1,5 +1,9 @@
 const state = {
-  health: [],
+  health: {
+    health_1: '',
+    health_2: [],
+    health_3: []
+  },
   health_1: [
     { id: 1, name: 'health_1', value: 'yes', title: 'Tak' },
     { id: 2, name: 'health_1', value: 'no', title: 'Nie' }

@@ -6,8 +6,8 @@ const state = {
     education: ''
   },
   gender: [
-    { id: 1, name: 'gender', value: 'female', title: 'Kobieta' },
-    { id: 2, name: 'gender', value: 'male', title: 'Mężczyzna' }
+    { id: 1, name: 'gender', value: 'female', title: 'Kobieta', checked: true },
+    { id: 2, name: 'gender', value: 'male', title: 'Mężczyzna', checked: false }
   ],
   age: [
     { id: 1, name: 'age', value: '18-24', title: '18-24' },

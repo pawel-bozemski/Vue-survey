@@ -1,5 +1,9 @@
 const state = {
-  sport: [],
+  sport: {
+    sport_1: '',
+    sport_2: '',
+    sport_3: ''
+  },
   sport_1: [
     { id: 1, name: 'sport_1', value: 'none1', title: 'Nie wychodzę z domu/ Nie spaceruję z powodów zdrowotnych' },
     { id: 2, name: 'sport_1', value: '30min', title: '30 – 60 minut' },

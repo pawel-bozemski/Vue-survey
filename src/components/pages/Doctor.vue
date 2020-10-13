@@ -149,8 +149,14 @@ export default {
     ...mapGetters({
       doctor_1Questions: 'doctor_1',
       doctor_2Questions: 'doctor_2',
-      doctor_3Questions: 'doctor_3'
+      doctor_3Questions: 'doctor_3',
+      doctor: 'doctor'
     })
+  },
+  mounted: function () {
+    this.doctor_1 = this.doctor.doctor_1
+    this.doctor_2 = this.doctor.doctor_2
+    this.doctor_3 = this.doctor.doctor_3
   },
   methods: {
     setDoctor () {

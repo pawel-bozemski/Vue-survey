@@ -122,11 +122,17 @@ export default {
       disable: true
     }
   },
+  mounted: function () {
+    this.cost_1 = this.cost.cost_1
+    this.cost_2 = this.cost.cost_2
+    this.cost_3 = this.cost.cost_3
+  },
   computed: {
     ...mapGetters({
       cost_1Questions: 'cost_1',
       cost_2Questions: 'cost_2',
-      cost_3Questions: 'cost_3'
+      cost_3Questions: 'cost_3',
+      cost: 'cost'
     })
   },
   methods: {

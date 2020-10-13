@@ -21,7 +21,6 @@
                 :id="question.value"
                 :value="question.value"
                 v-model="gender"
-                :checked="gender"
               />
             </span>
           </label>
@@ -124,6 +123,12 @@ export default {
       education: '',
       disable: true
     }
+  },
+  mounted: function () {
+    this.gender = this.interview.gender
+    this.age = this.interview.age
+    this.location = this.interview.location
+    this.education = this.interview.education
   },
   computed: {
     ...mapGetters({

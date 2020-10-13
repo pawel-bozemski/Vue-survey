@@ -1,5 +1,9 @@
 const state = {
-  doctor: [],
+  doctor: {
+    doctor_1: '',
+    doctor_2: '',
+    doctor_3: ''
+  },
   doctor_1: [
     { id: 1, name: 'doctor_1', value: 'halfYear1', title: 'Mniej niż 6 miesięcy temu' },
     { id: 2, name: 'doctor_1', value: 'year1', title: '6 - 12 miesięcy temu' },

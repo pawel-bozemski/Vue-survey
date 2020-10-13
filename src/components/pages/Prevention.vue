@@ -179,18 +179,22 @@ export default {
         this.disable = false
       }
     }
-
   },
-
   computed: {
     ...mapGetters({
       prevention_1Questions: 'prevention_1',
       prevention_2Questions: 'prevention_2',
       prevention_3Questions: 'prevention_3',
-      prevention_4Questions: 'prevention_4'
+      prevention_4Questions: 'prevention_4',
+      prevention: 'prevention'
     })
   },
-
+  mounted: function () {
+    this.prevention_1 = this.prevention.prevention_1
+    this.prevention_2 = this.prevention.prevention_2
+    this.prevention_3 = this.prevention.prevention_3
+    this.prevention_4 = this.prevention.prevention_4
+  },
   methods: {
     setPrevention () {
       const prevention = {
