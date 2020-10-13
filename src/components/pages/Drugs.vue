@@ -42,7 +42,7 @@
 
     <div class="jumbotron">
       <h4>
-        Czy pali Pan/Pani poniższe rodzaje wyrobów tytoniowych? - Tradycyjne wyroby tytoniowe
+        Czy pali Pan/Pani tradycyjne wyroby tytoniowe?
       </h4>
       <div class="questions">
         <div

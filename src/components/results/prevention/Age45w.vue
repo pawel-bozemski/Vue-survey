@@ -3,9 +3,7 @@
     <div class="jumbotron">
       <h4>Czy w ciągu ostatniego roku wykonywała Pani morfologię?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.prevention.prevention_1 == 'yes1'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_1 == 'yes1', 'not__visible' : this.prevention.prevention_1 !== 'yes1'}">Twój wynik</p>
@@ -32,9 +30,7 @@
     <div class="jumbotron">
       <h4>Czy w ciągu ostatniego roku robiła Pani pomiar ciśnienia krwi?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.prevention.prevention_2 == 'yes2'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_2 == 'yes2', 'not__visible' : this.prevention.prevention_2 !== 'yes2'}">Twój wynik</p>
@@ -60,9 +56,7 @@
     <div class="jumbotron">
       <h4>Czy w ciągu ostaniego roku temu mierzyła Pani poziom cukru we krwi?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.prevention.prevention_3 == 'yes3'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_3 == 'yes3', 'not__visible' : this.prevention.prevention_3 !== 'yes3'}">Twój wynik</p>
@@ -88,9 +82,7 @@
     <div class="jumbotron">
       <h4>Jak często wykonuje Pani samobadania jako profilaktykę raka piersi?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.prevention.prevention_4 == 'weekly'}" style="width:20%">
             <p :class="{'visible' : this.prevention.prevention_4 == 'weekly', 'not__visible' : this.prevention.prevention_4 !== 'weekly'}">Twój wynik</p>

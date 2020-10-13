@@ -3,9 +3,7 @@
     <div class="jumbotron">
       <h4>Czy pije Pani/Pani poniższe rodzaje alkoholi? (Piwo, Wino, Wódka, Inne alkohole)</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'everyday1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'everyday1', 'not__visible' : this.drugs.drugs_1 !== 'everyday1'}">Twój wynik</p>
@@ -50,9 +48,7 @@
     <div class="jumbotron">
       <h4>Czy pali Pan/Pani poniższe rodzaje wyrobów tytoniowych? - Tradycyjne wyroby tytoniowe</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.drugs.drugs_2 == 'everyday2'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'everyday2', 'not__visible' : this.drugs.drugs_2 !== 'everyday2'}">Twój wynik</p>
@@ -90,9 +86,7 @@
     <div class="jumbotron">
       <h4>Czy pali Pan/Pani alternatywne papierosy – podgrzewacze tytoniu?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.drugs.drugs_3 == 'everyday3'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_3 == 'everyday3', 'not__visible' : this.drugs.drugs_3 !== 'everyday3'}">Twój wynik</p>

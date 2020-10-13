@@ -3,9 +3,7 @@
     <div class="jumbotron">
       <h4>Jakie posiłki spożywa Pan/Pani najczęściej</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.diet.diet_1 == 'zdrowe'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'zdrowe', 'not__visible' : this.diet.diet_1 !== 'zdrowe'}">Twój wynik</p>
@@ -50,9 +48,7 @@
     <div class="jumbotron">
       <h4>Jak często jada Pan/Pani produkty typu fast-food (hamburgery, frytki, hot-dog itp.)?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.diet.diet_2 == 'everyday2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'everyday2', 'not__visible' : this.diet.diet_2 !== 'everyday2'}">Twój wynik</p>
@@ -96,9 +92,7 @@
     <div class="jumbotron">
       <h4>Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.diet.diet_3 == 'everyday3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'everyday3', 'not__visible' : this.diet.diet_3 !== 'everyday3'}">Twój wynik</p>

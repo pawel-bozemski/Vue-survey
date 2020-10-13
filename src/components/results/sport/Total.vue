@@ -3,9 +3,7 @@
     <div class="jumbotron">
       <h4>Ile średnio Pan/Pani codziennie spaceruje – wliczając w to czas poświęcony nie tylko na relaks, ale również na dotarcie np. do pracy?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.sport.sport_1 == 'none1'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_1 == 'none1', 'not__visible' : this.sport.sport_1 !== 'none1'}">Twój wynik</p>
@@ -43,9 +41,7 @@
     <div class="jumbotron">
       <h4>Jak często uprawia Pan/Pani sport?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.sport.sport_2 == 'none2'}" style="width:25%">
             <p :class="{'visible' : this.sport.sport_2 == 'none2', 'not__visible' : this.sport.sport_2 !== 'none2'}">Twój wynik</p>
@@ -83,9 +79,7 @@
     <div class="jumbotron">
       <h4>Jak ocenia Pan/Pani swoją kondycję fizyczną w porównaniu z innymi osobami w tym samym wieku ?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.sport.sport_3 == 'good'}" style="width:33%">
             <p :class="{'visible' : this.sport.sport_3 == 'good', 'not__visible' : this.sport.sport_3 !== 'good'}">Twój wynik</p>

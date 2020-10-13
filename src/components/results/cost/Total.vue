@@ -3,9 +3,6 @@
     <div class="jumbotron">
       <h4>Czy kiedykolwiek ze względu na koszty zrezygnował/a Pan/Pani z wizyty u lekarza?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
         <div class="bar">
           <div class="result one" :class="{'active' : this.cost.cost_1 == 'yes1'}" style="width:33%">
             <p :class="{'visible' : this.cost.cost_1 == 'yes1', 'not__visible' : this.cost.cost_1 !== 'yes1'}">Twój wynik</p>
@@ -37,9 +34,7 @@
     <div class="jumbotron">
       <h4>Czy kiedykolwiek nie było stać Pana/Pani na wykupienie leku na receptę?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.cost.cost_2 == 'yes2'}" style="width:33%">
             <p :class="{'visible' : this.cost.cost_2 == 'yes2', 'not__visible' : this.cost.cost_2 !== 'yes2'}">Twój wynik</p>
@@ -70,9 +65,7 @@
     <div class="jumbotron">
       <h4>Czy miał(a)by Pan/Pani problem z dojazdem do lekarza na umówioną wizytę?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.cost.cost_3 == 'yes3'}" style="width:50%">
             <p :class="{'visible' : this.cost.cost_3 == 'yes3', 'not__visible' : this.cost.cost_3 !== 'yes3'}">Twój wynik</p>

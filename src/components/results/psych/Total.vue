@@ -3,9 +3,7 @@
     <div class="jumbotron">
       <h4>Czy i jak często znajduje się Pan/Pani w stresujących sytuacjach?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.psych.psych_1 == 'daily1'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_1 == 'daily1', 'not__visible' : this.psych.psych_1 !== 'daily1'}">Twój wynik</p>
@@ -50,9 +48,7 @@
     <div class="jumbotron">
       <h4>Czy znajduje Pan/Pani czas na spotkania z przyjaciółmi i rodziną?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.psych.psych_2 == 'daily2'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_2 == 'daily2', 'not__visible' : this.psych.psych_2 !== 'daily2'}">Twój wynik</p>
@@ -96,9 +92,7 @@
     <div class="jumbotron">
       <h4>Jak długo przeważnie Pan/Pani śpi w trakcie doby?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.psych.psych_3 == 'low'}" style="width:33%">
             <p :class="{'visible' : this.psych.psych_3 == 'low', 'not__visible' : this.psych.psych_3 !== 'low'}">Twój wynik</p>

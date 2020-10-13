@@ -130,7 +130,7 @@
           <div class="result one" :class="{'active' : this.bmi >= 25 && this.bmi < 30}" style="width:25%">
             <p :class="{'visible' : this.bmi >= 25 && this.bmi < 30, 'not__visible' : this.bmi <= 25 || this.bmi >= 30}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.bmi>= 30}" style="width:25%">
+          <div class="result two"  :class="{'active' : this.bmi >= 30}" style="width:25%">
             <p :class="{'visible' : this.bmi >= 30, 'not__visible' : this.bmi <= 30}">Twój wynik</p>
           </div>
         </div>
@@ -180,7 +180,7 @@ export default {
       diet_1: '',
       diet_2: '',
       diet_3: '',
-      bmi: '',
+      bmi: 0,
       height: '',
       mass: '',
       disable: true
@@ -216,21 +216,28 @@ export default {
   },
   watch: {
     diet_1: function () {
-      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '') {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '' || this.bmi === 0) {
         this.disable = true
       } else {
         this.disable = false
       }
     },
     diet_2: function () {
-      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '') {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '' || this.bmi === 0) {
         this.disable = true
       } else {
         this.disable = false
       }
     },
     diet_3: function () {
-      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '') {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '' || this.bmi === 0) {
+        this.disable = true
+      } else {
+        this.disable = false
+      }
+    },
+    bmi: function () {
+      if (this.diet_1 === '' || this.diet_2 === '' || this.diet_3 === '' || this.bmi === 0) {
         this.disable = true
       } else {
         this.disable = false

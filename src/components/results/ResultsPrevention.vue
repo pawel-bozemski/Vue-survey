@@ -2,6 +2,30 @@
   <div class="interview">
     <h1>Wyniki Badanie</h1>
     <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
+    <div class="jumbotron">
+      <div v-if="this.pointsTotal >= 5" class="card">
+        <div class="card-body">
+          <p>
+            Brawo, Twój wynik jest powyżej średniej. Twój ogólny stan zdrowia jest dobry.<br>
+            Stosujesz zbilansowaną dietę, nie przesadzasz z używkami, wiesz jak ważny jest ruch i odpoczynek.<br>
+            Zapominasz jednak, jak ważna jest profilaktyka medyczna.<br>
+            Sprawdź, jakie badania są zalecane dla Twojego wieku i rób je regularnie.<br>
+          </p>
+        </div>
+      </div>
+      <div v-else class="card">
+        <div class="card-body">
+          <p>
+            Niestety, Twój wynik jest poniżej średniej.<br>
+            Powinieneś zadbać o polepszenie swojego stanu zdrowia.<br>
+            Stosuj  zbilansowaną dietę, nie przesadzaj z używkami, znajdź czas na ruch i relaks.<br>
+            Ale przede wszystkim nie zapominaj o profilaktyce medycznej.<br>
+            Sprawdź, jakie badania są zalecane dla Twojego wieku i rób je regularnie.<br>
+         </p>
+        </div>
+      </div>
+    </div>
+
     <app-age18m v-if="this.interview.age == '18-24' && this.interview.gender == 'male'"></app-age18m>
     <app-age25m v-else-if="this.interview.age == '25-34' && this.interview.gender == 'male'"></app-age25m>
     <app-age35m v-else-if="this.interview.age == '35-44' && this.interview.gender == 'male'"></app-age35m>
@@ -66,8 +90,48 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters({
-      interview: 'interview'
+      interview: 'interview',
+      prevention: 'prevention'
     })
+  },
+  data () {
+    return {
+      points_1: 0,
+      points_2: 0,
+      points_3: 0,
+      points_4: 0,
+      pointsTotal: 0
+    }
+  },
+  mounted: function () {
+    if (this.prevention.prevention_1 === 'yes1') {
+      this.points_1 = 2
+    } else if (this.prevention.prevention_1 === 'no1') {
+      this.points_1 = 0
+    }
+    if (this.prevention.prevention_2 === 'yes2') {
+      this.points_2 = 2
+    } else if (this.prevention.prevention_2 === 'no2') {
+      this.points_2 = 0
+    }
+    if (this.prevention.prevention_3 === 'yes3') {
+      this.points_3 = 2
+    } else if (this.prevention.prevention_3 === 'no3') {
+      this.points_3 = 0
+    }
+    if (this.prevention.prevention_4 === 'weekly') {
+      this.points_4 = 2
+    } else if (this.prevention.prevention_4 === 'monthly') {
+      this.points_4 = 2
+    } else if (this.prevention.prevention_4 === 'yearly') {
+      this.points_4 = 1
+    } else if (this.prevention.prevention_4 === 'almostNever') {
+      this.points_4 = 0
+    } else if (this.prevention.prevention_4 === 'never') {
+      this.points_4 = 0
+    }
+
+    this.pointsTotal = this.points_1 + this.points_2 + this.points_3 + this.points_4
   },
   components: {
     appAge18m: Age18m,

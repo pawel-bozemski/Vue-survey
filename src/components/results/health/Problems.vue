@@ -4,9 +4,7 @@
       <h4>Czy któraś z tych dolegliwości pojawia się u Pan/Pani co najmniej kilka razy w miesiącu?</h4>
       <div class="questions">
         <h4>Ból pleców</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('back') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('back') == true, 'not__visible' : this.health.health_3.includes('back') !== true}">Twój wynik</p>
@@ -30,9 +28,7 @@
 
       <div class="questions">
         <h4>Ból głowy</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('head') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('head') == true, 'not__visible' : this.health.health_3.includes('head') !== true}">Twój wynik</p>
@@ -56,9 +52,7 @@
 
       <div class="questions">
         <h4>Ból w klatce piersiowej</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('chest') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('chest') == true, 'not__visible' : this.health.health_3.includes('chest') !== true}">Twój wynik</p>
@@ -81,9 +75,7 @@
       </div>
       <div class="questions">
         <h4>Zgaga</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('burn') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('burn') == true, 'not__visible' : this.health.health_3.includes('burn') !== true}">Twój wynik</p>
@@ -107,9 +99,7 @@
 
       <div class="questions">
         <h4>Drętwienie kończyn</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('arms') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('arms') == true, 'not__visible' : this.health.health_3.includes('arms') !== true}">Twój wynik</p>
@@ -132,9 +122,7 @@
       </div>
       <div class="questions">
         <h4>Bezsenność</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('insomnia') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('insomnia') == true, 'not__visible' : this.health.health_3.includes('insomnia') !== true}">Twój wynik</p>
@@ -157,9 +145,7 @@
       </div>
       <div class="questions">
         <h4>Zaparcia</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('constipation') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('constipation') == true, 'not__visible' : this.health.health_3.includes('constipation') !== true}">Twój wynik</p>
@@ -182,9 +168,7 @@
       </div>
       <div class="questions">
         <h4>Senność w ciągu dnia</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('sleepy') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('sleepy') == true, 'not__visible' : this.health.health_3.includes('sleepy') !== true}">Twój wynik</p>
@@ -207,9 +191,7 @@
       </div>
       <div class="questions">
         <h4>Nadmierne pragnienie</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('thirst') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('thirst') == true, 'not__visible' : this.health.health_3.includes('thirst') !== true}">Twój wynik</p>
@@ -219,8 +201,8 @@
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') == true, 'one__bg' : this.health.health_3.includes('thirst') !== true}" style="width:11%">50%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') !== true, 'two__bg' : this.health.health_3.includes('thirst') == true}" style="width:89%">50%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') == true, 'one__bg' : this.health.health_3.includes('thirst') !== true}" style="width:50%">50%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') !== true, 'two__bg' : this.health.health_3.includes('thirst') == true}" style="width:50%">50%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -232,9 +214,7 @@
       </div>
       <div class="questions">
         <h4>Niewyraźne widzenie</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('blured') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('blured') == true, 'not__visible' : this.health.health_3.includes('blured') !== true}">Twój wynik</p>
@@ -257,9 +237,7 @@
       </div>
       <div class="questions">
         <h4>Nietrzymanie moczu</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('urea') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('urea') == true, 'not__visible' : this.health.health_3.includes('urea') !== true}">Twój wynik</p>
@@ -282,9 +260,7 @@
       </div>
       <div class="questions">
         <h4>Psychiczne, emocjonalne lub fizyczne wyczerpanie pracą</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('psych') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('psych') == true, 'not__visible' : this.health.health_3.includes('psych') !== true}">Twój wynik</p>
@@ -307,9 +283,7 @@
       </div>
       <div class="questions">
         <h4>Zaburzenia pamięci</h4>
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.health.health_3.includes('memory') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_3.includes('memory') == true, 'not__visible' : this.health.health_3.includes('memory') !== true}">Twój wynik</p>

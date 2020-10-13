@@ -3,9 +3,7 @@
     <div class="jumbotron">
       <h4>Kiedy ostatnio był/a Pan/Pani na wizycie u lekarza pierwszego kontaktu?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.doctor.doctor_1 == 'halfYear1'}" style="width:25%">
             <p :class="{'visible' : this.doctor.doctor_1 == 'halfYear1', 'not__visible' : this.doctor.doctor_1 !== 'halfYear1'}">Twój wynik</p>
@@ -43,9 +41,7 @@
     <div class="jumbotron">
       <h4>Kiedy ostatnio leczył/a się  Pan/Pani u lekarza specjalisty?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.doctor.doctor_2 == 'halfYear2'}" style="width:25%">
             <p :class="{'visible' : this.doctor.doctor_2 == 'halfYear2', 'not__visible' : this.doctor.doctor_2 !== 'halfYear2'}">Twój wynik</p>
@@ -83,9 +79,7 @@
     <div class="jumbotron">
       <h4>Kiedy ostatnio odwiedzał/a Pan/Pani dentystę lub ortodontę?</h4>
       <div class="questions">
-        <div class="form-check form-check-inline question-box">
-          <h6>Wiek: {{ this.interview.age }} lata</h6>
-        </div>
+
         <div class="bar">
           <div class="result one" :class="{'active' : this.doctor.doctor_3 == 'halfYear3'}" style="width:25%">
             <p :class="{'visible' : this.doctor.doctor_3 == 'halfYear3', 'not__visible' : this.doctor.doctor_3 !== 'halfYear3'}">Twój wynik</p>
