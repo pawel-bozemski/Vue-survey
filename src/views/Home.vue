@@ -67,6 +67,9 @@ h6 {
   font-size: 25px;
   font-weight: bold;
 }
+.btn {
+  color: white;
+}
 
 @media (max-width: 1024px) {
   .image {

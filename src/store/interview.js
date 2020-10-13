@@ -2,8 +2,7 @@ const state = {
   interview: {
     gender: '',
     age: '',
-    location: '',
-    education: ''
+    location: ''
   },
   gender: [
     { id: 1, name: 'gender', value: 'female', title: 'Kobieta', checked: true },
@@ -25,11 +24,6 @@ const state = {
     { id: 5, name: 'location', value: 'city100k', title: 'miasto 100-199 tys. mieszkańców' },
     { id: 6, name: 'location', value: 'city200k', title: 'miasto 200-499 mieszkańców' },
     { id: 7, name: 'location', value: 'city500k', title: 'miasto 500 + tys. mieszkańców' }
-  ],
-  education: [
-    { id: 1, name: 'education', value: 'elementary', title: 'podstawowe' },
-    { id: 2, name: 'education', value: 'secondary', title: 'średnie' },
-    { id: 3, name: 'education', value: 'higher', title: 'wyższe' }
   ]
 }
 

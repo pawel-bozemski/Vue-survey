@@ -77,30 +77,6 @@
     </div>
     <img class="image2" src="../imgs/interview/pan.png" alt="">
     <div class="jumbotron">
-      <h4>Wykształcenie</h4>
-      <div class="questions">
-        <div
-          class="form-check form-check-inline question-box"
-          v-for="question in educationQuestions"
-          :key="question.id"
-        >
-          <label class="form-check-label" :for="question.value">
-            {{ question.title }}
-            <span>
-              <input
-                class="input"
-                type="radio"
-                :name="question.value"
-                :id="question.value"
-                :value="question.value"
-                v-model="education"
-              />
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron">
       <router-link to="/diet">
         <button class="btn btn-warning"
           :disabled="this.disable"
@@ -120,7 +96,6 @@ export default {
       gender: '',
       age: '',
       location: '',
-      education: '',
       disable: true
     }
   },
@@ -128,41 +103,32 @@ export default {
     this.gender = this.interview.gender
     this.age = this.interview.age
     this.location = this.interview.location
-    this.education = this.interview.education
   },
   computed: {
     ...mapGetters({
       genderQuestions: 'gender',
       ageQuestions: 'age',
       locationQuestions: 'location',
-      educationQuestions: 'education',
       interview: 'interview'
     })
   },
   watch: {
     gender: function () {
-      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+      if (this.gender === '' || this.age === '' || this.location === '') {
         this.disable = true
       } else {
         this.disable = false
       }
     },
     age: function () {
-      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+      if (this.gender === '' || this.age === '' || this.location === '') {
         this.disable = true
       } else {
         this.disable = false
       }
     },
     location: function () {
-      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
-        this.disable = true
-      } else {
-        this.disable = false
-      }
-    },
-    education: function () {
-      if (this.gender === '' || this.age === '' || this.location === '' || this.education === '') {
+      if (this.gender === '' || this.age === '' || this.location === '') {
         this.disable = true
       } else {
         this.disable = false
@@ -174,8 +140,7 @@ export default {
       const interview = {
         gender: this.gender,
         age: this.age,
-        location: this.location,
-        education: this.education
+        location: this.location
       }
       this.$store.dispatch('setInterview', interview)
     }

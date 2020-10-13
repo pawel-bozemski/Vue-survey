@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <h1>Wyniki Dieta</h1>
-    <h4 style="color:orange">Sprawdź jak wypadasz na tle społeczeństwa</h4>
+    <h4 style="color:orange">Sprawdź, jak wypadasz na tle podobnych do Ciebie osób</h4>
     <div class="jumbotron">
       <div v-if="this.pointsTotal >= 5" class="card">
         <div class="card-body">
