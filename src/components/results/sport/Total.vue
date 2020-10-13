@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Ile średnio Pan/Pani codziennie spaceruje – wliczając w to czas poświęcony nie tylko na relaks, ale również na dotarcie np. do pracy?</h4>
+      <h4>Jak długo spacerujesz podczas dnia, wliczając w to czas poświęcony nie tylko na relaks, ale również na dotarcie np. do pracy?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -39,7 +39,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak często uprawia Pan/Pani sport?</h4>
+      <h4>Jak często uprawiasz sport?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -77,7 +77,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak ocenia Pan/Pani swoją kondycję fizyczną w porównaniu z innymi osobami w tym samym wieku ?</h4>
+      <h4>Jak oceniasz swoją kondycję fizyczną na tle osób w tym samym wieku?</h4>
       <div class="questions">
 
         <div class="bar">

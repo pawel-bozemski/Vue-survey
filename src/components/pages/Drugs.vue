@@ -14,7 +14,7 @@
     <h1>Używki</h1>
     <div class="jumbotron">
       <h4>
-        Czy pije Pani/Pani poniższe rodzaje alkoholi? (Piwo, Wino, Wódka, Inne alkohole)
+        Jak często pijesz alkohol? (piwo, wino, wódka, inne)
       </h4>
       <div class="questions">
       <img class="image1" src="../../imgs/drugs/dinner.png" alt="">
@@ -42,7 +42,7 @@
 
     <div class="jumbotron">
       <h4>
-        Czy pali Pan/Pani tradycyjne wyroby tytoniowe?
+        Czy palisz tradycyjne papierosy?
       </h4>
       <div class="questions">
         <div
@@ -69,7 +69,7 @@
 
     <div class="jumbotron">
       <h4>
-        Czy pali Pan/Pani alternatywne papierosy – podgrzewacze tytoniu?
+       Czy palisz alternatywne papierosy – podgrzewacze tytoniu?
       </h4>
       <div class="questions">
         <div

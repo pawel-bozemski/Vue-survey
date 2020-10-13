@@ -14,7 +14,8 @@
     <h1>Zdrowie fizyczne</h1>
     <div class="jumbotron">
       <h4>
-        Ile średnio Pan/Pani codziennie spaceruje – wliczając w to czas poświęcony nie tylko na relaks, ale również na dotarcie np. do pracy?      </h4>
+        Jak długo spacerujesz podczas dnia, wliczając w to czas poświęcony nie tylko na relaks, ale również na dotarcie np. do pracy?
+      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
@@ -40,7 +41,7 @@
     <img class="image1" src="../../imgs/sport/podroz.png" alt="">
     <div class="jumbotron">
       <h4>
-        Jak często uprawia Pan/Pani sport?
+        Jak często uprawiasz sport?
       </h4>
       <div class="questions">
         <div
@@ -67,7 +68,7 @@
     <img class="image2" src="../../imgs/sport/rower.png" alt="">
     <div class="jumbotron">
       <h4>
-        Jak ocenia Pan/Pani swoją kondycję fizyczną w porównaniu z innymi osobami w tym samym wieku ?
+        Jak oceniasz swoją kondycję fizyczną na tle osób w tym samym wieku?
       </h4>
       <div class="questions">
         <div

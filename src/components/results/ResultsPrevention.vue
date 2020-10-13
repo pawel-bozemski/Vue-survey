@@ -46,7 +46,7 @@
           Wstecz
         </button>
       </router-link>
-      <router-link to="/resultsdoctor">
+      <router-link to="/finish">
         <button class="btn btn-warning">
           Dalej >>>>
         </button>

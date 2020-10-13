@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Czy i jak często znajduje się Pan/Pani w stresujących sytuacjach?</h4>
+      <h4>Czy i jak często znajdujesz się w stresujących sytuacjach?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -46,7 +46,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Czy znajduje Pan/Pani czas na spotkania z przyjaciółmi i rodziną?</h4>
+      <h4>Czy spotykasz się z przyjaciółmi i rodziną? </h4>
       <div class="questions">
 
         <div class="bar">
@@ -90,7 +90,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak długo przeważnie Pan/Pani śpi w trakcie doby?</h4>
+      <h4>Ile czasu w trakcie doby przeznaczasz na sen? </h4>
       <div class="questions">
 
         <div class="bar">

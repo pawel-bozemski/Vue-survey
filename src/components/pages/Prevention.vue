@@ -125,7 +125,7 @@
           Wstecz
         </button>
       </router-link>
-      <router-link to="/doctor">
+      <router-link to="/resultsdiet">
         <button
         :disabled="this.disable"
         class="btn btn-warning"

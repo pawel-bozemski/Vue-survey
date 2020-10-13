@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Jakie posiłki spożywa Pan/Pani najczęściej</h4>
+      <h4>Jak się odżywiasz? Najczęściej jem posiłki:</h4>
       <div class="questions">
 
         <div class="bar">
@@ -46,7 +46,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak często jada Pan/Pani produkty typu fast-food (hamburgery, frytki, hot-dog itp.)?</h4>
+      <h4>Jak często w Twojej diecie pojawiają się dania typu fast-food (hamburgery, frytki, hot-dogi itp.)?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -90,7 +90,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?</h4>
+      <h4>Jak często sięgasz po dosładzane napoje, gazowane i niegazowane?</h4>
       <div class="questions">
 
         <div class="bar">

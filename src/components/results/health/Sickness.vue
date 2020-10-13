@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Czy cierpi Pan/Pani jakieś przewlekłe (trwające, lub mające trwać przynajmniej 6 miesięcy) problemy ze zdrowiem?</h4>
+      <h4>Czy cierpisz z powodu przewlekłych (trwających już min. pół roku lub szacowanych na min. 6 miesięcy) problemów ze zdrowiem? </h4>
       <div class="questions">
 
         <div class="bar">
@@ -27,7 +27,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Czy stwierdzono u Pana/Pani kiedyś lub obecnie następujące choroby?</h4>
+      <h4>Czy stwierdzono u Ciebie (teraz lub kiedyś) następujące choroby?</h4>
       <div class="questions">
         <h4>Nadciśnienie</h4>
 

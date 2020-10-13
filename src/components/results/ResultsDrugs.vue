@@ -20,7 +20,7 @@
             Niestety, Twój wynik jest poniżej średniej.<br>
              Twoja kondycja psychiczna i fizyczna jest nienajlepsza.<br>
              Pamiętaj więc o zbilansowanej diecie, nie bagatelizuj żadnych dolegliwości.<br>
-             Ale przede wszystkim    zrezygnuj lub ogranicz niepotrzebne używki.<br>
+             Ale przede wszystkim zrezygnuj lub ogranicz niepotrzebne używki.<br>
              Ci na pewno wyjdzie na plus i znacznie poprawi stan zdrowia.<br>
             </p>
         </div>

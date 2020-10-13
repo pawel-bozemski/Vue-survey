@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Czy pije Pani/Pani poniższe rodzaje alkoholi? (Piwo, Wino, Wódka, Inne alkohole)</h4>
+      <h4>Jak często pijesz alkohol? (piwo, wino, wódka, inne)</h4>
       <div class="questions">
 
         <div class="bar">
@@ -46,7 +46,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Czy pali Pan/Pani poniższe rodzaje wyrobów tytoniowych? - Tradycyjne wyroby tytoniowe</h4>
+      <h4>Czy palisz tradycyjne papierosy?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -84,7 +84,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Czy pali Pan/Pani alternatywne papierosy – podgrzewacze tytoniu?</h4>
+      <h4>Czy palisz alternatywne papierosy – podgrzewacze tytoniu?</h4>
       <div class="questions">
 
         <div class="bar">

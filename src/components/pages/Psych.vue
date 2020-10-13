@@ -14,7 +14,8 @@
     <h1>Higiena psychiczna</h1>
     <div class="jumbotron">
       <h4>
-        Czy i jak często znajduje się Pan/Pani w stresujących sytuacjach?</h4>
+        Czy i jak często znajdujesz się w stresujących sytuacjach?
+      </h4>
       <img class="image1" src="../../imgs/psych/panie.png" alt="">
       <div class="questions">
         <div
@@ -41,7 +42,7 @@
 
     <div class="jumbotron">
       <h4>
-        Czy znajduje Pan/Pani czas na spotkania z przyjaciółmi i rodziną?
+        Czy spotykasz się z przyjaciółmi i rodziną?
       </h4>
       <div class="questions">
         <div
@@ -69,7 +70,7 @@
 
     <div class="jumbotron">
       <h4>
-        Jak długo przeważnie Pan/Pani śpi w trakcie doby?
+        Ile czasu w trakcie doby przeznaczasz na sen?
       </h4>
       <div class="questions">
         <div

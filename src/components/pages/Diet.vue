@@ -13,7 +13,7 @@
     </div>
     <h1>Dieta</h1>
     <div class="jumbotron">
-      <h4>Jakie posiłki spożywa Pan/Pani najczęściej</h4>
+      <h4>Jak się odżywiasz? Najczęściej jem posiłki:</h4>
       <img class="image1" src="../../imgs/diet/sub.png" alt="">
       <div class="questions">
         <div
@@ -39,9 +39,7 @@
     </div>
     <div class="jumbotron">
       <h4>
-        Jak często jada Pan/Pani produkty typu fast-food <br />(hamburgery,
-        frytki, hot-dog itp.)?
-      </h4>
+        Jak często w Twojej diecie pojawiają się dania typu fast-food (hamburgery, frytki, hot-dogi itp.)?      </h4>
       <div class="questions">
         <div
           class="form-check form-check-inline question-box"
@@ -67,7 +65,7 @@
     <img class="image2" src="../../imgs/diet/apple.png" alt="">
     <div class="jumbotron">
       <h4>
-        Jak często pije Pan/Pani napoje słodzone, gazowane lub niegazowane?
+        Jak często sięgasz po dosładzane napoje, gazowane i niegazowane?
       </h4>
       <div class="questions">
         <div

@@ -14,7 +14,7 @@
     <h1>Problemy zdrowotne</h1>
     <div class="jumbotron">
       <h4>
-        Czy cierpi Pan/Pani jakieś przewlekłe (trwające, lub mające trwać przynajmniej 6 miesięcy) problemy ze zdrowiem?
+       Czy cierpisz z powodu przewlekłych (trwających już min. pół roku lub szacowanych na min. 6 miesięcy) problemów ze zdrowiem?
       </h4>
       <div class="questions">
         <div
@@ -41,7 +41,7 @@
     </div>
     <div class="jumbotron">
       <h4>
-        Czy stwierdzono u Pana/Pani kiedyś lub obecnie następujące choroby?
+        Czy stwierdzono u Ciebie (teraz lub kiedyś) następujące choroby?
       </h4>
       <div class="questions">
         <div
@@ -68,7 +68,7 @@
 
     <div class="jumbotron">
       <h4>
-        Czy któraś z tych dolegliwości pojawia się u Pan/Pani co najmniej kilka razy w miesiącu?
+        Czy doświadczasz którejś z tych dolegliwości co najmniej kilka razy w miesiącu?
       </h4>
       <img class="image2" src="../../imgs/health/med.png" alt="">
       <div class="questions">

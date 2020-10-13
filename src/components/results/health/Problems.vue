@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Czy któraś z tych dolegliwości pojawia się u Pan/Pani co najmniej kilka razy w miesiącu?</h4>
+      <h4>Czy doświadczasz którejś z tych dolegliwości co najmniej kilka razy w miesiącu?</h4>
       <div class="questions">
         <h4>Ból pleców</h4>
 

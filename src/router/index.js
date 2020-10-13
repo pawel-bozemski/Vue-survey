@@ -9,8 +9,6 @@ import Psych from '../components/pages/Psych'
 import Sport from '../components/pages/Sport'
 import Health from '../components/pages/Health'
 import Prevention from '../components/pages/Prevention'
-import Doctor from '../components/pages/Doctor'
-import Cost from '../components/pages/Cost'
 import Interview from '../components/Interview'
 import ResultsDiet from '../components/results/ResultsDiet'
 import ResultsDrugs from '../components/results/ResultsDrugs'
@@ -19,8 +17,6 @@ import ResultsSport from '../components/results/ResultsSport'
 import ResultsHealth1 from '../components/results/ResultsHealth1'
 import ResultsHealth2 from '../components/results/ResultsHealth2'
 import ResultsPrevention from '../components/results/ResultsPrevention'
-import ResultsDoctor from '../components/results/ResultsDoctor'
-import ResultsCost from '../components/results/ResultsCost'
 
 Vue.use(VueRouter)
 
@@ -39,11 +35,6 @@ const routes = [
     path: '/diet',
     name: 'Diet',
     component: Diet
-  },
-  {
-    path: '/cost',
-    name: 'cost',
-    component: Cost
   },
   {
     path: '/health',
@@ -70,12 +61,6 @@ const routes = [
     name: 'Psych',
     component: Psych
   },
-  {
-    path: '/doctor',
-    name: 'doctor',
-    component: Doctor
-  },
-
   {
     path: '/interview',
     name: 'interview',
@@ -116,17 +101,6 @@ const routes = [
     name: 'resultsprevention',
     component: ResultsPrevention
   },
-  {
-    path: '/resultsdoctor',
-    name: 'resultsdoctor',
-    component: ResultsDoctor
-  },
-  {
-    path: '/resultscost',
-    name: 'resultsdcost',
-    component: ResultsCost
-  },
-
   {
     path: '*',
     name: 'NotFound',

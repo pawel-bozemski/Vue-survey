@@ -7,8 +7,6 @@ import psych from './psych'
 import sport from './sport'
 import health from './health'
 import prevention from './prevention'
-import doctor from './doctor'
-import cost from './cost'
 
 Vue.use(Vuex)
 
@@ -20,8 +18,6 @@ export default new Vuex.Store({
     psych,
     sport,
     health,
-    prevention,
-    doctor,
-    cost
+    prevention
   }
 })

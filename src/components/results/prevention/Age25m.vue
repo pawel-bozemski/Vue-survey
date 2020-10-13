@@ -1,7 +1,7 @@
 <template>
   <div class="interview">
     <div class="jumbotron">
-      <h4>Czy w ciągu ostatniego roku wykonywał Pan morfologię?</h4>
+      <h4>Czy w ciągu ostatniego roku wykonywałeś morfologię?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -28,7 +28,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Czy w ciągu ostatniego roku robił Pan pomiar ciśnienia krwi?</h4>
+      <h4>Czy w ciągu ostatniego roku mierzyłeś sobie ciśnienia krwi?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -54,7 +54,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Czy w ciągu ostaniego roku temu mierzył Pan poziom cukru we krwi?</h4>
+      <h4>Czy w ciągu ostatniego roku mierzyłeś sobie poziom cukru we krwi?</h4>
       <div class="questions">
 
         <div class="bar">
@@ -80,7 +80,7 @@
     </div>
 
     <div class="jumbotron">
-      <h4>Jak często wykonuje Pan samobadania jako profilaktykę raka jąder?</h4>
+      <h4>Jak często wykonujesz profilaktyczne samobadanie jąder ?</h4>
       <div class="questions">
 
         <div class="bar">

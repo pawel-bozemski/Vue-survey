@@ -27,7 +27,7 @@
     </div>
     <app-total></app-total>
     <div class="jumbotron buttons">
-      <router-link to="/cost" tag="a" class="backBtn">
+      <router-link to="/prevention" tag="a" class="backBtn">
         <button class="btn btn-warning">
           Wstecz
         </button>
