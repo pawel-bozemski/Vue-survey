@@ -4,20 +4,20 @@
       <h4>Czy i jak często znajdujesz się w stresujących sytuacjach?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.psych.psych_1 == 'daily1'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.psych.psych_1 == 'daily1'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_1 == 'daily1', 'not__visible' : this.psych.psych_1 !== 'daily1'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.psych.psych_1 == 'weekly1'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.psych.psych_1 == 'weekly1'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_1 == 'weekly1', 'not__visible' : this.psych.psych_1 !== 'weekly1'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.psych.psych_1 == 'monthly1'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.psych.psych_1 == 'monthly1'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_1 == 'monthly1', 'not__visible' : this.psych.psych_1 !== 'monthly1'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.psych.psych_1 == 'yearly1'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.psych.psych_1 == 'yearly1'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_1 == 'yearly1', 'not__visible' : this.psych.psych_1 !== 'yearly1'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.psych.psych_1 == 'none1'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.psych.psych_1 == 'none1'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_1 == 'none1', 'not__visible' : this.psych.psych_1 !== 'none1'}">Twój wynik</p>
           </div>
 
@@ -49,20 +49,20 @@
       <h4>Czy spotykasz się z przyjaciółmi i rodziną? </h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.psych.psych_2 == 'daily2'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.psych.psych_2 == 'daily2'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_2 == 'daily2', 'not__visible' : this.psych.psych_2 !== 'daily2'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.psych.psych_2 == 'weekly2'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.psych.psych_2 == 'weekly2'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_2 == 'weekly2', 'not__visible' : this.psych.psych_2 !== 'weekly2'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.psych.psych_2 == 'monthly2'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.psych.psych_2 == 'monthly2'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_2 == 'monthly2', 'not__visible' : this.psych.psych_2 !== 'monthly2'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.psych.diet22== 'yearly2'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.psych.diet22== 'yearly2'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_2 == 'yearly2', 'not__visible' : this.psych.psych_2 !== 'yearly2'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.psych.psych_2 == 'none2'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.psych.psych_2 == 'none2'}" style="width:20%">
             <p :class="{'visible' : this.psych.psych_2 == 'none2', 'not__visible' : this.psych.psych_2 !== 'none2'}">Twój wynik</p>
           </div>
         </div>
@@ -93,14 +93,14 @@
       <h4>Ile czasu w trakcie doby przeznaczasz na sen? </h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.psych.psych_3 == 'low'}" style="width:33%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.psych.psych_3 == 'low'}" style="width:33%">
             <p :class="{'visible' : this.psych.psych_3 == 'low', 'not__visible' : this.psych.psych_3 !== 'low'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.psych.psych_3 == 'optimal'}" style="width:34%">
+          <div class="result two" :class="{'active cont' : this.psych.psych_3 == 'optimal'}" style="width:34%">
             <p :class="{'visible' : this.psych.psych_3 == 'optimal', 'not__visible' : this.psych.psych_3 !== 'optimal'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.psych.psych_3 == 'high'}" style="width:33%">
+          <div class="result one" :class="{'active cont' : this.psych.psych_3 == 'high'}" style="width:33%">
             <p :class="{'visible' : this.psych.psych_3 == 'high', 'not__visible' : this.psych.psych_3 !== 'high'}">Twój wynik</p>
           </div>
         </div>

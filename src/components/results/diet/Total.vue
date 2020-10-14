@@ -4,20 +4,20 @@
       <h4>Jak się odżywiasz? Najczęściej jem posiłki:</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.diet.diet_1 == 'zdrowe'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'zdrowe'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'zdrowe', 'not__visible' : this.diet.diet_1 !== 'zdrowe'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.diet.diet_1 == 'bezmiesne'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_1 == 'bezmiesne'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'bezmiesne', 'not__visible' : this.diet.diet_1 !== 'bezmiesne'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.diet.diet_1 == 'miesne'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'miesne'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'miesne', 'not__visible' : this.diet.diet_1 !== 'miesne'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.diet.diet_1 == 'lowCarb'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_1 == 'lowCarb'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'lowCarb', 'not__visible' : this.diet.diet_1 !== 'lowCarb'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.diet.diet_1 == 'lowSalt'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'lowSalt'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'lowSalt', 'not__visible' : this.diet.diet_1 !== 'lowSalt'}">Twój wynik</p>
           </div>
 
@@ -49,20 +49,20 @@
       <h4>Jak często w Twojej diecie pojawiają się dania typu fast-food (hamburgery, frytki, hot-dogi itp.)?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.diet.diet_2 == 'everyday2'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'everyday2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'everyday2', 'not__visible' : this.diet.diet_2 !== 'everyday2'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.diet.diet_2 == 'weekly2'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_2 == 'weekly2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'weekly2', 'not__visible' : this.diet.diet_2 !== 'weekly2'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.diet.diet_2 == 'monthly2'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'monthly2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'monthly2', 'not__visible' : this.diet.diet_2 !== 'monthly2'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.diet.diet_2== 'yearly2'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_2== 'yearly2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'yearly2', 'not__visible' : this.diet.diet_2 !== 'yearly2'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.diet.diet_2 == 'never2'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'never2'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_2 == 'never2', 'not__visible' : this.diet.diet_2 !== 'never2'}">Twój wynik</p>
           </div>
         </div>
@@ -93,20 +93,20 @@
       <h4>Jak często sięgasz po dosładzane napoje, gazowane i niegazowane?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.diet.diet_3 == 'everyday3'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'everyday3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'everyday3', 'not__visible' : this.diet.diet_3 !== 'everyday3'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.diet.diet_3 == 'weekly3'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_3 == 'weekly3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'weekly3', 'not__visible' : this.diet.diet_3 !== 'weekly3'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.diet.diet_3 == 'monthly3'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'monthly3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'monthly3', 'not__visible' : this.diet.diet_3 !== 'monthly3'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.diet.diet_3 == 'yearly3'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_3 == 'yearly3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'yearly3', 'not__visible' : this.diet.diet_3 !== 'yearly3'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.diet.diet_3 == 'never3'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'never3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'never3', 'not__visible' : this.diet.diet_3 !== 'never3'}">Twój wynik</p>
           </div>
         </div>

@@ -55,11 +55,11 @@
       <div class="questions">
         <h4>Cukrzyca</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('diabetes') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('diabetes') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('diabetes') == true, 'not__visible' : this.health.health_2.includes('diabetes') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('diabetes') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('diabetes') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('diabetes') !== true, 'not__visible' : this.health.health_2.includes('diabetes') == true}">Twój wynik</p>
           </div>
         </div>
@@ -79,11 +79,11 @@
       <div class="questions">
         <h4>Przewlekła obturacyjna choroba płuc (POChP)</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('pochp') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('pochp') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('pochp') == true, 'not__visible' : this.health.health_2.includes('pochp') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('pochp') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('pochp') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('pochp') !== true, 'not__visible' : this.health.health_2.includes('pochp') == true}">Twój wynik</p>
           </div>
         </div>
@@ -102,11 +102,11 @@
       <div class="questions">
         <h4>Alergia lub astma</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('allergy') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('allergy') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('allergy') == true, 'not__visible' : this.health.health_2.includes('allergy') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('allergy') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('allergy') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('allergy') !== true, 'not__visible' : this.health.health_2.includes('allergy') == true}">Twój wynik</p>
           </div>
         </div>
@@ -126,11 +126,11 @@
       <div class="questions">
         <h4>Depresja</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('depresion') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('depresion') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('depresion') == true, 'not__visible' : this.health.health_2.includes('depresion') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('depresion') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('depresion') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('depresion') !== true, 'not__visible' : this.health.health_2.includes('depresion') == true}">Twój wynik</p>
           </div>
         </div>
@@ -149,11 +149,11 @@
       <div class="questions">
         <h4>Choroba nowotworowa</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('cancer') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('cancer') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('cancer') == true, 'not__visible' : this.health.health_2.includes('cancer') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('cancer') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('cancer') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('cancer') !== true, 'not__visible' : this.health.health_2.includes('cancer') == true}">Twój wynik</p>
           </div>
         </div>
@@ -172,11 +172,11 @@
       <div class="questions">
         <h4>Choroba stawów</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('joints') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('joints') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('joints') == true, 'not__visible' : this.health.health_2.includes('joints') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('joints') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('joints') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('joints') !== true, 'not__visible' : this.health.health_2.includes('joints') == true}">Twój wynik</p>
           </div>
         </div>
@@ -195,11 +195,11 @@
       <div class="questions">
         <h4>Choroba neurologiczna</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('neurological') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('neurological') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('neurological') == true, 'not__visible' : this.health.health_2.includes('neurological') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('neurological') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('neurological') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('neurological') !== true, 'not__visible' : this.health.health_2.includes('neurological') == true}">Twój wynik</p>
           </div>
         </div>
@@ -218,11 +218,11 @@
       <div class="questions">
         <h4>Choroby serca</h4>
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_2.includes('heart') == true}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('heart') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('heart') == true, 'not__visible' : this.health.health_2.includes('heart') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.health.health_2.includes('heart') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('heart') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('heart') !== true, 'not__visible' : this.health.health_2.includes('heart') == true}">Twój wynik</p>
           </div>
         </div>

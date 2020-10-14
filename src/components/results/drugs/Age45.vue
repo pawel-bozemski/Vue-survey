@@ -4,20 +4,20 @@
       <h4>Jak często pijesz alkohol? (piwo, wino, wódka, inne)</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'everyday1'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_1 == 'everyday1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'everyday1', 'not__visible' : this.drugs.drugs_1 !== 'everyday1'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.drugs.drugs_1 == 'weekly1'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.drugs.drugs_1 == 'weekly1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'weekly1', 'not__visible' : this.drugs.drugs_1 !== 'weekly1'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'monthly1'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_1 == 'monthly1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'monthly1', 'not__visible' : this.drugs.drugs_1 !== 'monthly1'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.drugs.drugs_1 == 'yearly1'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.drugs.drugs_1 == 'yearly1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'yearly1', 'not__visible' : this.drugs.drugs_1 !== 'yearly1'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.drugs.drugs_1 == 'never1'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_1 == 'never1'}" style="width:20%">
             <p :class="{'visible' : this.drugs.drugs_1 == 'never1', 'not__visible' : this.drugs.drugs_1 !== 'never1'}">Twój wynik</p>
           </div>
 
@@ -49,17 +49,17 @@
       <h4>Czy palisz tradycyjne papierosy?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.drugs.drugs_2 == 'everyday2'}" style="width:25%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_2 == 'everyday2'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'everyday2', 'not__visible' : this.drugs.drugs_2 !== 'everyday2'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.drugs.drugs_2 == 'sometimes2'}" style="width:25%">
+          <div class="result two" :class="{'active cont' : this.drugs.drugs_2 == 'sometimes2'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'sometimes2', 'not__visible' : this.drugs.drugs_2 !== 'sometimes2'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.drugs.drugs_2 == 'past2'}" style="width:25%">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_2 == 'past2'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'past2', 'not__visible' : this.drugs.drugs_2 !== 'past2'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.drugs.drugs_2== 'never2'}" style="width:25%">
+          <div class="result two"  :class="{'active cont' : this.drugs.drugs_2== 'never2'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_2 == 'never2', 'not__visible' : this.drugs.drugs_2 !== 'never2'}">Twój wynik</p>
           </div>
         </div>
@@ -85,19 +85,19 @@
 
     <div class="jumbotron">
       <h4>Czy palisz alternatywne papierosy – podgrzewacze tytoniu?</h4>
-      <div class="questions">
+      <div class="questions upper">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.drugs.drugs_3 == 'everyday3'}" style="width:25%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_3 == 'everyday3'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_3 == 'everyday3', 'not__visible' : this.drugs.drugs_3 !== 'everyday3'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.drugs.drugs_3 == 'sometimes3'}" style="width:25%">
+          <div class="result two" :class="{'active cont' : this.drugs.drugs_3 == 'sometimes3'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_3 == 'sometimes3', 'not__visible' : this.drugs.drugs_3 !== 'sometimes3'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.drugs.drugs_3 == 'past3'}" style="width:25%">
+          <div class="result one" :class="{'active cont' : this.drugs.drugs_3 == 'past3'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_3 == 'past3', 'not__visible' : this.drugs.drugs_3 !== 'past3'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.drugs.drugs_3 == 'never3'}" style="width:25%">
+          <div class="result two"  :class="{'active cont' : this.drugs.drugs_3 == 'never3'}" style="width:25%">
             <p :class="{'visible' : this.drugs.drugs_3 == 'never3', 'not__visible' : this.drugs.drugs_3 !== 'never3'}">Twój wynik</p>
           </div>
         </div>

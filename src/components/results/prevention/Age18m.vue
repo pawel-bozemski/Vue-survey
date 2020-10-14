@@ -4,11 +4,11 @@
       <h4>Czy w ciągu ostatniego roku wykonywałeś morfologię?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.prevention.prevention_1 == 'yes1'}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.prevention.prevention_1 == 'yes1'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_1 == 'yes1', 'not__visible' : this.prevention.prevention_1 !== 'yes1'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.prevention.prevention_1 == 'no1'}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.prevention.prevention_1 == 'no1'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_1 == 'no1', 'not__visible' : this.prevention.prevention_1 !== 'no1'}">Twój wynik</p>
           </div>
 
@@ -31,11 +31,11 @@
       <h4>Czy w ciągu ostatniego roku mierzyłeś sobie ciśnienia krwi?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.prevention.prevention_2 == 'yes2'}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.prevention.prevention_2 == 'yes2'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_2 == 'yes2', 'not__visible' : this.prevention.prevention_2 !== 'yes2'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.prevention.prevention_2 == 'no2'}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.prevention.prevention_2 == 'no2'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_2 == 'no2', 'not__visible' : this.prevention.prevention_2 !== 'no2'}">Twój wynik</p>
           </div>
         </div>
@@ -57,11 +57,11 @@
       <h4>Czy w ciągu ostatniego roku mierzyłeś sobie poziom cukru we krwi?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.prevention.prevention_3 == 'yes3'}" style="width:50%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.prevention.prevention_3 == 'yes3'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_3 == 'yes3', 'not__visible' : this.prevention.prevention_3 !== 'yes3'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.prevention.prevention_3 == 'no3'}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.prevention.prevention_3 == 'no3'}" style="width:50%">
             <p :class="{'visible' : this.prevention.prevention_3 == 'no3', 'not__visible' : this.prevention.prevention_3 !== 'no3'}">Twój wynik</p>
           </div>
         </div>
@@ -83,20 +83,20 @@
       <h4>Jak często wykonujesz profilaktyczne samobadanie jąder ?</h4>
       <div class="questions">
 
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.prevention.prevention_4 == 'weekly'}" style="width:20%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.prevention.prevention_4 == 'weekly'}" style="width:20%">
             <p :class="{'visible' : this.prevention.prevention_4 == 'weekly', 'not__visible' : this.prevention.prevention_4 !== 'weekly'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.prevention.prevention_4 == 'monthly'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.prevention.prevention_4 == 'monthly'}" style="width:20%">
             <p :class="{'visible' : this.prevention.prevention_4 == 'monthly', 'not__visible' : this.prevention.prevention_4 !== 'monthly'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.prevention.prevention_4 == 'yearly'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.prevention.prevention_4 == 'yearly'}" style="width:20%">
             <p :class="{'visible' : this.prevention.prevention_4 == 'yearly', 'not__visible' : this.prevention.prevention_4 !== 'yearly'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.prevention.prevention_4 == 'almostNever'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.prevention.prevention_4 == 'almostNever'}" style="width:20%">
             <p :class="{'visible' : this.prevention.prevention_4 == 'almostNever', 'not__visible' : this.prevention.prevention_4 !== 'almostNever'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.prevention.prevention_4 == 'never'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.prevention.prevention_4 == 'never'}" style="width:20%">
             <p :class="{'visible' : this.prevention.prevention_4 == 'never', 'not__visible' : this.prevention.prevention_4 !== 'never'}">Twój wynik</p>
           </div>
         </div>
