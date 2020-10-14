@@ -103,9 +103,9 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.prevention.prevention_4 == 'weekly', 'one__bg' : this.prevention.prevention_4 !== 'weekly'}" style="width:20%">31%</div>
           <div class="result" :class="{'active' : this.prevention.prevention_4 == 'monthly', 'two__bg' : this.prevention.prevention_4 !== 'monthly'}" style="width:20%">19%</div>
-          <div class="result" :class="{'active' : this.prevention.prevention_4 == 'yearly', 'one__bg' : this.prevention.prevention_4 !== 'yearly'}" style="width:20%">5%</div>
-          <div class="result" :class="{'active' : this.prevention.prevention_4 == 'almostNever', 'two__bg' : this.prevention.prevention_4 !== 'almostNever'}" style="width:20%">10%</div>
-          <div class="result" :class="{'active' : this.prevention.prevention_4 == 'never', 'one__bg' : this.prevention.prevention_4 !== 'never'}" style="width:20%">35%</div>
+          <div class="result" :class="{'active' : this.prevention.prevention_4 == 'yearly', 'three__bg' : this.prevention.prevention_4 !== 'yearly'}" style="width:20%">5%</div>
+          <div class="result" :class="{'active' : this.prevention.prevention_4 == 'almostNever', 'four__bg' : this.prevention.prevention_4 !== 'almostNever'}" style="width:20%">10%</div>
+          <div class="result" :class="{'active' : this.prevention.prevention_4 == 'never', 'five__bg' : this.prevention.prevention_4 !== 'never'}" style="width:20%">35%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -114,11 +114,11 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'monthly', 'two__bg' : this.prevention.prevention_4 !== 'monthly'}"></span>Kilka razy w roku</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'yearly', 'one__bg' : this.prevention.prevention_4 !== 'yearly'}"></span>Raz w roku</div>
+            <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'yearly', 'three__bg' : this.prevention.prevention_4 !== 'yearly'}"></span>Raz w roku</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'almostNever', 'two__bg' : this.prevention.prevention_4 !== 'almostNever'}"></span>Rzadziej niż raz w roku</div>
+            <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'almostNever', 'four__bg' : this.prevention.prevention_4 !== 'almostNever'}"></span>Rzadziej niż raz w roku</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'never', 'one__bg' : this.prevention.prevention_4 !== 'never'}"></span>Nigdy</div>
+            <span class="dot" :class="{'active' : this.prevention.prevention_4 == 'never', 'five__bg' : this.prevention.prevention_4 !== 'never'}"></span>Nigdy</div>
         </div>
       </div>
     </div>

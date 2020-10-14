@@ -5,29 +5,29 @@
       <div class="questions">
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'zdrowe'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'zdrowe'}" style="width:25%">
             <p :class="{'visible' : this.diet.diet_1 == 'zdrowe', 'not__visible' : this.diet.diet_1 !== 'zdrowe'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.diet.diet_1 == 'bezmiesne'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_1 == 'bezmiesne'}" style="width:16%">
             <p :class="{'visible' : this.diet.diet_1 == 'bezmiesne', 'not__visible' : this.diet.diet_1 !== 'bezmiesne'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'miesne'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'miesne'}" style="width:30%">
             <p :class="{'visible' : this.diet.diet_1 == 'miesne', 'not__visible' : this.diet.diet_1 !== 'miesne'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active cont' : this.diet.diet_1 == 'lowCarb'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_1 == 'lowCarb'}" style="width:16%">
             <p :class="{'visible' : this.diet.diet_1 == 'lowCarb', 'not__visible' : this.diet.diet_1 !== 'lowCarb'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'lowSalt'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'lowSalt'}" style="width:18%">
             <p :class="{'visible' : this.diet.diet_1 == 'lowSalt', 'not__visible' : this.diet.diet_1 !== 'lowSalt'}">Twój wynik</p>
           </div>
 
         </div>
         <div class="bar">
           <div class="result" :class="{'active' : this.diet.diet_1 == 'zdrowe', 'one__bg' : this.diet.diet_1 !== 'zdrowe'}" style="width:20%">28%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'bezmiesne', 'two__bg' : this.diet.diet_1 !== 'bezmiesne'}" style="width:20%">10%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'miesne', 'one__bg' : this.diet.diet_1 !== 'miesne'}" style="width:20%">37%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'two__bg' : this.diet.diet_1 !== 'lowCarb'}" style="width:20%">10%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'one__bg' : this.diet.diet_1 !== 'lowSalt'}" style="width:20%">12%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'bezmiesne', 'two__bg' : this.diet.diet_1 !== 'bezmiesne'}" style="width:16%">10%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'miesne', 'three__bg' : this.diet.diet_1 !== 'miesne'}" style="width:30%">37%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'four__bg' : this.diet.diet_1 !== 'lowCarb'}" style="width:16%">10%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'five__bg' : this.diet.diet_1 !== 'lowSalt'}" style="width:18%">12%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -36,11 +36,11 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.diet.diet_1 == 'bezmiesne', 'two__bg' : this.diet.diet_1 !== 'bezmiesne'}"></span>Bezmięsne</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_1 == 'miesne', 'one__bg' : this.diet.diet_1 !== 'miesne'}"></span>Mięsne, wysokobiałkowe</div>
+            <span class="dot" :class="{'active' : this.diet.diet_1 == 'miesne', 'three__bg' : this.diet.diet_1 !== 'miesne'}"></span>Mięsne, wysokobiałkowe</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'two__bg' : this.diet.diet_1 !== 'lowCarb'}"></span>Unikam ryżu, makaronów i innych węglowodanów</div>
+            <span class="dot" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'four__bg' : this.diet.diet_1 !== 'lowCarb'}"></span>Unikam ryżu, makaronów i innych węglowodanów</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'one__bg' : this.diet.diet_1 !== 'lowSalt'}"></span>Tylko z odrobiną soli lub wcale</div>
+            <span class="dot" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'five__bg' : this.diet.diet_1 !== 'lowSalt'}"></span>Tylko z odrobiną soli lub wcale</div>
         </div>
       </div>
     </div>
@@ -50,16 +50,16 @@
       <div class="questions">
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'everyday2'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'everyday2'}" style="width:10%">
             <p :class="{'visible' : this.diet.diet_2 == 'everyday2', 'not__visible' : this.diet.diet_2 !== 'everyday2'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.diet.diet_2 == 'weekly2'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_2 == 'weekly2'}" style="width:15%">
             <p :class="{'visible' : this.diet.diet_2 == 'weekly2', 'not__visible' : this.diet.diet_2 !== 'weekly2'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'monthly2'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'monthly2'}" style="width:25%">
             <p :class="{'visible' : this.diet.diet_2 == 'monthly2', 'not__visible' : this.diet.diet_2 !== 'monthly2'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active cont' : this.diet.diet_2== 'yearly2'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_2== 'yearly2'}" style="width:30%">
             <p :class="{'visible' : this.diet.diet_2 == 'yearly2', 'not__visible' : this.diet.diet_2 !== 'yearly2'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active cont' : this.diet.diet_2 == 'never2'}" style="width:20%">
@@ -67,11 +67,11 @@
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.diet.diet_2 == 'everyday2', 'one__bg' : this.diet.diet_2 !== 'everyday2'}" style="width:20%">0%</div>
-          <div class="result" :class="{'active' : this.diet.diet_2 == 'weekly2', 'two__bg' : this.diet.diet_2 !== 'weekly2'}" style="width:20%">9%</div>
-          <div class="result" :class="{'active' : this.diet.diet_2 == 'monthly2', 'one__bg' : this.diet.diet_2 !== 'monthly2'}" style="width:20%">19%</div>
-          <div class="result" :class="{'active' : this.diet.diet_2 == 'yearly2', 'two__bg' : this.diet.diet_2 !== 'yearly2'}" style="width:20%">59%</div>
-          <div class="result" :class="{'active' : this.diet.diet_2 == 'never2', 'one__bg' : this.diet.diet_2 !== 'never2'}" style="width:20%">14%</div>
+          <div class="result" :class="{'active' : this.diet.diet_2 == 'everyday2', 'one__bg' : this.diet.diet_2 !== 'everyday2'}" style="width:10%">0%</div>
+          <div class="result" :class="{'active' : this.diet.diet_2 == 'weekly2', 'two__bg' : this.diet.diet_2 !== 'weekly2'}" style="width:15%">9%</div>
+          <div class="result" :class="{'active' : this.diet.diet_2 == 'monthly2', 'three__bg' : this.diet.diet_2 !== 'monthly2'}" style="width:25%">19%</div>
+          <div class="result" :class="{'active' : this.diet.diet_2 == 'yearly2', 'four__bg' : this.diet.diet_2 !== 'yearly2'}" style="width:30%">59%</div>
+          <div class="result" :class="{'active' : this.diet.diet_2 == 'never2', 'five__bg' : this.diet.diet_2 !== 'never2'}" style="width:20%">14%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -80,11 +80,11 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.diet.diet_2 == 'weekly2', 'two__bg' : this.diet.diet_2 !== 'weekly2'}"></span>Kilka razy w tygodniu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_2 == 'monthly2', 'one__bg' : this.diet.diet_2 !== 'monthly2'}"></span>Kilka razy w miesiącu</div>
+            <span class="dot" :class="{'active' : this.diet.diet_2 == 'monthly2', 'three__bg' : this.diet.diet_2 !== 'monthly2'}"></span>Kilka razy w miesiącu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_2 == 'yearly2', 'two__bg' : this.diet.diet_2 !== 'yearly2'}"></span>Raz w miesiącu lub rzadziej</div>
+            <span class="dot" :class="{'active' : this.diet.diet_2 == 'yearly2', 'four__bg' : this.diet.diet_2 !== 'yearly2'}"></span>Raz w miesiącu lub rzadziej</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_2 == 'never2', 'one__bg' : this.diet.diet_2 !== 'never2'}"></span>Nigdy</div>
+            <span class="dot" :class="{'active' : this.diet.diet_2 == 'never2', 'five__bg' : this.diet.diet_2 !== 'never2'}"></span>Nigdy</div>
         </div>
       </div>
     </div>
@@ -94,28 +94,28 @@
       <div class="questions">
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'everyday3'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'everyday3'}" style="width:10%">
             <p :class="{'visible' : this.diet.diet_3 == 'everyday3', 'not__visible' : this.diet.diet_3 !== 'everyday3'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.diet.diet_3 == 'weekly3'}" style="width:20%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_3 == 'weekly3'}" style="width:25%">
             <p :class="{'visible' : this.diet.diet_3 == 'weekly3', 'not__visible' : this.diet.diet_3 !== 'weekly3'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'monthly3'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_3 == 'monthly3', 'not__visible' : this.diet.diet_3 !== 'monthly3'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active cont' : this.diet.diet_3 == 'yearly3'}" style="width:20%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_3 == 'yearly3'}" style="width:30%">
             <p :class="{'visible' : this.diet.diet_3 == 'yearly3', 'not__visible' : this.diet.diet_3 !== 'yearly3'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'never3'}" style="width:20%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_3 == 'never3'}" style="width:15%">
             <p :class="{'visible' : this.diet.diet_3 == 'never3', 'not__visible' : this.diet.diet_3 !== 'never3'}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.diet.diet_3 == 'everyday3', 'one__bg' : this.diet.diet_3 !== 'everyday3'}" style="width:20%">13%</div>
-          <div class="result" :class="{'active' : this.diet.diet_3 == 'weekly3', 'two__bg' : this.diet.diet_3 !== 'weekly3'}" style="width:20%">22%</div>
-          <div class="result" :class="{'active' : this.diet.diet_3 == 'monthly3', 'one__bg' : this.diet.diet_3 !== 'monthly3'}" style="width:20%">18%</div>
-          <div class="result" :class="{'active' : this.diet.diet_3 == 'yearly3', 'two__bg' : this.diet.diet_3 !== 'yearly3'}" style="width:20%">32%</div>
-          <div class="result" :class="{'active' : this.diet.diet_3 == 'never3', 'one__bg' : this.diet.diet_3 !== 'never3'}" style="width:20%">15%</div>
+          <div class="result" :class="{'active' : this.diet.diet_3 == 'everyday3', 'one__bg' : this.diet.diet_3 !== 'everyday3'}" style="width:10%">13%</div>
+          <div class="result" :class="{'active' : this.diet.diet_3 == 'weekly3', 'two__bg' : this.diet.diet_3 !== 'weekly3'}" style="width:25%">22%</div>
+          <div class="result" :class="{'active' : this.diet.diet_3 == 'monthly3', 'three__bg' : this.diet.diet_3 !== 'monthly3'}" style="width:20%">18%</div>
+          <div class="result" :class="{'active' : this.diet.diet_3 == 'yearly3', 'four__bg' : this.diet.diet_3 !== 'yearly3'}" style="width:30%">32%</div>
+          <div class="result" :class="{'active' : this.diet.diet_3 == 'never3', 'five__bg' : this.diet.diet_3 !== 'never3'}" style="width:15%">15%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -124,11 +124,11 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.diet.diet_3 == 'weekly3', 'two__bg' : this.diet.diet_3 !== 'weekly3'}"></span>Kilka razy w tygodniu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_3 == 'monthly3', 'one__bg' : this.diet.diet_3 !== 'monthly3'}"></span>Kilka razy w miesiącu</div>
+            <span class="dot" :class="{'active' : this.diet.diet_3 == 'monthly3', 'three__bg' : this.diet.diet_3 !== 'monthly3'}"></span>Kilka razy w miesiącu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_3 == 'yearly3', 'two__bg' : this.diet.diet_3 !== 'yearly3'}"></span>Raz w miesiącu lub rzadziej</div>
+            <span class="dot" :class="{'active' : this.diet.diet_3 == 'yearly3', 'four__bg' : this.diet.diet_3 !== 'yearly3'}"></span>Raz w miesiącu lub rzadziej</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.diet.diet_3 == 'never3', 'one__bg' : this.diet.diet_3 !== 'never3'}"></span>Nigdy</div>
+            <span class="dot" :class="{'active' : this.diet.diet_3 == 'never3', 'five__bg' : this.diet.diet_3 !== 'never3'}"></span>Nigdy</div>
         </div>
       </div>
     </div>

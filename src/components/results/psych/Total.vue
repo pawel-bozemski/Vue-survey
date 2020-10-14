@@ -25,9 +25,9 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.psych.psych_1 == 'daily1', 'one__bg' : this.psych.psych_1 !== 'daily1'}" style="width:20%">24%</div>
           <div class="result" :class="{'active' : this.psych.psych_1 == 'weekly1', 'two__bg' : this.psych.psych_1 !== 'weekly1'}" style="width:20%">38%</div>
-          <div class="result" :class="{'active' : this.psych.psych_1 == 'monthly1', 'one__bg' : this.psych.psych_1 !== 'monthly1'}" style="width:20%">19%</div>
-          <div class="result" :class="{'active' : this.psych.psych_1 == 'yearly1', 'two__bg' : this.psych.psych_1 !== 'yearly1'}" style="width:20%">17%</div>
-          <div class="result" :class="{'active' : this.psych.psych_1 == 'none1', 'one__bg' : this.psych.psych_1 !== 'none1'}" style="width:20%">2%</div>
+          <div class="result" :class="{'active' : this.psych.psych_1 == 'monthly1', 'three__bg' : this.psych.psych_1 !== 'monthly1'}" style="width:20%">19%</div>
+          <div class="result" :class="{'active' : this.psych.psych_1 == 'yearly1', 'four__bg' : this.psych.psych_1 !== 'yearly1'}" style="width:20%">17%</div>
+          <div class="result" :class="{'active' : this.psych.psych_1 == 'none1', 'five__bg' : this.psych.psych_1 !== 'none1'}" style="width:20%">2%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -36,11 +36,11 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.psych.psych_1 == 'weekly1', 'two__bg' : this.psych.psych_1 !== 'weekly1'}"></span>Tak, kilka razy w tygodniu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.psych.psych_1 == 'monthly1', 'one__bg' : this.psych.psych_1 !== 'monthly1'}"></span>Tak, kilka razy w miesiącu</div>
+            <span class="dot" :class="{'active' : this.psych.psych_1 == 'monthly1', 'three__bg' : this.psych.psych_1 !== 'monthly1'}"></span>Tak, kilka razy w miesiącu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.psych.psych_1 == 'yearly1', 'two__bg' : this.psych.psych_1 !== 'yearly1'}"></span>Tak, raz w miesiącu lub rzadziej</div>
+            <span class="dot" :class="{'active' : this.psych.psych_1 == 'yearly1', 'four__bg' : this.psych.psych_1 !== 'yearly1'}"></span>Tak, raz w miesiącu lub rzadziej</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.psych.psych_1 == 'none1', 'one__bg' : this.psych.psych_1 !== 'none1'}"></span>Nie, nigdy</div>
+            <span class="dot" :class="{'active' : this.psych.psych_1 == 'none1', 'five__bg' : this.psych.psych_1 !== 'none1'}"></span>Nie, nigdy</div>
         </div>
       </div>
     </div>
@@ -69,9 +69,9 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.psych.psych_2 == 'daily2', 'one__bg' : this.psych.psych_2 !== 'daily2'}" style="width:20%">21%</div>
           <div class="result" :class="{'active' : this.psych.psych_2 == 'weekly2', 'two__bg' : this.psych.psych_2 !== 'weekly2'}" style="width:20%">24%</div>
-          <div class="result" :class="{'active' : this.psych.psych_2 == 'monthly2', 'one__bg' : this.psych.psych_2 !== 'monthly2'}" style="width:20%">36%</div>
-          <div class="result" :class="{'active' : this.psych.psych_2 == 'yearly2', 'two__bg' : this.psych.psych_2 !== 'yearly2'}" style="width:20%">17%</div>
-          <div class="result" :class="{'active' : this.psych.psych_2 == 'none2', 'one__bg' : this.psych.psych_2 !== 'none2'}" style="width:20%">1%</div>
+          <div class="result" :class="{'active' : this.psych.psych_2 == 'monthly2', 'three__bg' : this.psych.psych_2 !== 'monthly2'}" style="width:20%">36%</div>
+          <div class="result" :class="{'active' : this.psych.psych_2 == 'yearly2', 'four__bg' : this.psych.psych_2 !== 'yearly2'}" style="width:20%">17%</div>
+          <div class="result" :class="{'active' : this.psych.psych_2 == 'none2', 'five__bg' : this.psych.psych_2 !== 'none2'}" style="width:20%">1%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -80,11 +80,11 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.psych.psych_2 == 'weekly2', 'two__bg' : this.psych.psych_2 !== 'weekly2'}"></span>Tak, kilka razy w tygodniu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.psych.psych_2 == 'monthly2', 'one__bg' : this.psych.psych_2 !== 'monthly2'}"></span>Tak, kilka razy w miesiącu</div>
+            <span class="dot" :class="{'active' : this.psych.psych_2 == 'monthly2', 'three__bg' : this.psych.psych_2 !== 'monthly2'}"></span>Tak, kilka razy w miesiącu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.psych.psych_2 == 'yearly2', 'two__bg' : this.psych.psych_2 !== 'yearly2'}"></span>Tak, raz w miesiącu lub rzadziej</div>
+            <span class="dot" :class="{'active' : this.psych.psych_2 == 'yearly2', 'four__bg' : this.psych.psych_2 !== 'yearly2'}"></span>Tak, raz w miesiącu lub rzadziej</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.psych.psych_2 == 'none2', 'one__bg' : this.psych.psych_2 !== 'none2'}"></span>Nie, nigdy</div>
+            <span class="dot" :class="{'active' : this.psych.psych_2 == 'none2', 'five__bg' : this.psych.psych_2 !== 'none2'}"></span>Nie, nigdy</div>
         </div>
         </div>
     </div>
@@ -107,7 +107,7 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.psych.psych_3 == 'low', 'one__bg' : this.psych.psych_3 !== 'low'}" style="width:33%">40%</div>
           <div class="result" :class="{'active' : this.psych.psych_3 == 'optimal', 'two__bg' : this.psych.psych_3 !== 'optimal'}" style="width:34%">58%</div>
-          <div class="result" :class="{'active' : this.psych.psych_3 == 'high', 'one__bg' : this.psych.psych_3 !== 'high'}" style="width:33%">2%</div>
+          <div class="result" :class="{'active' : this.psych.psych_3 == 'high', 'three__bg' : this.psych.psych_3 !== 'high'}" style="width:33%">2%</div>
         </div>
         <div class="row">
           <div class="dot__content">

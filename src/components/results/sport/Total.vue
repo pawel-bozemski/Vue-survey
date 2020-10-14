@@ -21,8 +21,8 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.sport.sport_1 == 'none1', 'one__bg' : this.sport.sport_1 !== 'none1'}" style="width:25%">13%</div>
           <div class="result" :class="{'active' : this.sport.sport_1 == '30min', 'two__bg' : this.sport.sport_1 !== '30min'}" style="width:25%">67%</div>
-          <div class="result" :class="{'active' : this.sport.sport_1 == '1hour', 'one__bg' : this.sport.sport_1 !== '1hour'}" style="width:25%">12%</div>
-          <div class="result" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'two__bg' : this.sport.sport_1 !== 'coupleHours'}" style="width:25%">7%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == '1hour', 'three__bg' : this.sport.sport_1 !== '1hour'}" style="width:25%">12%</div>
+          <div class="result" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'four__bg' : this.sport.sport_1 !== 'coupleHours'}" style="width:25%">7%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -31,9 +31,9 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.sport.sport_1 == '30min', 'two__bg' : this.sport.sport_1 !== '30min'}"></span>Tak, kilka razy w tygodniu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.sport.sport_1 == '1hour', 'one__bg' : this.sport.sport_1 !== '1hour'}"></span>Tak, kilka razy w miesiącu</div>
+            <span class="dot" :class="{'active' : this.sport.sport_1 == '1hour', 'three__bg' : this.sport.sport_1 !== '1hour'}"></span>Tak, kilka razy w miesiącu</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'two__bg' : this.sport.sport_1 !== 'coupleHours'}"></span>Tak, raz w miesiącu lub rzadziej</div>
+            <span class="dot" :class="{'active' : this.sport.sport_1 == 'coupleHours', 'four__bg' : this.sport.sport_1 !== 'coupleHours'}"></span>Tak, raz w miesiącu lub rzadziej</div>
         </div>
       </div>
     </div>
@@ -59,8 +59,8 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.sport.sport_2 == 'none2', 'one__bg' : this.sport.sport_2 !== 'none2'}" style="width:25%">50%</div>
           <div class="result" :class="{'active' : this.sport.sport_2 == '4monthly', 'two__bg' : this.sport.sport_2 !== '4monthly'}" style="width:25%">13%</div>
-          <div class="result" :class="{'active' : this.sport.sport_2 == '1weekly', 'one__bg' : this.sport.sport_2 !== '1weekly'}" style="width:25%">13%</div>
-          <div class="result" :class="{'active' : this.sport.sport_2 == '2weekly', 'two__bg' : this.sport.sport_2 !== '2weekly'}" style="width:25%">24%</div>
+          <div class="result" :class="{'active' : this.sport.sport_2 == '1weekly', 'three__bg' : this.sport.sport_2 !== '1weekly'}" style="width:25%">13%</div>
+          <div class="result" :class="{'active' : this.sport.sport_2 == '2weekly', 'four__bg' : this.sport.sport_2 !== '2weekly'}" style="width:25%">24%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -69,9 +69,9 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.sport.sport_2 == '4monthly', 'two__bg' : this.sport.sport_2 !== '4monthly'}"></span>Mniej niż 4 godziny miesięcznie</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.sport.sport_2 == '1weekly', 'one__bg' : this.sport.sport_2 !== '1weekly'}"></span>Około 1-1,5 godziny tygodniowo</div>
+            <span class="dot" :class="{'active' : this.sport.sport_2 == '1weekly', 'three__bg' : this.sport.sport_2 !== '1weekly'}"></span>Około 1-1,5 godziny tygodniowo</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.sport.sport_2 == '2weekly', 'two__bg' : this.sport.sport_2 !== '2weekly'}"></span>Co najmniej 2 godziny tygodniowo i więcej</div>
+            <span class="dot" :class="{'active' : this.sport.sport_2 == '2weekly', 'four__bg' : this.sport.sport_2 !== '2weekly'}"></span>Co najmniej 2 godziny tygodniowo i więcej</div>
         </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
         <div class="bar">
           <div class="result" :class="{'active' : this.sport.sport_3 == 'good', 'one__bg' : this.sport.sport_3 !== 'good'}" style="width:33%">7%</div>
           <div class="result" :class="{'active' : this.sport.sport_3 == 'average', 'two__bg' : this.sport.sport_3 !== 'average'}" style="width:33%">36%</div>
-          <div class="result" :class="{'active' : this.sport.sport_3 == 'bad', 'one__bg' : this.sport.sport_3 !== 'bad'}" style="width:34%">57%</div>
+          <div class="result" :class="{'active' : this.sport.sport_3 == 'bad', 'three__bg' : this.sport.sport_3 !== 'bad'}" style="width:34%">57%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -103,7 +103,7 @@
           <div class="dot__content">
             <span class="dot" :class="{'active' : this.sport.sport_3 == 'average', 'two__bg' : this.sport.sport_3 !== 'average'}"></span>Przeciętny (Ani dobry, ani zły)</div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.sport.sport_3 == 'bad', 'one__bg' : this.sport.sport_3 !== 'bad'}"></span>Bardzo zły i zły</div>
+            <span class="dot" :class="{'active' : this.sport.sport_3 == 'bad', 'three__bg' : this.sport.sport_3 !== 'bad'}"></span>Bardzo zły i zły</div>
         </div>
       </div>
     </div>

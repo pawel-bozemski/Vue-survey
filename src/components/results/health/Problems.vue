@@ -6,16 +6,16 @@
         <h4>Ból pleców</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('back') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('back') == true}" style="width:30%">
             <p :class="{'visible' : this.health.health_3.includes('back') == true, 'not__visible' : this.health.health_3.includes('back') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('back') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('back') !== true}" style="width:70%">
             <p :class="{'visible' : this.health.health_3.includes('back') !== true, 'not__visible' : this.health.health_3.includes('back') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('back') == true, 'one__bg' : this.health.health_3.includes('back') !== true}" style="width:50%">34%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('back') !== true, 'two__bg' : this.health.health_3.includes('back') == true}" style="width:50%">66%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('back') == true, 'one__bg' : this.health.health_3.includes('back') !== true}" style="width:30%">34%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('back') !== true, 'two__bg' : this.health.health_3.includes('back') == true}" style="width:70%">66%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -30,16 +30,16 @@
         <h4>Ból głowy</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('head') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('head') == true}" style="width:20%">
             <p :class="{'visible' : this.health.health_3.includes('head') == true, 'not__visible' : this.health.health_3.includes('head') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('head') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('head') !== true}" style="width:80%">
             <p :class="{'visible' : this.health.health_3.includes('head') !== true, 'not__visible' : this.health.health_3.includes('head') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('head') == true, 'one__bg' : this.health.health_3.includes('head') !== true}" style="width:50%">22%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('head') !== true, 'two__bg' : this.health.health_3.includes('head') == true}" style="width:50%">78%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('head') == true, 'one__bg' : this.health.health_3.includes('head') !== true}" style="width:20%">22%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('head') !== true, 'two__bg' : this.health.health_3.includes('head') == true}" style="width:80%">78%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -54,16 +54,16 @@
         <h4>Ból w klatce piersiowej</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('chest') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('chest') == true}" style="width:10%">
             <p :class="{'visible' : this.health.health_3.includes('chest') == true, 'not__visible' : this.health.health_3.includes('chest') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('chest') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('chest') !== true}" style="width:90%">
             <p :class="{'visible' : this.health.health_3.includes('chest') !== true, 'not__visible' : this.health.health_3.includes('chest') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('chest') == true, 'one__bg' : this.health.health_3.includes('chest') !== true}" style="width:50%">8%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('chest') !== true, 'two__bg' : this.health.health_3.includes('chest') == true}" style="width:50%">92%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('chest') == true, 'one__bg' : this.health.health_3.includes('chest') !== true}" style="width:10%">8%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('chest') !== true, 'two__bg' : this.health.health_3.includes('chest') == true}" style="width:90%">92%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -77,16 +77,16 @@
         <h4>Zgaga</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('burn') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('burn') == true}" style="width:10%">
             <p :class="{'visible' : this.health.health_3.includes('burn') == true, 'not__visible' : this.health.health_3.includes('burn') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('burn') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('burn') !== true}" style="width:90%">
             <p :class="{'visible' : this.health.health_3.includes('burn') !== true, 'not__visible' : this.health.health_3.includes('burn') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('burn') == true, 'one__bg' : this.health.health_3.includes('burn') !== true}" style="width:50%">13%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('burn') !== true, 'two__bg' : this.health.health_3.includes('burn') == true}" style="width:50%">87%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('burn') == true, 'one__bg' : this.health.health_3.includes('burn') !== true}" style="width:10%">13%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('burn') !== true, 'two__bg' : this.health.health_3.includes('burn') == true}" style="width:90%">87%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -101,16 +101,16 @@
         <h4>Drętwienie kończyn</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('arms') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('arms') == true}" style="width:20%">
             <p :class="{'visible' : this.health.health_3.includes('arms') == true, 'not__visible' : this.health.health_3.includes('arms') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('arms') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('arms') !== true}" style="width:80%">
             <p :class="{'visible' : this.health.health_3.includes('arms') !== true, 'not__visible' : this.health.health_3.includes('arms') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('arms') == true, 'one__bg' : this.health.health_3.includes('arms') !== true}" style="width:50%">20%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('arms') !== true, 'two__bg' : this.health.health_3.includes('arms') == true}" style="width:50%">80%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('arms') == true, 'one__bg' : this.health.health_3.includes('arms') !== true}" style="width:20%">20%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('arms') !== true, 'two__bg' : this.health.health_3.includes('arms') == true}" style="width:80%">80%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -124,16 +124,16 @@
         <h4>Bezsenność</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('insomnia') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('insomnia') == true}" style="width:20%">
             <p :class="{'visible' : this.health.health_3.includes('insomnia') == true, 'not__visible' : this.health.health_3.includes('insomnia') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('insomnia') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('insomnia') !== true}" style="width:80%">
             <p :class="{'visible' : this.health.health_3.includes('insomnia') !== true, 'not__visible' : this.health.health_3.includes('insomnia') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('insomnia') == true, 'one__bg' : this.health.health_3.includes('insomnia') !== true}" style="width:50%">20%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('insomnia') !== true, 'two__bg' : this.health.health_3.includes('insomnia') == true}" style="width:50%">80%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('insomnia') == true, 'one__bg' : this.health.health_3.includes('insomnia') !== true}" style="width:20%">20%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('insomnia') !== true, 'two__bg' : this.health.health_3.includes('insomnia') == true}" style="width:80%">80%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -147,16 +147,16 @@
         <h4>Zaparcia</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('constipation') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('constipation') == true}" style="width:10%">
             <p :class="{'visible' : this.health.health_3.includes('constipation') == true, 'not__visible' : this.health.health_3.includes('constipation') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('constipation') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('constipation') !== true}" style="width:90%">
             <p :class="{'visible' : this.health.health_3.includes('constipation') !== true, 'not__visible' : this.health.health_3.includes('constipation') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('constipation') == true, 'one__bg' : this.health.health_3.includes('constipation') !== true}" style="width:50%">12%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('constipation') !== true, 'two__bg' : this.health.health_3.includes('constipation') == true}" style="width:50%">88%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('constipation') == true, 'one__bg' : this.health.health_3.includes('constipation') !== true}" style="width:10%">12%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('constipation') !== true, 'two__bg' : this.health.health_3.includes('constipation') == true}" style="width:90%">88%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -170,16 +170,16 @@
         <h4>Senność w ciągu dnia</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('sleepy') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('sleepy') == true}" style="width:25%">
             <p :class="{'visible' : this.health.health_3.includes('sleepy') == true, 'not__visible' : this.health.health_3.includes('sleepy') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('sleepy') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('sleepy') !== true}" style="width:75%">
             <p :class="{'visible' : this.health.health_3.includes('sleepy') !== true, 'not__visible' : this.health.health_3.includes('sleepy') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('sleepy') == true, 'one__bg' : this.health.health_3.includes('sleepy') !== true}" style="width:50%">25%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('sleepy') !== true, 'two__bg' : this.health.health_3.includes('sleepy') == true}" style="width:50%">75%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('sleepy') == true, 'one__bg' : this.health.health_3.includes('sleepy') !== true}" style="width:25%">25%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('sleepy') !== true, 'two__bg' : this.health.health_3.includes('sleepy') == true}" style="width:75%">75%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -193,16 +193,16 @@
         <h4>Nadmierne pragnienie</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('thirst') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('thirst') == true}" style="width:15%">
             <p :class="{'visible' : this.health.health_3.includes('thirst') == true, 'not__visible' : this.health.health_3.includes('thirst') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('thirst') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('thirst') !== true}" style="width:85%">
             <p :class="{'visible' : this.health.health_3.includes('thirst') !== true, 'not__visible' : this.health.health_3.includes('thirst') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') == true, 'one__bg' : this.health.health_3.includes('thirst') !== true}" style="width:50%">50%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') !== true, 'two__bg' : this.health.health_3.includes('thirst') == true}" style="width:50%">50%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') == true, 'one__bg' : this.health.health_3.includes('thirst') !== true}" style="width:15%">11%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('thirst') !== true, 'two__bg' : this.health.health_3.includes('thirst') == true}" style="width:85%">89%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -216,16 +216,16 @@
         <h4>Niewyraźne widzenie</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('blured') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('blured') == true}" style="width:20%">
             <p :class="{'visible' : this.health.health_3.includes('blured') == true, 'not__visible' : this.health.health_3.includes('blured') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('blured') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('blured') !== true}" style="width:80%">
             <p :class="{'visible' : this.health.health_3.includes('blured') !== true, 'not__visible' : this.health.health_3.includes('blured') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('blured') == true, 'one__bg' : this.health.health_3.includes('blured') !== true}" style="width:50%">16%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('blured') !== true, 'two__bg' : this.health.health_3.includes('blured') == true}" style="width:50%">84%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('blured') == true, 'one__bg' : this.health.health_3.includes('blured') !== true}" style="width:20%">16%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('blured') !== true, 'two__bg' : this.health.health_3.includes('blured') == true}" style="width:80%">84%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -239,16 +239,16 @@
         <h4>Nietrzymanie moczu</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('urea') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('urea') == true}" style="width:10%">
             <p :class="{'visible' : this.health.health_3.includes('urea') == true, 'not__visible' : this.health.health_3.includes('urea') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('urea') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('urea') !== true}" style="width:90%">
             <p :class="{'visible' : this.health.health_3.includes('urea') !== true, 'not__visible' : this.health.health_3.includes('urea') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('urea') == true, 'one__bg' : this.health.health_3.includes('urea') !== true}" style="width:50%">6%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('urea') !== true, 'two__bg' : this.health.health_3.includes('urea') == true}" style="width:50%">94%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('urea') == true, 'one__bg' : this.health.health_3.includes('urea') !== true}" style="width:10%">6%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('urea') !== true, 'two__bg' : this.health.health_3.includes('urea') == true}" style="width:90%">94%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -262,16 +262,16 @@
         <h4>Psychiczne, emocjonalne lub fizyczne wyczerpanie pracą</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('psych') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('psych') == true}" style="width:30%">
             <p :class="{'visible' : this.health.health_3.includes('psych') == true, 'not__visible' : this.health.health_3.includes('psych') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('psych') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('psych') !== true}" style="width:70%">
             <p :class="{'visible' : this.health.health_3.includes('psych') !== true, 'not__visible' : this.health.health_3.includes('psych') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('psych') == true, 'one__bg' : this.health.health_3.includes('psych') !== true}" style="width:50%">27%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('psych') !== true, 'two__bg' : this.health.health_3.includes('psych') == true}" style="width:50%">73%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('psych') == true, 'one__bg' : this.health.health_3.includes('psych') !== true}" style="width:30%">27%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('psych') !== true, 'two__bg' : this.health.health_3.includes('psych') == true}" style="width:70%">73%</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -285,16 +285,16 @@
         <h4>Zaburzenia pamięci</h4>
 
         <div class="bar upper">
-          <div class="result one" :class="{'active cont' : this.health.health_3.includes('memory') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_3.includes('memory') == true}" style="width:10%">
             <p :class="{'visible' : this.health.health_3.includes('memory') == true, 'not__visible' : this.health.health_3.includes('memory') !== true}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.health.health_3.includes('memory') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_3.includes('memory') !== true}" style="width:90%">
             <p :class="{'visible' : this.health.health_3.includes('memory') !== true, 'not__visible' : this.health.health_3.includes('memory') == true}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.health.health_3.includes('memory') == true, 'one__bg' : this.health.health_3.includes('memory') !== true}" style="width:50%">8%</div>
-          <div class="result" :class="{'active' : this.health.health_3.includes('memory') !== true, 'two__bg' : this.health.health_3.includes('memory') == true}" style="width:50%">92%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('memory') == true, 'one__bg' : this.health.health_3.includes('memory') !== true}" style="width:10%">8%</div>
+          <div class="result" :class="{'active' : this.health.health_3.includes('memory') !== true, 'two__bg' : this.health.health_3.includes('memory') == true}" style="width:90%">92%</div>
         </div>
         <div class="row">
           <div class="dot__content">

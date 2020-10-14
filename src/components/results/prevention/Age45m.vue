@@ -45,10 +45,10 @@
         </div>
         <div class="row">
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_2 == 'yes2', 'one__bg' : this.prevention.prevention_2 !== 'yes2'}"></span>Tak
+            <span class="dot" :class="{'active' : this.prevention.prevention_2 == 'yes2', 'three__bg' : this.prevention.prevention_2 !== 'yes2'}"></span>Tak
           </div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_2 == 'no2', 'two__bg' : this.prevention.prevention_2 !== 'no2'}"></span>Nie</div>
+            <span class="dot" :class="{'active' : this.prevention.prevention_2 == 'no2', 'four__bg' : this.prevention.prevention_2 !== 'no2'}"></span>Nie</div>
         </div>
       </div>
     </div>
@@ -71,10 +71,10 @@
         </div>
         <div class="row">
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_3 == 'yes3', 'one__bg' : this.prevention.prevention_3 !== 'yes3'}"></span>Tak
+            <span class="dot" :class="{'active' : this.prevention.prevention_3 == 'yes3', 'three__bg' : this.prevention.prevention_3 !== 'yes3'}"></span>Tak
           </div>
           <div class="dot__content">
-            <span class="dot" :class="{'active' : this.prevention.prevention_3 == 'no3', 'two__bg' : this.prevention.prevention_3 !== 'no3'}"></span>Nie</div>
+            <span class="dot" :class="{'active' : this.prevention.prevention_3 == 'no3', 'four__bg' : this.prevention.prevention_3 !== 'no3'}"></span>Nie</div>
         </div>
       </div>
     </div>

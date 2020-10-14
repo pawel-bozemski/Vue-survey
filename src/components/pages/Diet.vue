@@ -121,25 +121,25 @@
         <div class="form-check form-check-inline question-box">
           <h6 class="col">{{ this.bmi }}</h6>
         </div>
-        <div class="bar">
-          <div class="result one" :class="{'active' : this.bmi < 19 }" style="width:25%">
+        <div class="bar upper">
+          <div class="result one" :class="{'active cont' : this.bmi < 19 }" style="width:25%">
             <p :class="{'visible' : this.bmi < 19 , 'not__visible' : this.bmi >= 19}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active' : this.bmi >= 19 && this.bmi < 25}" style="width:25%">
+          <div class="result two" :class="{'active cont' : this.bmi >= 19 && this.bmi < 25}" style="width:25%">
             <p :class="{'visible' : this.bmi >= 19 && this.bmi < 25, 'not__visible' : this.bmi < 19 || this.bmi >= 25}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active' : this.bmi >= 25 && this.bmi < 30}" style="width:25%">
+          <div class="result one" :class="{'active cont' : this.bmi >= 25 && this.bmi < 30}" style="width:25%">
             <p :class="{'visible' : this.bmi >= 25 && this.bmi < 30, 'not__visible' : this.bmi <= 25 || this.bmi >= 30}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active' : this.bmi >= 30}" style="width:25%">
+          <div class="result two"  :class="{'active cont' : this.bmi >= 30}" style="width:25%">
             <p :class="{'visible' : this.bmi >= 30, 'not__visible' : this.bmi <= 30}">Twój wynik</p>
           </div>
         </div>
         <div class="bar">
           <div class="result" :class="{'active' : this.bmi < 19 , 'one__bg' : this.bmi >= 19}" style="width:25%">Niedowaga</div>
           <div class="result" :class="{'active' : this.bmi >= 19 && this.bmi < 25, 'two__bg' : this.bmi < 19 || this.bmi >= 25}" style="width:25%">Waga Optymalna</div>
-          <div class="result" :class="{'active' : this.bmi >= 25 && this.bmi < 30, 'one__bg' : this.bmi < 25 || this.bmi >= 30}" style="width:25%">Nadwaga</div>
-          <div class="result" :class="{'active' : this.bmi >= 30, 'two__bg' : this.bmi <= 30}" style="width:25%">Otyłość</div>
+          <div class="result" :class="{'active' : this.bmi >= 25 && this.bmi < 30, 'three__bg' : this.bmi < 25 || this.bmi >= 30}" style="width:25%">Nadwaga</div>
+          <div class="result" :class="{'active' : this.bmi >= 30, 'four__bg' : this.bmi <= 30}" style="width:25%">Otyłość</div>
         </div>
         <div class="row">
           <div class="dot__content">
@@ -148,9 +148,9 @@
           <div class="dot__content">
             <div class="dot" :class="{'active' : this.bmi >= 19 && this.bmi < 25, 'two__bg' : this.bmi < 19 || this.bmi >= 25}"></div>19-25</div>
           <div class="dot__content">
-            <div class="dot" :class="{'active' : this.bmi >= 25 && this.bmi < 30, 'one__bg' : this.bmi < 25 || this.bmi >= 30}"></div>25-30</div>
+            <div class="dot" :class="{'active' : this.bmi >= 25 && this.bmi < 30, 'three__bg' : this.bmi < 25 || this.bmi >= 30}"></div>25-30</div>
           <div class="dot__content">
-            <div class="dot" :class="{'active' : this.bmi >= 30, 'two__bg' :this.bmi <= 30}"></div>Więcej niż 30</div>
+            <div class="dot" :class="{'active' : this.bmi >= 30, 'four__bg' :this.bmi <= 30}"></div>Więcej niż 30</div>
         </div>
       </div>
     </div>
