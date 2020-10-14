@@ -11,7 +11,7 @@ const state = {
   health_2: [
     { id: 1, name: 'health_2', value: 'hipertension', title: 'Nadciśnienie' },
     { id: 2, name: 'health_2', value: 'diabetes', title: 'Cukrzyca' },
-    { id: 3, name: 'health_2', value: 'pochp', title: 'Przewlekła obturacyjna choroba płuc (POChP)' },
+    { id: 3, name: 'health_2', value: 'pochp', title: 'Przewlekła obturacyjna choroba płuc' },
     { id: 4, name: 'health_2', value: 'allergy', title: 'Alergia lub astma' },
     { id: 5, name: 'health_2', value: 'depresion', title: 'Depresja' },
     { id: 6, name: 'health_2', value: 'cancer', title: 'Choroba nowotworowa' },

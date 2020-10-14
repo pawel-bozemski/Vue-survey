@@ -39,24 +39,6 @@
 <script></script>
 
 <style scoped lang="scss">
-
-/* first for IE 4–8 */
-@font-face {
-  font-family: NNDagnyTextWeb;
-  src: url("../fonts/NNDagnyTextWeb.eot");
-}
-
-/* then for WOFF-capable browsers */
-@font-face {
-  font-family: NNDagnyTextWeb;
-  src: url("../fonts/NNDagnyTextWeb.woff") format("woff");
-}
-
-/* go on with normal style definitions */
-body {
-  font-family: NNDagnyTextWeb, sans-serif;
-}
-
 .image {
   display: block;
   margin-left: auto;
