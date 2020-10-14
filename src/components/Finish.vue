@@ -30,10 +30,10 @@
       <p>Twój kod to :</p>
       <div class="form-group">
         <input
-          type="text"
+          @click="copyText"
+          id="textToCopy"
           class="form-control"
-          placeholder="Example input"
-        />
+          value="kod do skopiowania">
       </div>
       <p><strong>Uwaga! Zapisz swój kod, bo po zamknięciu tej strony <br> nie będzie możliwości jego ponownego wyświetlenia.</strong></p>
     </div>
@@ -48,11 +48,27 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    copyText () {
+      const text = document.getElementById('textToCopy')
+      text.select()
+      text.setSelectionRange(0, 99999)
+      document.execCommand('copy')
+    }
+  }
+}
+
+</script>
 
 <style scoped lang="scss">
 .container {
   width: 90%;
+}
+
+.textarea {
+  background-color: #fbf9fa;
 }
 .image {
   margin: 20px 0;
