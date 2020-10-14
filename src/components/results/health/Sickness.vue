@@ -5,7 +5,7 @@
       <div class="questions">
 
         <div class="bar">
-          <div class="result one" :class="{'active' : this.health.health_1 == 'yes'}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_1 == 'yes'}" style="width:50%">
             <p :class="{'visible' : this.health.health_1 == 'yes', 'not__visible' : this.health.health_1 !== 'yes'}">Twój wynik</p>
           </div>
           <div class="result two" :class="{'active' : this.health.health_1 == 'no'}" style="width:50%">
@@ -32,10 +32,10 @@
         <h4>Nadciśnienie</h4>
 
         <div class="bar upper">
-          <div class="result one upper" :class="{'active' : this.health.health_2.includes('hipertension') == true}" style="width:50%">
+          <div class="result one" :class="{'active cont' : this.health.health_2.includes('hipertension') == true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('hipertension') == true, 'not__visible' : this.health.health_2.includes('hipertension') !== true}">Twój wynik</p>
           </div>
-          <div class="result two upper" :class="{'active' : this.health.health_2.includes('hipertension') !== true}" style="width:50%">
+          <div class="result two" :class="{'active cont' : this.health.health_2.includes('hipertension') !== true}" style="width:50%">
             <p :class="{'visible' : this.health.health_2.includes('hipertension') !== true, 'not__visible' : this.health.health_2.includes('hipertension') == true}">Twój wynik</p>
           </div>
         </div>

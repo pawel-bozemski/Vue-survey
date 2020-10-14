@@ -12,6 +12,9 @@
   color: white;
   background-color: #f57921;
 }
+h1 {
+  color: #f57921;
+}
 
 .noshow {
   display: none;
@@ -44,12 +47,34 @@ label {
   opacity: 0.7;
   font-size: 14px;
   line-height: 15px;
+  span {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+  }
+  input {
+    display: none;
+  }
 }
 span {
-  position: absolute;
-  right: 2%;
-  top: 20%;
+  border: 1px solid grey;
+  display: inline-block;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
 }
+
+span input:checked+i {
+  background-color: #f57921;
+  display: inline-block;
+  border-radius: 15px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20%;
+  right: 15%;
+}
+
 .image1 {
   position: absolute;
   z-index: -5;
@@ -83,5 +108,22 @@ span {
     position: absolute;
     z-index: -5;
     width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .image1 {
+    display: none;
+  }
+  .image2 {
+    display: none;
   }
 }

@@ -1,11 +1,11 @@
 <template>
   <div class="interview">
-        Etap 2/8
+    Etap 3/15
     <div class="progress">
       <div
         class="progress-bar"
         role="progressbar"
-        style="width: 25%"
+        style="width: 21%"
         aria-valuenow="25"
         aria-valuemin="0"
         aria-valuemax="100"
@@ -34,12 +34,12 @@
                 :value="question.value"
                 v-model="drugs_1"
               />
+              <i></i>
             </span>
           </label>
         </div>
       </div>
     </div>
-
     <div class="jumbotron">
       <h4>
         Czy palisz tradycyjne papierosy?
@@ -61,6 +61,7 @@
                 :value="question.value"
                 v-model="drugs_2"
               />
+              <i></i>
             </span>
           </label>
         </div>
@@ -88,6 +89,7 @@
                 :value="question.value"
                 v-model="drugs_3"
               />
+              <i></i>
             </span>
           </label>
         </div>

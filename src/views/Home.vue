@@ -7,24 +7,20 @@
     />
     <div class="text">
       <div class="header">
-        <p>
-          Dołącz do ponad 400 000 osób, które wzięły udział w Narodowym Teście
-          Zdrowia Polaków <br />
-          organizowanym przez Medonet, którego partnerem strategicznym jest
-          Nationale Nederlanden.
-        </p>
+        <h6>
+          Sprawdź się w teście Zdrowia
+        </h6>
       </div>
       <div class="content">
-        <h6>
-          Opowiedz na proste pytania o swój styl życia <br />
-          i zobacz, jak wypadasz na tle innych.
-        </h6>
+        <p>
+        Wiemy, że choć życie nieustająco przyśpiesza, dbasz o wszystko, co dla Ciebie ważne.<br>
+        Ale czy odpowiednio troszczysz się też o swoje zdrowie? Pomożemy Ci to ocenić.
+        </p>
       </div>
       <div class="footer">
         <p>
-          Odkryj, jak wielkie znaczenie dla naszego zdrowia, mają nawet drobne
-          rzeczy, <br />
-          które robimy każdego dnia.
+          Sprawdź jak wypadasz na tle ponad 400 000 osób, któe wzięły udział w Narodowym Teście Zdrowia portalu Medonet<br>
+           i odbierz dostęp do Poratalu Dietetycznego
         </p>
       </div>
     </div>
@@ -43,6 +39,24 @@
 <script></script>
 
 <style scoped lang="scss">
+
+/* first for IE 4–8 */
+@font-face {
+  font-family: NNDagnyTextWeb;
+  src: url("../fonts/NNDagnyTextWeb.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: NNDagnyTextWeb;
+  src: url("../fonts/NNDagnyTextWeb.woff") format("woff");
+}
+
+/* go on with normal style definitions */
+body {
+  font-family: NNDagnyTextWeb, sans-serif;
+}
+
 .image {
   display: block;
   margin-left: auto;
@@ -61,6 +75,9 @@
   width: 100%;
   margin: 10px;
   text-align: center;
+}
+.footer {
+  font-weight: 600;
 }
 h6 {
   color: #f57921;

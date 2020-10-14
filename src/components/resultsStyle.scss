@@ -19,7 +19,6 @@
 }
 .bar {
   width: 100%;
-  background-color: #ddd;
   margin: 10px 0;
   display: inline-block;
 }
@@ -32,6 +31,10 @@
   float: left;
   display: block;
 }
+.result.active.cont {
+  background: transparent;
+  padding: 0;
+}
 .active {
   background-color: #f57921;
   display: inline;
@@ -41,7 +44,11 @@
   display: none;
 }
 .visible {
-  display: inline;
+  display: inline-block;
+  background: #f57921;
+  padding: 6px 25px;
+  height: 41px;
+  margin-top: 8px;
 }
 .one__bg {
   background-color: #7d8597;
@@ -79,14 +86,17 @@
 .result.active p::after {
   position: absolute;
   content: "";
-  border: solid #f57921;
+  background: #f57921;
   border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 5px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  top: 100%;
-  left: 50%;
+  bottom: 0%;
+  left:calc(50% - 12px);
+  transform-origin: bottom left;
+  width: 20px;
+  height: 20px;
 }
 
 .upper {
@@ -96,6 +106,12 @@
 .btn {
   color: white;
   background-color: #f57921;
+}
+.progress {
+  margin: 15px;
+  .progress-bar {
+    background-color: #f57921;
+  }
 }
 
 @media (max-width: 1024px) {

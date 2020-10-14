@@ -1,11 +1,11 @@
 <template>
   <div class="interview">
-    Etap 3/8
+    Etap 4/15
     <div class="progress">
       <div
         class="progress-bar"
         role="progressbar"
-        style="width: 38%"
+        style="width: 28%"
         aria-valuenow="25"
         aria-valuemin="0"
         aria-valuemax="100"
@@ -34,6 +34,7 @@
                 :value="question.value"
                 v-model="psych_1"
               />
+              <i></i>
             </span>
           </label>
         </div>
@@ -61,6 +62,7 @@
                 :value="question.value"
                 v-model="psych_2"
               />
+              <i></i>
             </span>
           </label>
         </div>
@@ -89,6 +91,7 @@
                 :value="question.value"
                 v-model="psych_3"
               />
+              <i></i>
             </span>
           </label>
         </div>

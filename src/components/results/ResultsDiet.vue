@@ -1,5 +1,16 @@
 <template>
   <div class="interview">
+    Etap 8/15
+    <div class="progress">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        style="width: 56%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
     <h1>Wyniki Dieta</h1>
     <h4 class="subtitle">Sprawdź, jak wypadasz na tle podobnych do Ciebie osób</h4>
     <div class="jumbotron">

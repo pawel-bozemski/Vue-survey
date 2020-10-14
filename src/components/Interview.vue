@@ -1,7 +1,18 @@
 <template>
   <div class="interview">
-    <h1>Metryka</h1>
-    <p>Prosimy o podanie podstawowych danych statystycznych</p>
+    Etap 1/15
+    <div class="progress">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        style="width: 7%"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <h1>Podstawowe dane</h1>
+    <p>Odpowiedz na kilka pytań, które umożliwią nam analizę danych</p>
     <img class="image1" src="../imgs/interview/pani.png" alt="">
     <form class="jumbotron">
       <h4>Płeć</h4>
@@ -22,6 +33,7 @@
                 :value="question.value"
                 v-model="gender"
               />
+              <i></i>
             </span>
           </label>
         </div>
@@ -46,6 +58,7 @@
                 :value="question.value"
                 v-model="age"
               />
+              <i></i>
             </span>
           </label>
         </div>
@@ -70,6 +83,7 @@
                 :value="question.value"
                 v-model="location"
               />
+              <i></i>
             </span>
           </label>
         </div>
