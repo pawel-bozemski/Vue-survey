@@ -81,6 +81,12 @@ h6 {
   color: #f57921;
   text-decoration: underline;
 }
+.progress {
+  margin: 15px;
+  .progress-bar {
+    background-color: #f57921;
+  }
+}
 
 @media (max-width: 1024px) {
   .image {

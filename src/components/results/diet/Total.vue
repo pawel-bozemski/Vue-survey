@@ -8,26 +8,26 @@
           <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'zdrowe'}" style="width:25%">
             <p :class="{'visible' : this.diet.diet_1 == 'zdrowe', 'not__visible' : this.diet.diet_1 !== 'zdrowe'}">Twój wynik</p>
           </div>
-          <div class="result two" :class="{'active cont' : this.diet.diet_1 == 'bezmiesne'}" style="width:16%">
+          <div class="result two" :class="{'active cont' : this.diet.diet_1 == 'bezmiesne'}" style="width:13%">
             <p :class="{'visible' : this.diet.diet_1 == 'bezmiesne', 'not__visible' : this.diet.diet_1 !== 'bezmiesne'}">Twój wynik</p>
           </div>
           <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'miesne'}" style="width:30%">
             <p :class="{'visible' : this.diet.diet_1 == 'miesne', 'not__visible' : this.diet.diet_1 !== 'miesne'}">Twój wynik</p>
           </div>
-          <div class="result two"  :class="{'active cont' : this.diet.diet_1 == 'lowCarb'}" style="width:16%">
+          <div class="result two"  :class="{'active cont' : this.diet.diet_1 == 'lowCarb'}" style="width:12%">
             <p :class="{'visible' : this.diet.diet_1 == 'lowCarb', 'not__visible' : this.diet.diet_1 !== 'lowCarb'}">Twój wynik</p>
           </div>
-          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'lowSalt'}" style="width:18%">
+          <div class="result one" :class="{'active cont' : this.diet.diet_1 == 'lowSalt'}" style="width:20%">
             <p :class="{'visible' : this.diet.diet_1 == 'lowSalt', 'not__visible' : this.diet.diet_1 !== 'lowSalt'}">Twój wynik</p>
           </div>
 
         </div>
         <div class="bar">
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'zdrowe', 'one__bg' : this.diet.diet_1 !== 'zdrowe'}" style="width:20%">28%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'bezmiesne', 'two__bg' : this.diet.diet_1 !== 'bezmiesne'}" style="width:16%">10%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'zdrowe', 'one__bg' : this.diet.diet_1 !== 'zdrowe'}" style="width:25%">28%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'bezmiesne', 'two__bg' : this.diet.diet_1 !== 'bezmiesne'}" style="width:13%">10%</div>
           <div class="result" :class="{'active' : this.diet.diet_1 == 'miesne', 'three__bg' : this.diet.diet_1 !== 'miesne'}" style="width:30%">37%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'four__bg' : this.diet.diet_1 !== 'lowCarb'}" style="width:16%">10%</div>
-          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'five__bg' : this.diet.diet_1 !== 'lowSalt'}" style="width:18%">12%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowCarb', 'four__bg' : this.diet.diet_1 !== 'lowCarb'}" style="width:12%">10%</div>
+          <div class="result" :class="{'active' : this.diet.diet_1 == 'lowSalt', 'five__bg' : this.diet.diet_1 !== 'lowSalt'}" style="width:20%">12%</div>
         </div>
         <div class="row">
           <div class="dot__content">
