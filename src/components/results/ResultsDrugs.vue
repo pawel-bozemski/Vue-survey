@@ -45,6 +45,12 @@
     <app-age45 v-else-if="this.interview.age == '45-54'"></app-age45>
     <app-age55 v-else-if="this.interview.age == '55-64'"></app-age55>
     <app-age65 v-else-if="this.interview.age == '65'"></app-age65>
+        <div class="jumbotron">
+      <p>
+        Pamiętaj, że wyniki mają wyłącznie charakter poglądowy. Jeśli masz pytania lub wątpliwości dotyczące Twojego zdrowia, zgłoś się do swojego lekarza rodzinnego.
+      </p>
+    </div>
+
     <div class="jumbotron buttons">
       <router-link to="/resultsdiet" tag="a" class="backBtn">
         <button class="btn btn-warning">

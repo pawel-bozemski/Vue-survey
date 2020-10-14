@@ -18,7 +18,7 @@
         <p>
           Zależy nam na Twoim zdrowiu, dlatego mamy dla Ciebie kod dający Ci
           darmowy dostęp <br />
-          do Portalu Dietetycznego Nationale-Nederlandem. Dzięki portalowi:
+          do Portalu Dietetycznego Nationale-Nederlanden*. Dzięki portalowi:
         </p>
         <img class="image" src="../imgs/finish/perks.png" alt="perks" />
       </div>
@@ -43,7 +43,7 @@
       Nationale-Nederlanden od lat ubezpiecza klientów na wypadek raka,<br>
       zawału serca, udaru, a teraz - także na wypadek cukrzycy.
       </p>
-      <h6>Poznaj nasze produkty związane z chorobami cywilizacyjnymi</h6>
+      <a href="https://www.nn.pl/dla-ciebie/zycie-i-zdrowie.html">Poznaj nasze produkty związane z chorobami cywilizacyjnymi</a>
     </div>
   </div>
 </template>
@@ -77,7 +77,10 @@
 .text {
   margin: 20px 0;
 }
-h6 {
+h1 {
+  color: #f57921;
+}
+a {
   color: #f57921;
   text-decoration: underline;
 }

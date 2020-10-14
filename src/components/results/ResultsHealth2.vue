@@ -35,6 +35,12 @@
       </div>
     </div>
     <app-prob></app-prob>
+        <div class="jumbotron">
+      <p>
+        Pamiętaj, że wyniki mają wyłącznie charakter poglądowy. Jeśli masz pytania lub wątpliwości dotyczące Twojego zdrowia, zgłoś się do swojego lekarza rodzinnego.
+      </p>
+    </div>
+
     <div class="jumbotron buttons">
       <router-link to="/resultshealthsick" tag="a" class="backBtn">
         <button class="btn btn-warning">

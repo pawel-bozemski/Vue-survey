@@ -51,7 +51,11 @@
     <app-age45w v-else-if="this.interview.age == '45-54' && this.interview.gender == 'female'"></app-age45w>
     <app-age55w v-else-if="this.interview.age == '55-64' && this.interview.gender == 'female'"></app-age55w>
     <app-age65w v-else-if="this.interview.age == '65' && this.interview.gender == 'female'"></app-age65w>
-
+    <div class="jumbotron">
+      <p>
+        Pamiętaj, że wyniki mają wyłącznie charakter poglądowy. Jeśli masz pytania lub wątpliwości dotyczące Twojego zdrowia, zgłoś się do swojego lekarza rodzinnego.
+      </p>
+    </div>
     <div class="jumbotron buttons">
       <router-link to="/resultshealthprob" tag="a" class="backBtn">
         <button class="btn btn-warning">

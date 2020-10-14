@@ -49,7 +49,11 @@
         </button>
       </router-link>
     </div>
-
+    <div class="jumbotron">
+      <p>
+        Pamiętaj, że wyniki mają wyłącznie charakter poglądowy. Jeśli masz pytania lub wątpliwości dotyczące Twojego zdrowia, zgłoś się do swojego lekarza rodzinnego.
+      </p>
+    </div>
     <div class="jumbotron ">
       <div class="icons">
         <ul class="list-inline brands">

@@ -33,6 +33,7 @@
 }
 .result.active.cont {
   padding: 0;
+  background: transparent;
 }
 .active {
   background-color: #f57921;
@@ -45,7 +46,12 @@
 .visible {
   display: inline-block;
   margin-top: 8px;
+  height: 41px;
+  padding: 5px;
+  background-color: #f57921;
+  border-radius: 30px;
 }
+
 .one__bg {
   background-color: #c0bebf;
 }
