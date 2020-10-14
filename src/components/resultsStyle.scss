@@ -32,7 +32,6 @@
   display: block;
 }
 .result.active.cont {
-  background: transparent;
   padding: 0;
 }
 .active {
@@ -45,9 +44,6 @@
 }
 .visible {
   display: inline-block;
-  background: #f57921;
-  padding: 6px 25px;
-  height: 41px;
   margin-top: 8px;
 }
 .one__bg {
