@@ -26,6 +26,7 @@ h1 {
   align-items: start;
 }
 .question-box {
+  font-size: 15px;
   background-color: #fbf9fa;
   height: 40px;
   margin: 15px;
@@ -70,7 +71,6 @@ span input:checked+i {
   position: absolute;
   top: 20%;
   right: 17%;
-
 }
 
 .image1 {
@@ -107,6 +107,20 @@ span input:checked+i {
     z-index: -5;
     width: 30%;
   }
+  label {
+    span {
+      top: 10%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  span input:checked+i {
+    width: 10px;
+    height: 10px;
+    top: 25%;
+    right: 25%;
+  }
 }
 @media (max-width: 500px) {
   h1 {
@@ -117,6 +131,10 @@ span input:checked+i {
   }
   label {
     font-size: 12px;
+    height: 40px;
+    span {
+      top: 25%;
+    }
   }
   .image1 {
     display: none;

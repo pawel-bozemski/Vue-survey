@@ -92,7 +92,7 @@
     <img class="image2" src="../imgs/interview/pan.png" alt="">
     <div class="jumbotron">
       <router-link to="/diet">
-        <button class="btn btn-warning"
+        <button class="btn"
           :disabled="this.disable"
           @click="setInterview">
           Dalej >>>>

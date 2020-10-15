@@ -163,7 +163,7 @@
   </div>
     <div class="jumbotron buttons">
       <router-link to="/interview" class="backBtn">
-        <button class="btn btn-warning">
+        <button class="btn btn">
            Wstecz
         </button>
       </router-link>
