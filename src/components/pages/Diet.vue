@@ -107,7 +107,13 @@
         </div>
         <div class="row">
           <div class="col-lg">
-            <button type="button" class="btn btn-warning" @click="calculateBMI">Oblicz</button>
+            <button
+            :disabled="this.disableBmi"
+            type="button"
+            class="btn"
+            @click="calculateBMI">
+            Oblicz
+            </button>
           </div>
         </div>
       </div>
@@ -164,7 +170,7 @@
       <router-link to="/drugs">
         <button
         :disabled="this.disable"
-        class="btn btn-warning"
+        class="btn"
         @click="setDiet">
           Dalej >>>
         </button>
@@ -184,7 +190,8 @@ export default {
       bmi: 0,
       height: '',
       mass: '',
-      disable: true
+      disable: true,
+      disableBmi: true
     }
   },
   mounted: function () {
@@ -235,6 +242,20 @@ export default {
         this.disable = true
       } else {
         this.disable = false
+      }
+    },
+    height: function () {
+      if (this.height === '' || this.mass === '') {
+        this.disableBmi = true
+      } else {
+        this.disableBmi = false
+      }
+    },
+    mass: function () {
+      if (this.height === '' || this.mass === '') {
+        this.disableBmi = true
+      } else {
+        this.disableBmi = false
       }
     },
     bmi: function () {

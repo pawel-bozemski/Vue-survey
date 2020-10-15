@@ -53,12 +53,12 @@
 
     <div class="jumbotron buttons">
       <router-link to="/resultsdiet" tag="a" class="backBtn">
-        <button class="btn btn-warning">
+        <button class="btn ">
           Wstecz
         </button>
       </router-link>
       <router-link to="/resultspsych">
-        <button class="btn btn-warning">
+        <button class="btn ">
           Dalej >>>>
         </button>
       </router-link>

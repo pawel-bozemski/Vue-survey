@@ -97,14 +97,14 @@
     </div>
     <div class="jumbotron buttons">
       <router-link to="/diet" tag="a" class="backBtn">
-        <button class="btn btn-warning">
+        <button class="btn ">
           Wstecz
         </button>
       </router-link>
       <router-link to="/psych">
         <button
         :disabled="this.disable"
-        class="btn btn-warning"
+        class="btn "
         @click="setDrugs">
           Dalej
         </button>

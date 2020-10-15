@@ -39,12 +39,12 @@
     <app-total></app-total>
     <div class="jumbotron buttons">
       <router-link to="/prevention" tag="a" class="backBtn">
-        <button class="btn btn-warning">
+        <button class="btn ">
           Wstecz
         </button>
       </router-link>
       <router-link to="/resultsdrugs">
-        <button class="btn btn-warning">
+        <button class="btn ">
           Dalej >>>>
         </button>
       </router-link>
