@@ -133,16 +133,22 @@
     flex-wrap: wrap;
     align-items: start;
   }
+  .visible {
+    font-size: 12px;
+  }
 
 }
 
 @media (max-width: 500px) {
   .result {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 11px;
+    height: 35px;
+  }
+  .result.active p::after {
+    top: 60%;
   }
   .visible {
-    padding: 5px;
+    height: 35px;
   }
   h1 {
     font-size: 22px;
