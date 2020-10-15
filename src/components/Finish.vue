@@ -40,10 +40,11 @@
     <div class="col text">
       <p>Korzystanie z Portalu Dietetycznego to kolejny krok do jeszcze większego dbania o siebie, <br>
       kolejnym krokiem może być wybór odpowiedniego ubezpieczenia.<br>
-      Nationale-Nederlanden od lat ubezpiecza klientów na wypadek raka,<br>
+      Nationale-Nederlanden* od lat ubezpiecza klientów na wypadek raka,<br>
       zawału serca, udaru, a teraz - także na wypadek cukrzycy.
       </p>
       <a href="https://www.nn.pl/dla-ciebie/zycie-i-zdrowie.html">Poznaj nasze produkty związane z chorobami cywilizacyjnymi</a>
+      <p class="smallText">* Nationale-Nederlanden Towarzystwo Ubezpieczeń na Życie S.A.</p>
     </div>
   </div>
 </template>
@@ -65,6 +66,10 @@ export default {
 <style scoped lang="scss">
 .container {
   width: 90%;
+}
+.smallText {
+  font-size: 12px;
+  font-style: italic;
 }
 
 .textarea {
